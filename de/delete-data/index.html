@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="So exportierst du deine Bibliothek, löschst sie von diesem Gerät und löschst deinen Account bei Second Brain samt allem, was er in iCloud und auf unserem Server enthält.">
+<meta name="robots" content="index,follow">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#F9F8F3">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#131417">
+<meta property="og:title" content="Deine Daten löschen – Second Brain">
+<meta property="og:description" content="So exportierst du deine Bibliothek, löschst sie von diesem Gerät und löschst deinen Account bei Second Brain samt allem, was er in iCloud und auf unserem Server enthält.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de">
+<meta property="og:url" content="https://sohaibiii.github.io/second-brain-links/de/delete-data/">
+<meta property="og:image" content="https://sohaibiii.github.io/second-brain-links/apple-touch-icon.png">
+<link rel="canonical" href="https://sohaibiii.github.io/second-brain-links/de/delete-data/">
+<link rel="alternate" hreflang="en" href="https://sohaibiii.github.io/second-brain-links/delete-data/"><link rel="alternate" hreflang="de" href="https://sohaibiii.github.io/second-brain-links/de/delete-data/"><link rel="alternate" hreflang="es" href="https://sohaibiii.github.io/second-brain-links/es/delete-data/"><link rel="alternate" hreflang="fr" href="https://sohaibiii.github.io/second-brain-links/fr/delete-data/"><link rel="alternate" hreflang="ja" href="https://sohaibiii.github.io/second-brain-links/ja/delete-data/"><link rel="alternate" hreflang="ko" href="https://sohaibiii.github.io/second-brain-links/ko/delete-data/"><link rel="alternate" hreflang="pt-BR" href="https://sohaibiii.github.io/second-brain-links/pt-BR/delete-data/"><link rel="alternate" hreflang="zh-Hans" href="https://sohaibiii.github.io/second-brain-links/zh-Hans/delete-data/"><link rel="alternate" hreflang="x-default" href="https://sohaibiii.github.io/second-brain-links/delete-data/">
+<link rel="icon" href="/second-brain-links/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/second-brain-links/apple-touch-icon.png">
+<title>Deine Daten löschen – Second Brain</title>
+<style>
+:root{
+  --bg:#F9F8F3;--surface:#FFFFFF;--fill:#ECEBE4;--ink:#131313;--ink-2:#666669;--ink-3:#5E5E61;
+  --line:#E3E0D9;--grid:rgba(120,110,90,.07);--accent:#056BFF;--accent-ink:#0458D6;--accent-soft:#E3F5FA;--on-accent:#FFFFFF;
+  --card-shadow:0 4px 20px rgba(0,0,0,.035);--card-edge:rgba(227,224,217,.6);
+  --amber:#A35C14;--amber-soft:rgba(163,92,20,.10);--success:#21A35E;--success-soft:rgba(33,163,94,.12);
+  --sky:#ADD9FF;--lavender:#F0E3FF;
+  --hero-a:#0562EB;--hero-b:#0443B5;--hero-glow:rgba(173,217,255,.45);--hero-ink:#FFFFFF;--hero-ink-2:rgba(255,255,255,.92);--hero-stroke:rgba(255,255,255,.16);--hero-fill:rgba(255,255,255,.14);
+  --r-card:20px;--r-hero:28px;--r-control:14px;--r-chip:12px;--r-tile:10px;
+  --max:760px;--wide:1080px;--anchor:112px;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#131417;--surface:#212429;--fill:#2B2E34;--ink:#FAFAFA;--ink-2:#B0B3BA;--ink-3:#9EA1A8;
+  --line:rgba(255,255,255,.10);--grid:rgba(255,255,255,.035);--accent:#66A8FF;--accent-ink:#8DBDFF;--accent-soft:#1F3847;--on-accent:#0B1220;
+  --card-shadow:none;--card-edge:rgba(255,255,255,.07);
+  --amber:#FAB357;--amber-soft:rgba(250,179,87,.14);--success:#5CD68C;--success-soft:rgba(92,214,140,.14);
+  --sky:#2E4D78;--lavender:#3D3352;
+  --hero-a:#0A58D0;--hero-b:#06338A;--hero-glow:rgba(102,168,255,.38);
+}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+html,body{overflow-x:clip}
+body{margin:0;background-color:var(--bg);background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:40px 40px;color:var(--ink);font:17px/1.6 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,"Helvetica Neue",Arial,"Hiragino Sans","Apple SD Gothic Neo","PingFang SC","Noto Sans",sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a{color:var(--accent-ink);text-decoration:underline;text-decoration-color:color-mix(in srgb,var(--accent-ink) 40%,transparent);text-underline-offset:3px;overflow-wrap:anywhere}
+a:hover{text-decoration-color:var(--accent-ink)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;top:8px;left:8px;background:var(--surface);color:var(--ink);padding:8px 12px;z-index:20;border-radius:var(--r-chip);box-shadow:var(--card-shadow)}
+.skip:not(:focus){clip:rect(0 0 0 0);clip-path:inset(50%);width:1px;height:1px;overflow:hidden;white-space:nowrap;padding:0;margin:-1px}
+h1,h2,h3{margin:0;letter-spacing:-.02em;text-wrap:balance;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Roboto,"Helvetica Neue",Arial,"Hiragino Sans","Apple SD Gothic Neo","PingFang SC","Noto Sans",sans-serif}
+h1{font-weight:700;font-size:clamp(32px,4.6vw,48px);line-height:1.08}
+h2{font-weight:700;font-size:24px;line-height:1.25}
+h3{font-weight:600;font-size:18px;line-height:1.3}
+:lang(ja) h1,:lang(ko) h1,:lang(zh-Hans) h1{line-height:1.25;letter-spacing:0}
+:lang(ja) body,:lang(ko) body,:lang(zh-Hans) body{line-height:1.75}
+:lang(ko) body{word-break:keep-all;overflow-wrap:anywhere}
+p{margin:0 0 1em}
+p:last-child{margin-bottom:0}
+ul,ol{margin:0;padding-left:1.3em}
+li{margin:.45em 0}
+li::marker{color:var(--accent)}
+strong{font-weight:600}
+.muted{color:var(--ink-2)}
+small,.small{font-size:14px;color:var(--ink-2)}
+code{font:.92em ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:var(--fill);padding:.1em .4em;border-radius:6px}
+kbd{font:inherit;background:var(--fill);border-radius:8px;padding:.05em .5em;white-space:nowrap}
+
+/* top bar — the one glass surface, like the app's tab bar */
+.topbar{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 84%,transparent);-webkit-backdrop-filter:saturate(1.4) blur(14px);backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid var(--line)}
+.topbar .in{max-width:var(--wide);margin:0 auto;padding:10px 20px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.brand{display:inline-flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none;font-weight:700;font-size:19px;letter-spacing:-.01em}
+.brand img{width:30px;height:30px;flex:none}
+nav.pages{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}
+nav.pages a{text-decoration:none;color:var(--ink-2);font-size:15px;font-weight:500;padding:7px 12px;border-radius:999px}
+nav.pages a[aria-current="page"]{color:var(--accent-ink);background:var(--accent-soft)}
+nav.pages a:hover{color:var(--ink)}
+@media (max-width:640px){nav.pages{margin-left:0;width:100%;overflow-x:auto;flex-wrap:nowrap;scrollbar-width:none;padding-bottom:2px}nav.pages::-webkit-scrollbar{display:none}nav.pages a{flex:none}}
+
+/* language tabs — the same page, in the reader's own language */
+.langrow{border-top:1px solid var(--line)}
+.langrow .in{max-width:var(--wide);margin:0 auto;padding:7px 20px;display:flex;align-items:center;gap:12px}
+.langrow .lbl{flex:none;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+nav.langs{display:flex;gap:2px;min-width:0;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+nav.langs::-webkit-scrollbar{display:none}
+nav.langs a{flex:none;text-decoration:none;color:var(--ink-2);font-size:14.5px;font-weight:500;padding:6px 11px;border-radius:999px;white-space:nowrap}
+nav.langs a:hover{color:var(--ink);background:var(--fill)}
+nav.langs a[aria-current="page"]{color:var(--accent-ink);background:var(--accent-soft)}
+@media (max-width:640px){.langrow .lbl{display:none}.langrow .in{padding:6px 20px}}
+
+/* hero — the app's blue banner, with the brain beside it */
+.hero-wrap{max-width:var(--wide);margin:24px auto 0;padding:0 20px}
+.hero{position:relative;overflow:hidden;border-radius:var(--r-hero);background:linear-gradient(135deg,var(--hero-a) 0%,var(--hero-b) 100%);color:var(--hero-ink);box-shadow:inset 0 0 0 1px var(--hero-stroke),0 24px 60px rgba(5,67,181,.18);padding:clamp(36px,6vw,64px) clamp(24px,5vw,56px)}
+.hero::before{content:"";position:absolute;inset:-45% -15% auto auto;width:65%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,var(--hero-glow) 0,transparent 62%);pointer-events:none}
+.hero>*{position:relative}
+.hero .mascot{position:absolute;right:clamp(20px,4vw,48px);bottom:clamp(16px,3vw,32px);width:clamp(120px,15vw,176px);height:auto;filter:drop-shadow(0 14px 30px rgba(0,20,70,.35))}
+.hero .copy{max-width:calc(100% - clamp(140px,17vw,200px))}
+@media (max-width:720px){.hero .mascot{position:static;display:block;width:84px;margin:0 0 14px}.hero .copy{max-width:none}}
+.hero .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--hero-ink-2);margin-bottom:18px}
+.hero .eyebrow .dot{width:8px;height:8px;border-radius:50%;background:#ADD9FF;box-shadow:0 0 10px rgba(173,217,255,.9)}
+.hero h1{max-width:20ch}
+.hero .sub{margin:16px 0 0;max-width:58ch;font-size:clamp(17px,2vw,20px);color:var(--hero-ink-2)}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px;align-items:center}
+.hero .ctas a,.hero .ctas span{color:var(--hero-ink)}
+.hero .ctas .btn.primary{background:#FFFFFF;color:#0443B5;box-shadow:0 8px 24px rgba(0,20,70,.25)}
+.hero .ctas .btn.quiet{background:var(--hero-fill);color:var(--hero-ink);box-shadow:inset 0 0 0 1px var(--hero-stroke)}
+.hero .meta{margin-top:22px;font-size:14px;color:var(--hero-ink-2)}
+.hero .meta a{color:var(--hero-ink);text-decoration-color:rgba(255,255,255,.5)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:16px;line-height:1;padding:14px 20px;border-radius:var(--r-control);text-decoration:none;white-space:nowrap}
+.btn.primary{background:var(--accent);color:var(--on-accent)}
+.btn.quiet{background:var(--fill);color:var(--ink)}
+.btn svg{width:18px;height:18px;flex:none}
+.soon{display:inline-flex;align-items:center;gap:8px;font-size:15px;color:var(--hero-ink-2);padding:12px 4px}
+.soon svg{width:18px;height:18px;flex:none}
+
+/* content */
+main{max-width:var(--wide);margin:0 auto;padding:32px 20px 64px}
+.grid{display:grid;grid-template-columns:minmax(0,1fr);gap:20px}
+@media (min-width:900px){.grid.with-toc{grid-template-columns:240px minmax(0,1fr);align-items:start}}
+.toc{position:sticky;top:var(--anchor);padding:20px 22px;border-radius:var(--r-card);background:var(--surface);box-shadow:var(--card-shadow),inset 0 0 0 1px var(--card-edge);max-height:calc(100vh - var(--anchor) - 20px);overflow-y:auto}
+@media (max-width:899px){.toc{position:static;max-height:none}}
+.toc .lbl{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2);margin-bottom:10px}
+.toc ol{list-style:none;padding:0;margin:0}
+.toc li{margin:0}
+.toc a{display:block;padding:6px 0;font-size:15px;color:var(--ink-2);text-decoration:none;border-bottom:1px solid var(--line)}
+.toc li:last-child a{border-bottom:0}
+.toc a:hover{color:var(--accent-ink)}
+.stack{display:grid;gap:20px;min-width:0}
+.card .lead{max-width:62ch}
+.card{background:var(--surface);border-radius:var(--r-card);padding:clamp(22px,3.4vw,32px);box-shadow:var(--card-shadow),inset 0 0 0 1px var(--card-edge);min-width:0}
+.card h2{margin-bottom:12px;scroll-margin-top:calc(var(--anchor) + 8px)}
+.card[id]{scroll-margin-top:calc(var(--anchor) + 8px)}
+.card h3{margin:20px 0 6px}
+.card h3:first-of-type{margin-top:0}
+.card p+h3,.card ul+h3,.card .table-wrap+h3{margin-top:22px}
+@media (max-width:640px){:root{--anchor:140px}}
+.lead{font-size:clamp(18px,2vw,21px);line-height:1.5;color:var(--ink)}
+.stamp{font-size:14px;color:var(--ink-2);margin:0 0 4px}
+.callout{display:flex;gap:14px;align-items:flex-start;padding:16px 18px;border-radius:var(--r-control);background:var(--accent-soft)}
+.callout .tile{flex:none;width:32px;height:32px;border-radius:var(--r-tile);display:grid;place-items:center;background:var(--accent);color:#fff}
+.callout .tile svg{width:18px;height:18px}
+.callout.warm{background:var(--amber-soft)}.callout.warm .tile{background:var(--amber);color:#fff}
+.rows{list-style:none;padding:0;margin:0;display:grid;gap:2px}
+.rows li{display:grid;grid-template-columns:40px minmax(0,1fr);gap:14px;padding:12px 0;margin:0;border-bottom:1px solid var(--line);align-items:start}
+.rows li:last-child{border-bottom:0}
+.rows .tile{width:40px;height:40px;border-radius:var(--r-tile);display:grid;place-items:center;background:var(--accent-soft);color:var(--accent-ink)}
+.rows .tile svg{width:20px;height:20px}
+.rows b{display:block;font-weight:600}
+.rows span{color:var(--ink-2);font-size:15.5px}
+.features{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.features .card{display:flex;flex-direction:column;gap:10px}
+.features .tile{width:44px;height:44px;border-radius:var(--r-chip);display:grid;place-items:center;background:var(--accent-soft);color:var(--accent-ink);margin-bottom:6px}
+.features .tile svg{width:22px;height:22px}
+.features .card h3{margin:0}
+.features .card p{color:var(--ink-2);font-size:16px}
+.tiers{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.tier{background:var(--surface);border-radius:var(--r-card);padding:22px;box-shadow:inset 0 0 0 1px var(--line);display:flex;flex-direction:column;gap:8px}
+.tier .lbl{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2)}
+.tier .price{font-size:24px;font-weight:700;letter-spacing:-.02em}
+.tier .price small{font-size:14px;font-weight:500;color:var(--ink-2)}
+.tier ul{margin-top:4px;color:var(--ink-2);font-size:15.5px}
+.tier.pro{background:linear-gradient(135deg,var(--hero-a),var(--hero-b));color:var(--hero-ink);box-shadow:inset 0 0 0 1px var(--hero-stroke)}
+.tier.pro .lbl,.tier.pro ul,.tier.pro .price small{color:var(--hero-ink-2)}
+.tier.pro li::marker{color:#ADD9FF}
+dl.faq{margin:0}
+dl.faq dt{font-weight:600;margin-top:18px}
+dl.faq dt:first-child{margin-top:0}
+dl.faq dd{margin:6px 0 0;color:var(--ink-2)}
+table{width:100%;border-collapse:collapse;font-size:15.5px}
+th,td{text-align:left;vertical-align:top;padding:10px 12px 10px 0;border-bottom:1px solid var(--line)}
+th{font-weight:600;color:var(--ink-2);font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+tr:last-child td{border-bottom:0}
+.table-wrap{overflow-x:auto}
+@media (max-width:640px){
+  .table-wrap table,.table-wrap tbody,.table-wrap tr,.table-wrap th,.table-wrap td{display:block;width:auto}
+  .table-wrap tr{padding:12px 0;border-bottom:1px solid var(--line)}
+  .table-wrap tr:last-child{border-bottom:0}
+  .table-wrap tr.head{display:none}
+  .table-wrap th,.table-wrap td{border:0;padding:2px 0}
+  .table-wrap td[data-label]::before{content:attr(data-label);display:block;margin-top:6px;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2)}
+  .table-wrap td[data-label]:first-of-type::before{margin-top:0}
+  kbd{white-space:normal;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+}
+.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.steps li{display:grid;grid-template-columns:32px minmax(0,1fr);gap:14px;margin:0;align-items:start}
+.steps li::before{counter-increment:s;content:counter(s);width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:#fff;font-weight:700;font-size:14px}
+
+/* footer */
+footer{border-top:1px solid var(--line);padding:28px 20px 44px;color:var(--ink-2);font-size:14.5px;background:var(--bg)}
+footer .in{max-width:var(--wide);margin:0 auto;display:flex;gap:10px 22px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+footer nav{display:flex;gap:6px 16px;flex-wrap:wrap}
+footer a{color:var(--ink-2)}
+footer a:hover{color:var(--accent-ink)}
+</style>
+</head>
+<body>
+<a class="skip" href="#content">Zum Inhalt springen</a>
+<header class="topbar">
+  <div class="in">
+    <a class="brand" href="/second-brain-links/de/"><img src="/second-brain-links/mascot.png" alt="" width="30" height="30">Second Brain</a>
+    <nav class="pages" aria-label="Seiten"><a href="/second-brain-links/de/">Support</a><a href="/second-brain-links/de/about/">Über die App</a><a href="/second-brain-links/de/privacy/">Datenschutz</a><a href="/second-brain-links/de/terms/">Nutzungsbedingungen</a><a href="/second-brain-links/de/delete-data/" aria-current="page">Deine Daten</a></nav>
+  </div>
+  <div class="langrow"><div class="in">
+    <span class="lbl">Sprache</span>
+    <nav class="langs" aria-label="Sprache"><a href="/second-brain-links/delete-data/" lang="en" hreflang="en">English</a><a href="/second-brain-links/de/delete-data/" lang="de" hreflang="de" aria-current="page">Deutsch</a><a href="/second-brain-links/es/delete-data/" lang="es" hreflang="es">Español</a><a href="/second-brain-links/fr/delete-data/" lang="fr" hreflang="fr">Français</a><a href="/second-brain-links/ja/delete-data/" lang="ja" hreflang="ja">日本語</a><a href="/second-brain-links/ko/delete-data/" lang="ko" hreflang="ko">한국어</a><a href="/second-brain-links/pt-BR/delete-data/" lang="pt-BR" hreflang="pt-BR">Português (Brasil)</a><a href="/second-brain-links/zh-Hans/delete-data/" lang="zh-Hans" hreflang="zh-Hans">简体中文</a></nav>
+  </div></div>
+</header>
+<div class="hero-wrap"><section class="hero"><div class="copy"><div class="eyebrow"><span class="dot" aria-hidden="true"></span>Deine Daten</div><h1>Deine Daten exportieren oder löschen</h1><p class="sub">Deine Bibliothek liegt auf deinem Gerät und, wenn du die Synchronisierung gewählt hast, in deiner eigenen iCloud. So erstellst du eine Kopie, löschst sie von einem Gerät oder löschst deinen Account und alles, was er enthält.</p><p class="meta">Siehe auch die <a href="/second-brain-links/de/privacy/">Datenschutzerklärung</a></p></div></section></div>
+<main id="content"><div class="grid with-toc"><aside class="toc" aria-label="Auf dieser Seite"><div class="lbl">Auf dieser Seite</div><ol><li><a href="#where">Was wo gespeichert ist</a></li><li><a href="#export">Erst eine Kopie erstellen</a></li><li><a href="#local">Von diesem Gerät löschen</a></li><li><a href="#account">Deinen Account löschen</a></li><li><a href="#subscription">Dein Abo</a></li><li><a href="#email">Frag uns</a></li></ol></aside><div class="stack"><section class="card" id="where"><h2>Was wo gespeichert ist</h2>
+<div class="table-wrap"><table>
+<tr class="head"><th>Daten</th><th>Wo sie liegen</th><th>So entfernst du sie</th></tr>
+<tr><td data-label="Daten">Gedanken, Aufnahmen, Anhänge, Aufgaben, Notizen, Projekte, Verlauf</td><td data-label="Wo sie liegen">Dein Gerät</td><td data-label="So entfernst du sie"><kbd>Einstellungen</kbd> → <kbd>Alle lokalen Daten löschen</kbd> oder deinen Account löschen (siehe unten)</td></tr>
+<tr><td data-label="Daten">Dieselbe Bibliothek, wenn du die Synchronisierung eingeschaltet hast</td><td data-label="Wo sie liegen">Eine private Datenbank in deiner eigenen iCloud</td><td data-label="So entfernst du sie"><kbd>Einstellungen</kbd> → <kbd>Cloud-Synchronisierung und KI-Optionen</kbd> → <kbd>Account und Bibliothek löschen</kbd></td></tr>
+<tr><td data-label="Daten">Account-ID, Plan, Einwilligungen, Nutzungszähler, Geräteschlüssel</td><td data-label="Wo sie liegen">Unser Server (Cloudflare)</td><td data-label="So entfernst du sie"><kbd>Einstellungen</kbd> → <kbd>Cloud-Synchronisierung und KI-Optionen</kbd> → <kbd>Account und Bibliothek löschen</kbd></td></tr>
+<tr><td data-label="Daten">Cloud-KI-Ergebnisse</td><td data-label="Wo sie liegen">Unser Server, bis zu 24 Stunden</td><td data-label="So entfernst du sie">Werden von selbst entfernt, außerdem wenn du den Eintrag endgültig löschst oder deinen Account löschst</td></tr>
+<tr><td data-label="Daten">Monatlicher Zähler der kostenlosen Nutzung</td><td data-label="Wo sie liegen">Der iOS-Schlüsselbund auf diesem Gerät (nur Zahlen)</td><td data-label="So entfernst du sie">Wird jeden Monat zurückgesetzt. iOS behält ihn möglicherweise, nachdem die App gelöscht wurde</td></tr>
+<tr><td data-label="Daten">Abo</td><td data-label="Wo sie liegen">Dein Apple Account</td><td data-label="So entfernst du sie">Bei Apple kündigen (siehe unten)</td></tr>
+</table></div>
+</section><section class="card" id="export"><h2>Erst eine Kopie erstellen</h2>
+<ol class="steps">
+  <li><div>Öffne Second Brain und geh zu den <kbd>Einstellungen</kbd>.</div></li>
+  <li><div>Tippe auf <kbd>Export vorbereiten</kbd> und dann auf <kbd>Bibliotheksexport teilen</kbd>.</div></li>
+  <li><div>Sichere die ZIP-Datei in der Dateien-App oder sende sie, wohin du möchtest. Sie enthält deine Bibliothek (als JSON, Markdown und eine CSV-Datei mit deinen Aufgaben), deine Originaldateien und eine Liste von allem, was nicht aufgenommen werden konnte.</div></li>
+</ol>
+</section><section class="card" id="local"><h2>Von diesem Gerät löschen</h2>
+<p>Um einen einzelnen Eintrag zu löschen, lösche ihn und entferne ihn dann unter <kbd>Einstellungen</kbd> → <kbd>Zuletzt gelöscht</kbd> mit <kbd>Endgültig löschen</kbd>. Andernfalls wird er nach 30 Tagen automatisch entfernt.</p>
+<p>Um die ganze Bibliothek auf diesem Gerät zu löschen, nutze <kbd>Einstellungen</kbd> → <kbd>Alle lokalen Daten löschen</kbd>. Dadurch werden dein Account, seine iCloud-Kopie und eine separate Gastbibliothek <strong>nicht</strong> gelöscht. Wenn du die App löschst, werden ihre Daten ebenfalls vom Gerät entfernt.</p>
+</section><section class="card" id="account"><h2>Deinen Account löschen</h2>
+<ol class="steps">
+  <li><div>Öffne <kbd>Einstellungen</kbd> → <kbd>Cloud-Synchronisierung und KI-Optionen</kbd>.</div></li>
+  <li><div>Tippe auf <kbd>Account und Bibliothek löschen</kbd> und bestätige.</div></li>
+  <li><div>Second Brain löscht die iCloud-Kopie des Accounts, alles, was unser Server über den Account speichert (Sitzungen, Plan, Entscheidungen, Nutzungszähler, Geräteschlüssel und KI-Ergebnisse), und die Bibliothek des Accounts auf diesem Gerät. Außerdem widerruft es seinen Zugriff über „Mit Apple anmelden“. Deine separate Gastbibliothek bleibt auf dem Gerät.</div></li>
+</ol>
+<div class="callout warm"><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg></span><div>Wenn deine Anmeldung abgelaufen ist, bittet dich die App, dich erneut mit demselben Apple Account anzumelden, um den Vorgang abzuschließen. Wenn du das Gerät nicht mehr hast, installiere Second Brain auf einem beliebigen iPhone oder iPad, melde dich mit demselben Apple Account an und lösche den Account dort.</div></div>
+<p style="margin-top:16px">Danach behält unser Server nur eine inhaltsfreie Markierung: die als gelöscht gekennzeichnete gehashte Account-ID, ihre Nutzungszähler und Einweg-Hashes ihrer Kauf- und Gerätekennungen. So kann eine unterbrochene Löschung abgeschlossen werden, und ein Kauf oder das kostenlose Probekontingent kann nicht doppelt beansprucht werden. Datenbank-Backups bei unserem Hosting-Anbieter laufen innerhalb von 30 Tagen ab.</p>
+</section><section class="card" id="subscription"><h2>Dein Abo</h2>
+<p>Wenn du deine Daten, deinen Account oder die App löschst, wird ein Abo <strong>nicht</strong> gekündigt. Es gehört zu deinem Apple Account. Kündige es in deinen <a href="https://apps.apple.com/account/subscriptions">Abo-Einstellungen im App Store</a>; es bleibt bis zum Ende des aktuellen Zeitraums aktiv. Erstattungen bearbeitet der <a href="https://support.apple.com/billing">Apple Support</a>.</p>
+</section><section class="card" id="email"><h2>Frag uns</h2>
+<p>Wenn du die App nicht nutzen kannst oder eine Frage zu deinen Daten hast, schreib an <a href="mailto:topsol.org@gmail.com">topsol.org@gmail.com</a>. Wir antworten innerhalb von 30 Tagen. Wir haben weder einen Namen noch eine E-Mail-Adresse zu deinem Account gespeichert, deshalb suchen wir ihn gemeinsam mit dir. Am schnellsten geht es meist, wenn du dich auf einem beliebigen Gerät anmeldest und dort löschst. Bitte schick uns keine Gedanken oder Aufnahmen. Wir brauchen sie nicht, um dir zu helfen.</p>
+</section></div></div></main>
+<footer><div class="in">
+  <div>© 2026 Second Brain · TOPSOL · Alle Rechte vorbehalten.</div>
+  <nav aria-label="Fußzeile"><a href="/second-brain-links/de/">Support</a> · <a href="/second-brain-links/de/about/">Über die App</a> · <a href="/second-brain-links/de/privacy/">Datenschutz</a> · <a href="/second-brain-links/de/terms/">Nutzungsbedingungen</a> · <a href="/second-brain-links/de/delete-data/">Deine Daten</a> · <a href="mailto:topsol.org@gmail.com">topsol.org@gmail.com</a></nav>
+</div></footer>
+</body>
+</html>

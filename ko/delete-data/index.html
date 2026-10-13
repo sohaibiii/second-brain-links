@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="보관함을 내보내고, 이 기기에서 삭제하고, Second Brain 계정과 iCloud 및 저희 서버에 있는 모든 데이터를 삭제하는 방법을 안내합니다.">
+<meta name="robots" content="index,follow">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#F9F8F3">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#131417">
+<meta property="og:title" content="데이터 삭제 — Second Brain">
+<meta property="og:description" content="보관함을 내보내고, 이 기기에서 삭제하고, Second Brain 계정과 iCloud 및 저희 서버에 있는 모든 데이터를 삭제하는 방법을 안내합니다.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ko">
+<meta property="og:url" content="https://sohaibiii.github.io/second-brain-links/ko/delete-data/">
+<meta property="og:image" content="https://sohaibiii.github.io/second-brain-links/apple-touch-icon.png">
+<link rel="canonical" href="https://sohaibiii.github.io/second-brain-links/ko/delete-data/">
+<link rel="alternate" hreflang="en" href="https://sohaibiii.github.io/second-brain-links/delete-data/"><link rel="alternate" hreflang="de" href="https://sohaibiii.github.io/second-brain-links/de/delete-data/"><link rel="alternate" hreflang="es" href="https://sohaibiii.github.io/second-brain-links/es/delete-data/"><link rel="alternate" hreflang="fr" href="https://sohaibiii.github.io/second-brain-links/fr/delete-data/"><link rel="alternate" hreflang="ja" href="https://sohaibiii.github.io/second-brain-links/ja/delete-data/"><link rel="alternate" hreflang="ko" href="https://sohaibiii.github.io/second-brain-links/ko/delete-data/"><link rel="alternate" hreflang="pt-BR" href="https://sohaibiii.github.io/second-brain-links/pt-BR/delete-data/"><link rel="alternate" hreflang="zh-Hans" href="https://sohaibiii.github.io/second-brain-links/zh-Hans/delete-data/"><link rel="alternate" hreflang="x-default" href="https://sohaibiii.github.io/second-brain-links/delete-data/">
+<link rel="icon" href="/second-brain-links/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/second-brain-links/apple-touch-icon.png">
+<title>데이터 삭제 — Second Brain</title>
+<style>
+:root{
+  --bg:#F9F8F3;--surface:#FFFFFF;--fill:#ECEBE4;--ink:#131313;--ink-2:#666669;--ink-3:#5E5E61;
+  --line:#E3E0D9;--grid:rgba(120,110,90,.07);--accent:#056BFF;--accent-ink:#0458D6;--accent-soft:#E3F5FA;--on-accent:#FFFFFF;
+  --card-shadow:0 4px 20px rgba(0,0,0,.035);--card-edge:rgba(227,224,217,.6);
+  --amber:#A35C14;--amber-soft:rgba(163,92,20,.10);--success:#21A35E;--success-soft:rgba(33,163,94,.12);
+  --sky:#ADD9FF;--lavender:#F0E3FF;
+  --hero-a:#0562EB;--hero-b:#0443B5;--hero-glow:rgba(173,217,255,.45);--hero-ink:#FFFFFF;--hero-ink-2:rgba(255,255,255,.92);--hero-stroke:rgba(255,255,255,.16);--hero-fill:rgba(255,255,255,.14);
+  --r-card:20px;--r-hero:28px;--r-control:14px;--r-chip:12px;--r-tile:10px;
+  --max:760px;--wide:1080px;--anchor:112px;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#131417;--surface:#212429;--fill:#2B2E34;--ink:#FAFAFA;--ink-2:#B0B3BA;--ink-3:#9EA1A8;
+  --line:rgba(255,255,255,.10);--grid:rgba(255,255,255,.035);--accent:#66A8FF;--accent-ink:#8DBDFF;--accent-soft:#1F3847;--on-accent:#0B1220;
+  --card-shadow:none;--card-edge:rgba(255,255,255,.07);
+  --amber:#FAB357;--amber-soft:rgba(250,179,87,.14);--success:#5CD68C;--success-soft:rgba(92,214,140,.14);
+  --sky:#2E4D78;--lavender:#3D3352;
+  --hero-a:#0A58D0;--hero-b:#06338A;--hero-glow:rgba(102,168,255,.38);
+}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+html,body{overflow-x:clip}
+body{margin:0;background-color:var(--bg);background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:40px 40px;color:var(--ink);font:17px/1.6 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,"Helvetica Neue",Arial,"Hiragino Sans","Apple SD Gothic Neo","PingFang SC","Noto Sans",sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a{color:var(--accent-ink);text-decoration:underline;text-decoration-color:color-mix(in srgb,var(--accent-ink) 40%,transparent);text-underline-offset:3px;overflow-wrap:anywhere}
+a:hover{text-decoration-color:var(--accent-ink)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;top:8px;left:8px;background:var(--surface);color:var(--ink);padding:8px 12px;z-index:20;border-radius:var(--r-chip);box-shadow:var(--card-shadow)}
+.skip:not(:focus){clip:rect(0 0 0 0);clip-path:inset(50%);width:1px;height:1px;overflow:hidden;white-space:nowrap;padding:0;margin:-1px}
+h1,h2,h3{margin:0;letter-spacing:-.02em;text-wrap:balance;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Roboto,"Helvetica Neue",Arial,"Hiragino Sans","Apple SD Gothic Neo","PingFang SC","Noto Sans",sans-serif}
+h1{font-weight:700;font-size:clamp(32px,4.6vw,48px);line-height:1.08}
+h2{font-weight:700;font-size:24px;line-height:1.25}
+h3{font-weight:600;font-size:18px;line-height:1.3}
+:lang(ja) h1,:lang(ko) h1,:lang(zh-Hans) h1{line-height:1.25;letter-spacing:0}
+:lang(ja) body,:lang(ko) body,:lang(zh-Hans) body{line-height:1.75}
+:lang(ko) body{word-break:keep-all;overflow-wrap:anywhere}
+p{margin:0 0 1em}
+p:last-child{margin-bottom:0}
+ul,ol{margin:0;padding-left:1.3em}
+li{margin:.45em 0}
+li::marker{color:var(--accent)}
+strong{font-weight:600}
+.muted{color:var(--ink-2)}
+small,.small{font-size:14px;color:var(--ink-2)}
+code{font:.92em ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:var(--fill);padding:.1em .4em;border-radius:6px}
+kbd{font:inherit;background:var(--fill);border-radius:8px;padding:.05em .5em;white-space:nowrap}
+
+/* top bar — the one glass surface, like the app's tab bar */
+.topbar{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 84%,transparent);-webkit-backdrop-filter:saturate(1.4) blur(14px);backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid var(--line)}
+.topbar .in{max-width:var(--wide);margin:0 auto;padding:10px 20px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.brand{display:inline-flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none;font-weight:700;font-size:19px;letter-spacing:-.01em}
+.brand img{width:30px;height:30px;flex:none}
+nav.pages{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}
+nav.pages a{text-decoration:none;color:var(--ink-2);font-size:15px;font-weight:500;padding:7px 12px;border-radius:999px}
+nav.pages a[aria-current="page"]{color:var(--accent-ink);background:var(--accent-soft)}
+nav.pages a:hover{color:var(--ink)}
+@media (max-width:640px){nav.pages{margin-left:0;width:100%;overflow-x:auto;flex-wrap:nowrap;scrollbar-width:none;padding-bottom:2px}nav.pages::-webkit-scrollbar{display:none}nav.pages a{flex:none}}
+
+/* language tabs — the same page, in the reader's own language */
+.langrow{border-top:1px solid var(--line)}
+.langrow .in{max-width:var(--wide);margin:0 auto;padding:7px 20px;display:flex;align-items:center;gap:12px}
+.langrow .lbl{flex:none;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+nav.langs{display:flex;gap:2px;min-width:0;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+nav.langs::-webkit-scrollbar{display:none}
+nav.langs a{flex:none;text-decoration:none;color:var(--ink-2);font-size:14.5px;font-weight:500;padding:6px 11px;border-radius:999px;white-space:nowrap}
+nav.langs a:hover{color:var(--ink);background:var(--fill)}
+nav.langs a[aria-current="page"]{color:var(--accent-ink);background:var(--accent-soft)}
+@media (max-width:640px){.langrow .lbl{display:none}.langrow .in{padding:6px 20px}}
+
+/* hero — the app's blue banner, with the brain beside it */
+.hero-wrap{max-width:var(--wide);margin:24px auto 0;padding:0 20px}
+.hero{position:relative;overflow:hidden;border-radius:var(--r-hero);background:linear-gradient(135deg,var(--hero-a) 0%,var(--hero-b) 100%);color:var(--hero-ink);box-shadow:inset 0 0 0 1px var(--hero-stroke),0 24px 60px rgba(5,67,181,.18);padding:clamp(36px,6vw,64px) clamp(24px,5vw,56px)}
+.hero::before{content:"";position:absolute;inset:-45% -15% auto auto;width:65%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,var(--hero-glow) 0,transparent 62%);pointer-events:none}
+.hero>*{position:relative}
+.hero .mascot{position:absolute;right:clamp(20px,4vw,48px);bottom:clamp(16px,3vw,32px);width:clamp(120px,15vw,176px);height:auto;filter:drop-shadow(0 14px 30px rgba(0,20,70,.35))}
+.hero .copy{max-width:calc(100% - clamp(140px,17vw,200px))}
+@media (max-width:720px){.hero .mascot{position:static;display:block;width:84px;margin:0 0 14px}.hero .copy{max-width:none}}
+.hero .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--hero-ink-2);margin-bottom:18px}
+.hero .eyebrow .dot{width:8px;height:8px;border-radius:50%;background:#ADD9FF;box-shadow:0 0 10px rgba(173,217,255,.9)}
+.hero h1{max-width:20ch}
+.hero .sub{margin:16px 0 0;max-width:58ch;font-size:clamp(17px,2vw,20px);color:var(--hero-ink-2)}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px;align-items:center}
+.hero .ctas a,.hero .ctas span{color:var(--hero-ink)}
+.hero .ctas .btn.primary{background:#FFFFFF;color:#0443B5;box-shadow:0 8px 24px rgba(0,20,70,.25)}
+.hero .ctas .btn.quiet{background:var(--hero-fill);color:var(--hero-ink);box-shadow:inset 0 0 0 1px var(--hero-stroke)}
+.hero .meta{margin-top:22px;font-size:14px;color:var(--hero-ink-2)}
+.hero .meta a{color:var(--hero-ink);text-decoration-color:rgba(255,255,255,.5)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:16px;line-height:1;padding:14px 20px;border-radius:var(--r-control);text-decoration:none;white-space:nowrap}
+.btn.primary{background:var(--accent);color:var(--on-accent)}
+.btn.quiet{background:var(--fill);color:var(--ink)}
+.btn svg{width:18px;height:18px;flex:none}
+.soon{display:inline-flex;align-items:center;gap:8px;font-size:15px;color:var(--hero-ink-2);padding:12px 4px}
+.soon svg{width:18px;height:18px;flex:none}
+
+/* content */
+main{max-width:var(--wide);margin:0 auto;padding:32px 20px 64px}
+.grid{display:grid;grid-template-columns:minmax(0,1fr);gap:20px}
+@media (min-width:900px){.grid.with-toc{grid-template-columns:240px minmax(0,1fr);align-items:start}}
+.toc{position:sticky;top:var(--anchor);padding:20px 22px;border-radius:var(--r-card);background:var(--surface);box-shadow:var(--card-shadow),inset 0 0 0 1px var(--card-edge);max-height:calc(100vh - var(--anchor) - 20px);overflow-y:auto}
+@media (max-width:899px){.toc{position:static;max-height:none}}
+.toc .lbl{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2);margin-bottom:10px}
+.toc ol{list-style:none;padding:0;margin:0}
+.toc li{margin:0}
+.toc a{display:block;padding:6px 0;font-size:15px;color:var(--ink-2);text-decoration:none;border-bottom:1px solid var(--line)}
+.toc li:last-child a{border-bottom:0}
+.toc a:hover{color:var(--accent-ink)}
+.stack{display:grid;gap:20px;min-width:0}
+.card .lead{max-width:62ch}
+.card{background:var(--surface);border-radius:var(--r-card);padding:clamp(22px,3.4vw,32px);box-shadow:var(--card-shadow),inset 0 0 0 1px var(--card-edge);min-width:0}
+.card h2{margin-bottom:12px;scroll-margin-top:calc(var(--anchor) + 8px)}
+.card[id]{scroll-margin-top:calc(var(--anchor) + 8px)}
+.card h3{margin:20px 0 6px}
+.card h3:first-of-type{margin-top:0}
+.card p+h3,.card ul+h3,.card .table-wrap+h3{margin-top:22px}
+@media (max-width:640px){:root{--anchor:140px}}
+.lead{font-size:clamp(18px,2vw,21px);line-height:1.5;color:var(--ink)}
+.stamp{font-size:14px;color:var(--ink-2);margin:0 0 4px}
+.callout{display:flex;gap:14px;align-items:flex-start;padding:16px 18px;border-radius:var(--r-control);background:var(--accent-soft)}
+.callout .tile{flex:none;width:32px;height:32px;border-radius:var(--r-tile);display:grid;place-items:center;background:var(--accent);color:#fff}
+.callout .tile svg{width:18px;height:18px}
+.callout.warm{background:var(--amber-soft)}.callout.warm .tile{background:var(--amber);color:#fff}
+.rows{list-style:none;padding:0;margin:0;display:grid;gap:2px}
+.rows li{display:grid;grid-template-columns:40px minmax(0,1fr);gap:14px;padding:12px 0;margin:0;border-bottom:1px solid var(--line);align-items:start}
+.rows li:last-child{border-bottom:0}
+.rows .tile{width:40px;height:40px;border-radius:var(--r-tile);display:grid;place-items:center;background:var(--accent-soft);color:var(--accent-ink)}
+.rows .tile svg{width:20px;height:20px}
+.rows b{display:block;font-weight:600}
+.rows span{color:var(--ink-2);font-size:15.5px}
+.features{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.features .card{display:flex;flex-direction:column;gap:10px}
+.features .tile{width:44px;height:44px;border-radius:var(--r-chip);display:grid;place-items:center;background:var(--accent-soft);color:var(--accent-ink);margin-bottom:6px}
+.features .tile svg{width:22px;height:22px}
+.features .card h3{margin:0}
+.features .card p{color:var(--ink-2);font-size:16px}
+.tiers{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.tier{background:var(--surface);border-radius:var(--r-card);padding:22px;box-shadow:inset 0 0 0 1px var(--line);display:flex;flex-direction:column;gap:8px}
+.tier .lbl{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2)}
+.tier .price{font-size:24px;font-weight:700;letter-spacing:-.02em}
+.tier .price small{font-size:14px;font-weight:500;color:var(--ink-2)}
+.tier ul{margin-top:4px;color:var(--ink-2);font-size:15.5px}
+.tier.pro{background:linear-gradient(135deg,var(--hero-a),var(--hero-b));color:var(--hero-ink);box-shadow:inset 0 0 0 1px var(--hero-stroke)}
+.tier.pro .lbl,.tier.pro ul,.tier.pro .price small{color:var(--hero-ink-2)}
+.tier.pro li::marker{color:#ADD9FF}
+dl.faq{margin:0}
+dl.faq dt{font-weight:600;margin-top:18px}
+dl.faq dt:first-child{margin-top:0}
+dl.faq dd{margin:6px 0 0;color:var(--ink-2)}
+table{width:100%;border-collapse:collapse;font-size:15.5px}
+th,td{text-align:left;vertical-align:top;padding:10px 12px 10px 0;border-bottom:1px solid var(--line)}
+th{font-weight:600;color:var(--ink-2);font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+tr:last-child td{border-bottom:0}
+.table-wrap{overflow-x:auto}
+@media (max-width:640px){
+  .table-wrap table,.table-wrap tbody,.table-wrap tr,.table-wrap th,.table-wrap td{display:block;width:auto}
+  .table-wrap tr{padding:12px 0;border-bottom:1px solid var(--line)}
+  .table-wrap tr:last-child{border-bottom:0}
+  .table-wrap tr.head{display:none}
+  .table-wrap th,.table-wrap td{border:0;padding:2px 0}
+  .table-wrap td[data-label]::before{content:attr(data-label);display:block;margin-top:6px;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2)}
+  .table-wrap td[data-label]:first-of-type::before{margin-top:0}
+  kbd{white-space:normal;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+}
+.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.steps li{display:grid;grid-template-columns:32px minmax(0,1fr);gap:14px;margin:0;align-items:start}
+.steps li::before{counter-increment:s;content:counter(s);width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:#fff;font-weight:700;font-size:14px}
+
+/* footer */
+footer{border-top:1px solid var(--line);padding:28px 20px 44px;color:var(--ink-2);font-size:14.5px;background:var(--bg)}
+footer .in{max-width:var(--wide);margin:0 auto;display:flex;gap:10px 22px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+footer nav{display:flex;gap:6px 16px;flex-wrap:wrap}
+footer a{color:var(--ink-2)}
+footer a:hover{color:var(--accent-ink)}
+</style>
+</head>
+<body>
+<a class="skip" href="#content">본문으로 건너뛰기</a>
+<header class="topbar">
+  <div class="in">
+    <a class="brand" href="/second-brain-links/ko/"><img src="/second-brain-links/mascot.png" alt="" width="30" height="30">Second Brain</a>
+    <nav class="pages" aria-label="페이지"><a href="/second-brain-links/ko/">지원</a><a href="/second-brain-links/ko/about/">소개</a><a href="/second-brain-links/ko/privacy/">개인정보</a><a href="/second-brain-links/ko/terms/">이용 약관</a><a href="/second-brain-links/ko/delete-data/" aria-current="page">내 데이터</a></nav>
+  </div>
+  <div class="langrow"><div class="in">
+    <span class="lbl">언어</span>
+    <nav class="langs" aria-label="언어"><a href="/second-brain-links/delete-data/" lang="en" hreflang="en">English</a><a href="/second-brain-links/de/delete-data/" lang="de" hreflang="de">Deutsch</a><a href="/second-brain-links/es/delete-data/" lang="es" hreflang="es">Español</a><a href="/second-brain-links/fr/delete-data/" lang="fr" hreflang="fr">Français</a><a href="/second-brain-links/ja/delete-data/" lang="ja" hreflang="ja">日本語</a><a href="/second-brain-links/ko/delete-data/" lang="ko" hreflang="ko" aria-current="page">한국어</a><a href="/second-brain-links/pt-BR/delete-data/" lang="pt-BR" hreflang="pt-BR">Português (Brasil)</a><a href="/second-brain-links/zh-Hans/delete-data/" lang="zh-Hans" hreflang="zh-Hans">简体中文</a></nav>
+  </div></div>
+</header>
+<div class="hero-wrap"><section class="hero"><div class="copy"><div class="eyebrow"><span class="dot" aria-hidden="true"></span>내 데이터</div><h1>데이터 내보내기 또는 삭제</h1><p class="sub">보관함은 기기에, 그리고 동기화를 선택한 경우 본인의 iCloud에 있습니다. 사본을 만들거나, 한 기기에서 삭제하거나, 계정과 계정에 담긴 모든 것을 삭제하는 방법을 안내합니다.</p><p class="meta"><a href="/second-brain-links/ko/privacy/">개인정보 처리방침</a>도 참고하세요</p></div></section></div>
+<main id="content"><div class="grid with-toc"><aside class="toc" aria-label="이 페이지의 내용"><div class="lbl">이 페이지의 내용</div><ol><li><a href="#where">어디에 무엇이 저장되나요</a></li><li><a href="#export">먼저 사본 만들기</a></li><li><a href="#local">이 기기에서 삭제</a></li><li><a href="#account">계정 삭제</a></li><li><a href="#subscription">구독</a></li><li><a href="#email">문의하기</a></li></ol></aside><div class="stack"><section class="card" id="where"><h2>어디에 무엇이 저장되나요</h2>
+<div class="table-wrap"><table>
+<tr class="head"><th>데이터</th><th>저장 위치</th><th>삭제 방법</th></tr>
+<tr><td data-label="데이터">기록, 녹음, 첨부 파일, 할 일, 메모, 프로젝트, 이력</td><td data-label="저장 위치">사용자의 기기</td><td data-label="삭제 방법"><kbd>설정</kbd> → <kbd>모든 로컬 데이터 삭제</kbd> 또는 계정 삭제(아래 참고)</td></tr>
+<tr><td data-label="데이터">동기화를 켠 경우 같은 보관함</td><td data-label="저장 위치">본인 iCloud의 비공개 데이터베이스</td><td data-label="삭제 방법"><kbd>설정</kbd> → <kbd>클라우드 동기화 및 AI 선택</kbd> → <kbd>계정 및 보관함 삭제</kbd></td></tr>
+<tr><td data-label="데이터">계정 ID, 플랜, 동의 선택, 사용량 집계, 기기 키</td><td data-label="저장 위치">저희 서버(Cloudflare)</td><td data-label="삭제 방법"><kbd>설정</kbd> → <kbd>클라우드 동기화 및 AI 선택</kbd> → <kbd>계정 및 보관함 삭제</kbd></td></tr>
+<tr><td data-label="데이터">클라우드 AI 결과</td><td data-label="저장 위치">저희 서버, 최대 24시간</td><td data-label="삭제 방법">자동으로 삭제되거나, 항목을 영구 삭제할 때 또는 계정을 삭제할 때 삭제됨</td></tr>
+<tr><td data-label="데이터">월간 무료 사용 횟수</td><td data-label="저장 위치">이 기기의 iOS 키체인(숫자만)</td><td data-label="삭제 방법">매월 초기화됩니다. 앱을 삭제한 후에도 iOS에 남아 있을 수 있습니다</td></tr>
+<tr><td data-label="데이터">구독</td><td data-label="저장 위치">사용자의 Apple 계정</td><td data-label="삭제 방법">Apple에서 취소(아래 참고)</td></tr>
+</table></div>
+</section><section class="card" id="export"><h2>먼저 사본 만들기</h2>
+<ol class="steps">
+  <li><div>Second Brain을 열고 <kbd>설정</kbd>으로 이동하세요.</div></li>
+  <li><div><kbd>내보내기 준비</kbd>를 탭한 다음 <kbd>보관함 내보내기 파일 공유</kbd>를 탭하세요.</div></li>
+  <li><div>ZIP 파일을 파일 앱에 저장하거나 원하는 곳으로 보내세요. 보관함(JSON, Markdown, 할 일 CSV 형식), 원본 파일, 그리고 포함할 수 없었던 항목의 목록이 들어 있습니다.</div></li>
+</ol>
+</section><section class="card" id="local"><h2>이 기기에서 삭제</h2>
+<p>항목 하나를 삭제하려면 항목을 삭제한 다음 <kbd>설정</kbd> → <kbd>최근 삭제된 항목</kbd>에서 <kbd>영구 삭제</kbd>로 제거하세요. 그렇게 하지 않으면 30일 후 자동으로 제거됩니다.</p>
+<p>이 기기의 전체 보관함을 삭제하려면 <kbd>설정</kbd> → <kbd>모든 로컬 데이터 삭제</kbd>를 사용하세요. 이렇게 해도 계정, 계정의 iCloud 사본, 별도의 게스트 보관함은 삭제되지 <strong>않습니다</strong>. 앱을 삭제해도 기기에서 앱의 데이터가 제거됩니다.</p>
+</section><section class="card" id="account"><h2>계정 삭제</h2>
+<ol class="steps">
+  <li><div><kbd>설정</kbd> → <kbd>클라우드 동기화 및 AI 선택</kbd> 화면을 여세요.</div></li>
+  <li><div><kbd>계정 및 보관함 삭제</kbd>를 탭하고 확인하세요.</div></li>
+  <li><div>Second Brain이 계정의 iCloud 사본, 저희 서버가 보유한 해당 계정에 관한 모든 데이터(세션, 플랜, 선택 사항, 사용량 집계, 기기 키, AI 결과), 그리고 이 기기에 있는 계정의 보관함을 삭제합니다. 또한 Apple로 로그인 접근 권한을 철회합니다. 별도의 게스트 보관함은 기기에 남습니다.</div></li>
+</ol>
+<div class="callout warm"><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg></span><div>로그인이 만료된 경우, 삭제를 마치려면 같은 Apple 계정으로 다시 로그인하라는 안내가 표시됩니다. 더 이상 해당 기기가 없다면 아무 iPhone이나 iPad에 Second Brain을 설치하고 같은 Apple 계정으로 로그인한 다음 그곳에서 삭제하세요.</div></div>
+<p style="margin-top:16px">삭제 후 저희 서버에는 내용이 없는 표식만 남습니다. 삭제됨으로 표시된 해시 처리된 계정 ID, 사용량 집계, 그리고 구매 및 기기 식별자의 단방향 해시입니다. 이를 통해 중단된 삭제를 마무리하고, 구매나 무료 샘플을 두 번 받는 것을 막습니다. 호스팅 제공업체가 보관하는 데이터베이스 백업은 30일 이내에 만료됩니다.</p>
+</section><section class="card" id="subscription"><h2>구독</h2>
+<p>데이터, 계정 또는 앱을 삭제해도 구독은 취소되지 <strong>않습니다</strong>. 구독은 Apple 계정에 속합니다. <a href="https://apps.apple.com/account/subscriptions">App Store 구독 설정</a>에서 취소하세요. 취소해도 현재 기간이 끝날 때까지는 계속 유지됩니다. 환불은 <a href="https://support.apple.com/billing">Apple 지원</a>에서 처리합니다.</p>
+</section><section class="card" id="email"><h2>문의하기</h2>
+<p>앱을 사용할 수 없거나 데이터에 관해 궁금한 점이 있으면 <a href="mailto:topsol.org@gmail.com">topsol.org@gmail.com</a> 주소로 메일을 보내 주세요. 30일 이내에 답변드리겠습니다. 저희는 계정에 대한 이름이나 이메일을 보유하지 않으므로, 함께 계정을 찾아 드리겠습니다. 가장 빠른 방법은 대개 아무 기기에서나 로그인해 그곳에서 삭제하는 것입니다. 기록이나 녹음은 보내지 마세요. 도와드리는 데 필요하지 않습니다.</p>
+</section></div></div></main>
+<footer><div class="in">
+  <div>© 2026 Second Brain · TOPSOL · 모든 권리 보유.</div>
+  <nav aria-label="바닥글"><a href="/second-brain-links/ko/">지원</a> · <a href="/second-brain-links/ko/about/">소개</a> · <a href="/second-brain-links/ko/privacy/">개인정보</a> · <a href="/second-brain-links/ko/terms/">이용 약관</a> · <a href="/second-brain-links/ko/delete-data/">내 데이터</a> · <a href="mailto:topsol.org@gmail.com">topsol.org@gmail.com</a></nav>
+</div></footer>
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="如何导出你的资料库、将它从这台设备上删除，以及删除你的 Second Brain 账户及其在 iCloud 和我们服务器上保存的全部内容。">
+<meta name="robots" content="index,follow">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#F9F8F3">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#131417">
+<meta property="og:title" content="删除你的数据 — Second Brain">
+<meta property="og:description" content="如何导出你的资料库、将它从这台设备上删除，以及删除你的 Second Brain 账户及其在 iCloud 和我们服务器上保存的全部内容。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="zh_Hans">
+<meta property="og:url" content="https://sohaibiii.github.io/second-brain-links/zh-Hans/delete-data/">
+<meta property="og:image" content="https://sohaibiii.github.io/second-brain-links/apple-touch-icon.png">
+<link rel="canonical" href="https://sohaibiii.github.io/second-brain-links/zh-Hans/delete-data/">
+<link rel="alternate" hreflang="en" href="https://sohaibiii.github.io/second-brain-links/delete-data/"><link rel="alternate" hreflang="de" href="https://sohaibiii.github.io/second-brain-links/de/delete-data/"><link rel="alternate" hreflang="es" href="https://sohaibiii.github.io/second-brain-links/es/delete-data/"><link rel="alternate" hreflang="fr" href="https://sohaibiii.github.io/second-brain-links/fr/delete-data/"><link rel="alternate" hreflang="ja" href="https://sohaibiii.github.io/second-brain-links/ja/delete-data/"><link rel="alternate" hreflang="ko" href="https://sohaibiii.github.io/second-brain-links/ko/delete-data/"><link rel="alternate" hreflang="pt-BR" href="https://sohaibiii.github.io/second-brain-links/pt-BR/delete-data/"><link rel="alternate" hreflang="zh-Hans" href="https://sohaibiii.github.io/second-brain-links/zh-Hans/delete-data/"><link rel="alternate" hreflang="x-default" href="https://sohaibiii.github.io/second-brain-links/delete-data/">
+<link rel="icon" href="/second-brain-links/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/second-brain-links/apple-touch-icon.png">
+<title>删除你的数据 — Second Brain</title>
+<style>
+:root{
+  --bg:#F9F8F3;--surface:#FFFFFF;--fill:#ECEBE4;--ink:#131313;--ink-2:#666669;--ink-3:#5E5E61;
+  --line:#E3E0D9;--grid:rgba(120,110,90,.07);--accent:#056BFF;--accent-ink:#0458D6;--accent-soft:#E3F5FA;--on-accent:#FFFFFF;
+  --card-shadow:0 4px 20px rgba(0,0,0,.035);--card-edge:rgba(227,224,217,.6);
+  --amber:#A35C14;--amber-soft:rgba(163,92,20,.10);--success:#21A35E;--success-soft:rgba(33,163,94,.12);
+  --sky:#ADD9FF;--lavender:#F0E3FF;
+  --hero-a:#0562EB;--hero-b:#0443B5;--hero-glow:rgba(173,217,255,.45);--hero-ink:#FFFFFF;--hero-ink-2:rgba(255,255,255,.92);--hero-stroke:rgba(255,255,255,.16);--hero-fill:rgba(255,255,255,.14);
+  --r-card:20px;--r-hero:28px;--r-control:14px;--r-chip:12px;--r-tile:10px;
+  --max:760px;--wide:1080px;--anchor:112px;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#131417;--surface:#212429;--fill:#2B2E34;--ink:#FAFAFA;--ink-2:#B0B3BA;--ink-3:#9EA1A8;
+  --line:rgba(255,255,255,.10);--grid:rgba(255,255,255,.035);--accent:#66A8FF;--accent-ink:#8DBDFF;--accent-soft:#1F3847;--on-accent:#0B1220;
+  --card-shadow:none;--card-edge:rgba(255,255,255,.07);
+  --amber:#FAB357;--amber-soft:rgba(250,179,87,.14);--success:#5CD68C;--success-soft:rgba(92,214,140,.14);
+  --sky:#2E4D78;--lavender:#3D3352;
+  --hero-a:#0A58D0;--hero-b:#06338A;--hero-glow:rgba(102,168,255,.38);
+}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+html,body{overflow-x:clip}
+body{margin:0;background-color:var(--bg);background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:40px 40px;color:var(--ink);font:17px/1.6 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,"Helvetica Neue",Arial,"Hiragino Sans","Apple SD Gothic Neo","PingFang SC","Noto Sans",sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a{color:var(--accent-ink);text-decoration:underline;text-decoration-color:color-mix(in srgb,var(--accent-ink) 40%,transparent);text-underline-offset:3px;overflow-wrap:anywhere}
+a:hover{text-decoration-color:var(--accent-ink)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;top:8px;left:8px;background:var(--surface);color:var(--ink);padding:8px 12px;z-index:20;border-radius:var(--r-chip);box-shadow:var(--card-shadow)}
+.skip:not(:focus){clip:rect(0 0 0 0);clip-path:inset(50%);width:1px;height:1px;overflow:hidden;white-space:nowrap;padding:0;margin:-1px}
+h1,h2,h3{margin:0;letter-spacing:-.02em;text-wrap:balance;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Roboto,"Helvetica Neue",Arial,"Hiragino Sans","Apple SD Gothic Neo","PingFang SC","Noto Sans",sans-serif}
+h1{font-weight:700;font-size:clamp(32px,4.6vw,48px);line-height:1.08}
+h2{font-weight:700;font-size:24px;line-height:1.25}
+h3{font-weight:600;font-size:18px;line-height:1.3}
+:lang(ja) h1,:lang(ko) h1,:lang(zh-Hans) h1{line-height:1.25;letter-spacing:0}
+:lang(ja) body,:lang(ko) body,:lang(zh-Hans) body{line-height:1.75}
+:lang(ko) body{word-break:keep-all;overflow-wrap:anywhere}
+p{margin:0 0 1em}
+p:last-child{margin-bottom:0}
+ul,ol{margin:0;padding-left:1.3em}
+li{margin:.45em 0}
+li::marker{color:var(--accent)}
+strong{font-weight:600}
+.muted{color:var(--ink-2)}
+small,.small{font-size:14px;color:var(--ink-2)}
+code{font:.92em ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:var(--fill);padding:.1em .4em;border-radius:6px}
+kbd{font:inherit;background:var(--fill);border-radius:8px;padding:.05em .5em;white-space:nowrap}
+
+/* top bar — the one glass surface, like the app's tab bar */
+.topbar{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 84%,transparent);-webkit-backdrop-filter:saturate(1.4) blur(14px);backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid var(--line)}
+.topbar .in{max-width:var(--wide);margin:0 auto;padding:10px 20px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.brand{display:inline-flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none;font-weight:700;font-size:19px;letter-spacing:-.01em}
+.brand img{width:30px;height:30px;flex:none}
+nav.pages{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}
+nav.pages a{text-decoration:none;color:var(--ink-2);font-size:15px;font-weight:500;padding:7px 12px;border-radius:999px}
+nav.pages a[aria-current="page"]{color:var(--accent-ink);background:var(--accent-soft)}
+nav.pages a:hover{color:var(--ink)}
+@media (max-width:640px){nav.pages{margin-left:0;width:100%;overflow-x:auto;flex-wrap:nowrap;scrollbar-width:none;padding-bottom:2px}nav.pages::-webkit-scrollbar{display:none}nav.pages a{flex:none}}
+
+/* language tabs — the same page, in the reader's own language */
+.langrow{border-top:1px solid var(--line)}
+.langrow .in{max-width:var(--wide);margin:0 auto;padding:7px 20px;display:flex;align-items:center;gap:12px}
+.langrow .lbl{flex:none;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+nav.langs{display:flex;gap:2px;min-width:0;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+nav.langs::-webkit-scrollbar{display:none}
+nav.langs a{flex:none;text-decoration:none;color:var(--ink-2);font-size:14.5px;font-weight:500;padding:6px 11px;border-radius:999px;white-space:nowrap}
+nav.langs a:hover{color:var(--ink);background:var(--fill)}
+nav.langs a[aria-current="page"]{color:var(--accent-ink);background:var(--accent-soft)}
+@media (max-width:640px){.langrow .lbl{display:none}.langrow .in{padding:6px 20px}}
+
+/* hero — the app's blue banner, with the brain beside it */
+.hero-wrap{max-width:var(--wide);margin:24px auto 0;padding:0 20px}
+.hero{position:relative;overflow:hidden;border-radius:var(--r-hero);background:linear-gradient(135deg,var(--hero-a) 0%,var(--hero-b) 100%);color:var(--hero-ink);box-shadow:inset 0 0 0 1px var(--hero-stroke),0 24px 60px rgba(5,67,181,.18);padding:clamp(36px,6vw,64px) clamp(24px,5vw,56px)}
+.hero::before{content:"";position:absolute;inset:-45% -15% auto auto;width:65%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,var(--hero-glow) 0,transparent 62%);pointer-events:none}
+.hero>*{position:relative}
+.hero .mascot{position:absolute;right:clamp(20px,4vw,48px);bottom:clamp(16px,3vw,32px);width:clamp(120px,15vw,176px);height:auto;filter:drop-shadow(0 14px 30px rgba(0,20,70,.35))}
+.hero .copy{max-width:calc(100% - clamp(140px,17vw,200px))}
+@media (max-width:720px){.hero .mascot{position:static;display:block;width:84px;margin:0 0 14px}.hero .copy{max-width:none}}
+.hero .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--hero-ink-2);margin-bottom:18px}
+.hero .eyebrow .dot{width:8px;height:8px;border-radius:50%;background:#ADD9FF;box-shadow:0 0 10px rgba(173,217,255,.9)}
+.hero h1{max-width:20ch}
+.hero .sub{margin:16px 0 0;max-width:58ch;font-size:clamp(17px,2vw,20px);color:var(--hero-ink-2)}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px;align-items:center}
+.hero .ctas a,.hero .ctas span{color:var(--hero-ink)}
+.hero .ctas .btn.primary{background:#FFFFFF;color:#0443B5;box-shadow:0 8px 24px rgba(0,20,70,.25)}
+.hero .ctas .btn.quiet{background:var(--hero-fill);color:var(--hero-ink);box-shadow:inset 0 0 0 1px var(--hero-stroke)}
+.hero .meta{margin-top:22px;font-size:14px;color:var(--hero-ink-2)}
+.hero .meta a{color:var(--hero-ink);text-decoration-color:rgba(255,255,255,.5)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:16px;line-height:1;padding:14px 20px;border-radius:var(--r-control);text-decoration:none;white-space:nowrap}
+.btn.primary{background:var(--accent);color:var(--on-accent)}
+.btn.quiet{background:var(--fill);color:var(--ink)}
+.btn svg{width:18px;height:18px;flex:none}
+.soon{display:inline-flex;align-items:center;gap:8px;font-size:15px;color:var(--hero-ink-2);padding:12px 4px}
+.soon svg{width:18px;height:18px;flex:none}
+
+/* content */
+main{max-width:var(--wide);margin:0 auto;padding:32px 20px 64px}
+.grid{display:grid;grid-template-columns:minmax(0,1fr);gap:20px}
+@media (min-width:900px){.grid.with-toc{grid-template-columns:240px minmax(0,1fr);align-items:start}}
+.toc{position:sticky;top:var(--anchor);padding:20px 22px;border-radius:var(--r-card);background:var(--surface);box-shadow:var(--card-shadow),inset 0 0 0 1px var(--card-edge);max-height:calc(100vh - var(--anchor) - 20px);overflow-y:auto}
+@media (max-width:899px){.toc{position:static;max-height:none}}
+.toc .lbl{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2);margin-bottom:10px}
+.toc ol{list-style:none;padding:0;margin:0}
+.toc li{margin:0}
+.toc a{display:block;padding:6px 0;font-size:15px;color:var(--ink-2);text-decoration:none;border-bottom:1px solid var(--line)}
+.toc li:last-child a{border-bottom:0}
+.toc a:hover{color:var(--accent-ink)}
+.stack{display:grid;gap:20px;min-width:0}
+.card .lead{max-width:62ch}
+.card{background:var(--surface);border-radius:var(--r-card);padding:clamp(22px,3.4vw,32px);box-shadow:var(--card-shadow),inset 0 0 0 1px var(--card-edge);min-width:0}
+.card h2{margin-bottom:12px;scroll-margin-top:calc(var(--anchor) + 8px)}
+.card[id]{scroll-margin-top:calc(var(--anchor) + 8px)}
+.card h3{margin:20px 0 6px}
+.card h3:first-of-type{margin-top:0}
+.card p+h3,.card ul+h3,.card .table-wrap+h3{margin-top:22px}
+@media (max-width:640px){:root{--anchor:140px}}
+.lead{font-size:clamp(18px,2vw,21px);line-height:1.5;color:var(--ink)}
+.stamp{font-size:14px;color:var(--ink-2);margin:0 0 4px}
+.callout{display:flex;gap:14px;align-items:flex-start;padding:16px 18px;border-radius:var(--r-control);background:var(--accent-soft)}
+.callout .tile{flex:none;width:32px;height:32px;border-radius:var(--r-tile);display:grid;place-items:center;background:var(--accent);color:#fff}
+.callout .tile svg{width:18px;height:18px}
+.callout.warm{background:var(--amber-soft)}.callout.warm .tile{background:var(--amber);color:#fff}
+.rows{list-style:none;padding:0;margin:0;display:grid;gap:2px}
+.rows li{display:grid;grid-template-columns:40px minmax(0,1fr);gap:14px;padding:12px 0;margin:0;border-bottom:1px solid var(--line);align-items:start}
+.rows li:last-child{border-bottom:0}
+.rows .tile{width:40px;height:40px;border-radius:var(--r-tile);display:grid;place-items:center;background:var(--accent-soft);color:var(--accent-ink)}
+.rows .tile svg{width:20px;height:20px}
+.rows b{display:block;font-weight:600}
+.rows span{color:var(--ink-2);font-size:15.5px}
+.features{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.features .card{display:flex;flex-direction:column;gap:10px}
+.features .tile{width:44px;height:44px;border-radius:var(--r-chip);display:grid;place-items:center;background:var(--accent-soft);color:var(--accent-ink);margin-bottom:6px}
+.features .tile svg{width:22px;height:22px}
+.features .card h3{margin:0}
+.features .card p{color:var(--ink-2);font-size:16px}
+.tiers{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.tier{background:var(--surface);border-radius:var(--r-card);padding:22px;box-shadow:inset 0 0 0 1px var(--line);display:flex;flex-direction:column;gap:8px}
+.tier .lbl{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2)}
+.tier .price{font-size:24px;font-weight:700;letter-spacing:-.02em}
+.tier .price small{font-size:14px;font-weight:500;color:var(--ink-2)}
+.tier ul{margin-top:4px;color:var(--ink-2);font-size:15.5px}
+.tier.pro{background:linear-gradient(135deg,var(--hero-a),var(--hero-b));color:var(--hero-ink);box-shadow:inset 0 0 0 1px var(--hero-stroke)}
+.tier.pro .lbl,.tier.pro ul,.tier.pro .price small{color:var(--hero-ink-2)}
+.tier.pro li::marker{color:#ADD9FF}
+dl.faq{margin:0}
+dl.faq dt{font-weight:600;margin-top:18px}
+dl.faq dt:first-child{margin-top:0}
+dl.faq dd{margin:6px 0 0;color:var(--ink-2)}
+table{width:100%;border-collapse:collapse;font-size:15.5px}
+th,td{text-align:left;vertical-align:top;padding:10px 12px 10px 0;border-bottom:1px solid var(--line)}
+th{font-weight:600;color:var(--ink-2);font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+tr:last-child td{border-bottom:0}
+.table-wrap{overflow-x:auto}
+@media (max-width:640px){
+  .table-wrap table,.table-wrap tbody,.table-wrap tr,.table-wrap th,.table-wrap td{display:block;width:auto}
+  .table-wrap tr{padding:12px 0;border-bottom:1px solid var(--line)}
+  .table-wrap tr:last-child{border-bottom:0}
+  .table-wrap tr.head{display:none}
+  .table-wrap th,.table-wrap td{border:0;padding:2px 0}
+  .table-wrap td[data-label]::before{content:attr(data-label);display:block;margin-top:6px;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2)}
+  .table-wrap td[data-label]:first-of-type::before{margin-top:0}
+  kbd{white-space:normal;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+}
+.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.steps li{display:grid;grid-template-columns:32px minmax(0,1fr);gap:14px;margin:0;align-items:start}
+.steps li::before{counter-increment:s;content:counter(s);width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:#fff;font-weight:700;font-size:14px}
+
+/* footer */
+footer{border-top:1px solid var(--line);padding:28px 20px 44px;color:var(--ink-2);font-size:14.5px;background:var(--bg)}
+footer .in{max-width:var(--wide);margin:0 auto;display:flex;gap:10px 22px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+footer nav{display:flex;gap:6px 16px;flex-wrap:wrap}
+footer a{color:var(--ink-2)}
+footer a:hover{color:var(--accent-ink)}
+</style>
+</head>
+<body>
+<a class="skip" href="#content">跳至主要内容</a>
+<header class="topbar">
+  <div class="in">
+    <a class="brand" href="/second-brain-links/zh-Hans/"><img src="/second-brain-links/mascot.png" alt="" width="30" height="30">Second Brain</a>
+    <nav class="pages" aria-label="页面"><a href="/second-brain-links/zh-Hans/">支持</a><a href="/second-brain-links/zh-Hans/about/">关于</a><a href="/second-brain-links/zh-Hans/privacy/">隐私</a><a href="/second-brain-links/zh-Hans/terms/">条款</a><a href="/second-brain-links/zh-Hans/delete-data/" aria-current="page">你的数据</a></nav>
+  </div>
+  <div class="langrow"><div class="in">
+    <span class="lbl">语言</span>
+    <nav class="langs" aria-label="语言"><a href="/second-brain-links/delete-data/" lang="en" hreflang="en">English</a><a href="/second-brain-links/de/delete-data/" lang="de" hreflang="de">Deutsch</a><a href="/second-brain-links/es/delete-data/" lang="es" hreflang="es">Español</a><a href="/second-brain-links/fr/delete-data/" lang="fr" hreflang="fr">Français</a><a href="/second-brain-links/ja/delete-data/" lang="ja" hreflang="ja">日本語</a><a href="/second-brain-links/ko/delete-data/" lang="ko" hreflang="ko">한국어</a><a href="/second-brain-links/pt-BR/delete-data/" lang="pt-BR" hreflang="pt-BR">Português (Brasil)</a><a href="/second-brain-links/zh-Hans/delete-data/" lang="zh-Hans" hreflang="zh-Hans" aria-current="page">简体中文</a></nav>
+  </div></div>
+</header>
+<div class="hero-wrap"><section class="hero"><div class="copy"><div class="eyebrow"><span class="dot" aria-hidden="true"></span>你的数据</div><h1>导出或删除你的数据</h1><p class="sub">你的资料库保存在你的设备上；如果你选择了同步，也会保存在你自己的 iCloud 中。下面介绍如何获取副本、从一台设备上删除，或删除你的账户及其保存的全部内容。</p><p class="meta">另请参阅<a href="/second-brain-links/zh-Hans/privacy/">隐私政策</a></p></div></section></div>
+<main id="content"><div class="grid with-toc"><aside class="toc" aria-label="本页内容"><div class="lbl">本页内容</div><ol><li><a href="#where">什么数据存储在哪里</a></li><li><a href="#export">先保存一份副本</a></li><li><a href="#local">从这台设备上删除</a></li><li><a href="#account">删除你的账户</a></li><li><a href="#subscription">你的订阅</a></li><li><a href="#email">向我们咨询</a></li></ol></aside><div class="stack"><section class="card" id="where"><h2>什么数据存储在哪里</h2>
+<div class="table-wrap"><table>
+<tr class="head"><th>数据</th><th>存储位置</th><th>如何移除</th></tr>
+<tr><td data-label="数据">记录、录音、附件、任务、笔记、项目、历史</td><td data-label="存储位置">你的设备</td><td data-label="如何移除"><kbd>设置</kbd> → <kbd>删除所有本地数据</kbd>，或删除你的账户（见下文）</td></tr>
+<tr><td data-label="数据">同一个资料库（如果你打开了同步）</td><td data-label="存储位置">你自己 iCloud 中的私有数据库</td><td data-label="如何移除"><kbd>设置</kbd> → <kbd>云端同步与 AI 选项</kbd> → <kbd>删除账户和资料库</kbd></td></tr>
+<tr><td data-label="数据">账户 ID、方案、同意选项、用量计数、设备密钥</td><td data-label="存储位置">我们的服务器（Cloudflare）</td><td data-label="如何移除"><kbd>设置</kbd> → <kbd>云端同步与 AI 选项</kbd> → <kbd>删除账户和资料库</kbd></td></tr>
+<tr><td data-label="数据">云端 AI 结果</td><td data-label="存储位置">我们的服务器，最多 24 小时</td><td data-label="如何移除">到期自动移除；你永久删除相关条目或删除账户时也会移除</td></tr>
+<tr><td data-label="数据">每月免费使用计数</td><td data-label="存储位置">这台设备上的 iOS 钥匙串（仅数字）</td><td data-label="如何移除">每月重置。删除 App 后，iOS 可能仍会保留它</td></tr>
+<tr><td data-label="数据">订阅</td><td data-label="存储位置">你的 Apple 账户</td><td data-label="如何移除">通过 Apple 取消（见下文）</td></tr>
+</table></div>
+</section><section class="card" id="export"><h2>先保存一份副本</h2>
+<ol class="steps">
+  <li><div>打开 Second Brain，前往<kbd>设置</kbd>。</div></li>
+  <li><div>点按<kbd>准备导出</kbd>，然后点按<kbd>共享资料库导出文件</kbd>。</div></li>
+  <li><div>将 ZIP 文件存储到“文件”App，或发送到你想要的地方。它包含你的资料库（JSON、Markdown 格式以及一个任务 CSV 文件）、你的原始文件，以及一份无法包含在内的项目清单。</div></li>
+</ol>
+</section><section class="card" id="local"><h2>从这台设备上删除</h2>
+<p>要删除单个条目，请先将其删除，然后在<kbd>设置</kbd> → <kbd>最近删除</kbd>中使用<kbd>永久删除</kbd>将其移除。否则，它会在 30 天后被自动移除。</p>
+<p>要删除这台设备上的整个资料库，请使用<kbd>设置</kbd> → <kbd>删除所有本地数据</kbd>。这<strong>不会</strong>删除你的账户、其 iCloud 副本或单独的访客资料库。删除 App 也会将其数据从设备上移除。</p>
+</section><section class="card" id="account"><h2>删除你的账户</h2>
+<ol class="steps">
+  <li><div>打开<kbd>设置</kbd> → <kbd>云端同步与 AI 选项</kbd>。</div></li>
+  <li><div>点按<kbd>删除账户和资料库</kbd>并确认。</div></li>
+  <li><div>Second Brain 会删除该账户的 iCloud 副本、我们服务器上与该账户有关的所有内容（会话、方案、选项、用量计数、设备密钥和 AI 结果），以及这台设备上该账户的资料库。它还会撤销自身的“通过 Apple 登录”访问权限。你单独的访客资料库会保留在设备上。</div></li>
+</ol>
+<div class="callout warm"><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg></span><div>如果你的登录已过期，App 会要求你使用同一个 Apple 账户重新登录以完成操作。如果你已不再拥有该设备，可以在任意 iPhone 或 iPad 上安装 Second Brain，使用同一个 Apple 账户登录，然后在那里删除。</div></div>
+<p style="margin-top:16px">之后，我们的服务器只会保留一个不含内容的标记：被标记为已删除的哈希账户 ID、其用量计数，以及其购买标识符和设备标识符的单向哈希值。这能让中断的删除操作得以完成，并防止同一笔购买或免费体验被重复领取。我们托管服务商保存的数据库备份会在 30 天内过期。</p>
+</section><section class="card" id="subscription"><h2>你的订阅</h2>
+<p>删除你的数据、账户或 App <strong>不会</strong>取消订阅。订阅属于你的 Apple 账户。请在 <a href="https://apps.apple.com/account/subscriptions">App Store 订阅设置</a>中取消，订阅会保持有效，直到当前周期结束。退款由 <a href="https://support.apple.com/billing">Apple 支持</a>处理。</p>
+</section><section class="card" id="email"><h2>向我们咨询</h2>
+<p>如果你无法使用 App，或对你的数据有任何疑问，请发送邮件至 <a href="mailto:topsol.org@gmail.com">topsol.org@gmail.com</a>。我们会在 30 天内回复。我们没有你账户的姓名或电子邮件地址，因此会与你一起想办法找到它。最快的方式通常是在任意设备上登录并在那里删除。请不要向我们发送你的记录或录音，我们无需它们也能帮助你。</p>
+</section></div></div></main>
+<footer><div class="in">
+  <div>© 2026 Second Brain · TOPSOL · 保留所有权利。</div>
+  <nav aria-label="页脚"><a href="/second-brain-links/zh-Hans/">支持</a> · <a href="/second-brain-links/zh-Hans/about/">关于</a> · <a href="/second-brain-links/zh-Hans/privacy/">隐私</a> · <a href="/second-brain-links/zh-Hans/terms/">条款</a> · <a href="/second-brain-links/zh-Hans/delete-data/">你的数据</a> · <a href="mailto:topsol.org@gmail.com">topsol.org@gmail.com</a></nav>
+</div></footer>
+</body>
+</html>

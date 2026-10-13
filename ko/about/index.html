@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Second Brain은 말하거나 입력한 내용을 할 일, 일정, 메모, 아이디어로 바꾸고, 원본을 보관하며, 기기 내 AI를 우선 사용해 저장한 내용을 바탕으로 질문에 답합니다.">
+<meta name="robots" content="index,follow">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#F9F8F3">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#131417">
+<meta property="og:title" content="Second Brain — 그냥 말하세요. 정리는 저희가 할게요.">
+<meta property="og:description" content="Second Brain은 말하거나 입력한 내용을 할 일, 일정, 메모, 아이디어로 바꾸고, 원본을 보관하며, 기기 내 AI를 우선 사용해 저장한 내용을 바탕으로 질문에 답합니다.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ko">
+<meta property="og:url" content="https://sohaibiii.github.io/second-brain-links/ko/about/">
+<meta property="og:image" content="https://sohaibiii.github.io/second-brain-links/apple-touch-icon.png">
+<link rel="canonical" href="https://sohaibiii.github.io/second-brain-links/ko/about/">
+<link rel="alternate" hreflang="en" href="https://sohaibiii.github.io/second-brain-links/about/"><link rel="alternate" hreflang="de" href="https://sohaibiii.github.io/second-brain-links/de/about/"><link rel="alternate" hreflang="es" href="https://sohaibiii.github.io/second-brain-links/es/about/"><link rel="alternate" hreflang="fr" href="https://sohaibiii.github.io/second-brain-links/fr/about/"><link rel="alternate" hreflang="ja" href="https://sohaibiii.github.io/second-brain-links/ja/about/"><link rel="alternate" hreflang="ko" href="https://sohaibiii.github.io/second-brain-links/ko/about/"><link rel="alternate" hreflang="pt-BR" href="https://sohaibiii.github.io/second-brain-links/pt-BR/about/"><link rel="alternate" hreflang="zh-Hans" href="https://sohaibiii.github.io/second-brain-links/zh-Hans/about/"><link rel="alternate" hreflang="x-default" href="https://sohaibiii.github.io/second-brain-links/about/">
+<link rel="icon" href="/second-brain-links/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/second-brain-links/apple-touch-icon.png">
+<title>Second Brain — 그냥 말하세요. 정리는 저희가 할게요.</title>
+<style>
+:root{
+  --bg:#F9F8F3;--surface:#FFFFFF;--fill:#ECEBE4;--ink:#131313;--ink-2:#666669;--ink-3:#5E5E61;
+  --line:#E3E0D9;--grid:rgba(120,110,90,.07);--accent:#056BFF;--accent-ink:#0458D6;--accent-soft:#E3F5FA;--on-accent:#FFFFFF;
+  --card-shadow:0 4px 20px rgba(0,0,0,.035);--card-edge:rgba(227,224,217,.6);
+  --amber:#A35C14;--amber-soft:rgba(163,92,20,.10);--success:#21A35E;--success-soft:rgba(33,163,94,.12);
+  --sky:#ADD9FF;--lavender:#F0E3FF;
+  --hero-a:#0562EB;--hero-b:#0443B5;--hero-glow:rgba(173,217,255,.45);--hero-ink:#FFFFFF;--hero-ink-2:rgba(255,255,255,.92);--hero-stroke:rgba(255,255,255,.16);--hero-fill:rgba(255,255,255,.14);
+  --r-card:20px;--r-hero:28px;--r-control:14px;--r-chip:12px;--r-tile:10px;
+  --max:760px;--wide:1080px;--anchor:112px;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#131417;--surface:#212429;--fill:#2B2E34;--ink:#FAFAFA;--ink-2:#B0B3BA;--ink-3:#9EA1A8;
+  --line:rgba(255,255,255,.10);--grid:rgba(255,255,255,.035);--accent:#66A8FF;--accent-ink:#8DBDFF;--accent-soft:#1F3847;--on-accent:#0B1220;
+  --card-shadow:none;--card-edge:rgba(255,255,255,.07);
+  --amber:#FAB357;--amber-soft:rgba(250,179,87,.14);--success:#5CD68C;--success-soft:rgba(92,214,140,.14);
+  --sky:#2E4D78;--lavender:#3D3352;
+  --hero-a:#0A58D0;--hero-b:#06338A;--hero-glow:rgba(102,168,255,.38);
+}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+html,body{overflow-x:clip}
+body{margin:0;background-color:var(--bg);background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:40px 40px;color:var(--ink);font:17px/1.6 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,"Helvetica Neue",Arial,"Hiragino Sans","Apple SD Gothic Neo","PingFang SC","Noto Sans",sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a{color:var(--accent-ink);text-decoration:underline;text-decoration-color:color-mix(in srgb,var(--accent-ink) 40%,transparent);text-underline-offset:3px;overflow-wrap:anywhere}
+a:hover{text-decoration-color:var(--accent-ink)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;top:8px;left:8px;background:var(--surface);color:var(--ink);padding:8px 12px;z-index:20;border-radius:var(--r-chip);box-shadow:var(--card-shadow)}
+.skip:not(:focus){clip:rect(0 0 0 0);clip-path:inset(50%);width:1px;height:1px;overflow:hidden;white-space:nowrap;padding:0;margin:-1px}
+h1,h2,h3{margin:0;letter-spacing:-.02em;text-wrap:balance;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Roboto,"Helvetica Neue",Arial,"Hiragino Sans","Apple SD Gothic Neo","PingFang SC","Noto Sans",sans-serif}
+h1{font-weight:700;font-size:clamp(32px,4.6vw,48px);line-height:1.08}
+h2{font-weight:700;font-size:24px;line-height:1.25}
+h3{font-weight:600;font-size:18px;line-height:1.3}
+:lang(ja) h1,:lang(ko) h1,:lang(zh-Hans) h1{line-height:1.25;letter-spacing:0}
+:lang(ja) body,:lang(ko) body,:lang(zh-Hans) body{line-height:1.75}
+:lang(ko) body{word-break:keep-all;overflow-wrap:anywhere}
+p{margin:0 0 1em}
+p:last-child{margin-bottom:0}
+ul,ol{margin:0;padding-left:1.3em}
+li{margin:.45em 0}
+li::marker{color:var(--accent)}
+strong{font-weight:600}
+.muted{color:var(--ink-2)}
+small,.small{font-size:14px;color:var(--ink-2)}
+code{font:.92em ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:var(--fill);padding:.1em .4em;border-radius:6px}
+kbd{font:inherit;background:var(--fill);border-radius:8px;padding:.05em .5em;white-space:nowrap}
+
+/* top bar — the one glass surface, like the app's tab bar */
+.topbar{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 84%,transparent);-webkit-backdrop-filter:saturate(1.4) blur(14px);backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid var(--line)}
+.topbar .in{max-width:var(--wide);margin:0 auto;padding:10px 20px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.brand{display:inline-flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none;font-weight:700;font-size:19px;letter-spacing:-.01em}
+.brand img{width:30px;height:30px;flex:none}
+nav.pages{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}
+nav.pages a{text-decoration:none;color:var(--ink-2);font-size:15px;font-weight:500;padding:7px 12px;border-radius:999px}
+nav.pages a[aria-current="page"]{color:var(--accent-ink);background:var(--accent-soft)}
+nav.pages a:hover{color:var(--ink)}
+@media (max-width:640px){nav.pages{margin-left:0;width:100%;overflow-x:auto;flex-wrap:nowrap;scrollbar-width:none;padding-bottom:2px}nav.pages::-webkit-scrollbar{display:none}nav.pages a{flex:none}}
+
+/* language tabs — the same page, in the reader's own language */
+.langrow{border-top:1px solid var(--line)}
+.langrow .in{max-width:var(--wide);margin:0 auto;padding:7px 20px;display:flex;align-items:center;gap:12px}
+.langrow .lbl{flex:none;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+nav.langs{display:flex;gap:2px;min-width:0;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+nav.langs::-webkit-scrollbar{display:none}
+nav.langs a{flex:none;text-decoration:none;color:var(--ink-2);font-size:14.5px;font-weight:500;padding:6px 11px;border-radius:999px;white-space:nowrap}
+nav.langs a:hover{color:var(--ink);background:var(--fill)}
+nav.langs a[aria-current="page"]{color:var(--accent-ink);background:var(--accent-soft)}
+@media (max-width:640px){.langrow .lbl{display:none}.langrow .in{padding:6px 20px}}
+
+/* hero — the app's blue banner, with the brain beside it */
+.hero-wrap{max-width:var(--wide);margin:24px auto 0;padding:0 20px}
+.hero{position:relative;overflow:hidden;border-radius:var(--r-hero);background:linear-gradient(135deg,var(--hero-a) 0%,var(--hero-b) 100%);color:var(--hero-ink);box-shadow:inset 0 0 0 1px var(--hero-stroke),0 24px 60px rgba(5,67,181,.18);padding:clamp(36px,6vw,64px) clamp(24px,5vw,56px)}
+.hero::before{content:"";position:absolute;inset:-45% -15% auto auto;width:65%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,var(--hero-glow) 0,transparent 62%);pointer-events:none}
+.hero>*{position:relative}
+.hero .mascot{position:absolute;right:clamp(20px,4vw,48px);bottom:clamp(16px,3vw,32px);width:clamp(120px,15vw,176px);height:auto;filter:drop-shadow(0 14px 30px rgba(0,20,70,.35))}
+.hero .copy{max-width:calc(100% - clamp(140px,17vw,200px))}
+@media (max-width:720px){.hero .mascot{position:static;display:block;width:84px;margin:0 0 14px}.hero .copy{max-width:none}}
+.hero .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--hero-ink-2);margin-bottom:18px}
+.hero .eyebrow .dot{width:8px;height:8px;border-radius:50%;background:#ADD9FF;box-shadow:0 0 10px rgba(173,217,255,.9)}
+.hero h1{max-width:20ch}
+.hero .sub{margin:16px 0 0;max-width:58ch;font-size:clamp(17px,2vw,20px);color:var(--hero-ink-2)}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px;align-items:center}
+.hero .ctas a,.hero .ctas span{color:var(--hero-ink)}
+.hero .ctas .btn.primary{background:#FFFFFF;color:#0443B5;box-shadow:0 8px 24px rgba(0,20,70,.25)}
+.hero .ctas .btn.quiet{background:var(--hero-fill);color:var(--hero-ink);box-shadow:inset 0 0 0 1px var(--hero-stroke)}
+.hero .meta{margin-top:22px;font-size:14px;color:var(--hero-ink-2)}
+.hero .meta a{color:var(--hero-ink);text-decoration-color:rgba(255,255,255,.5)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:16px;line-height:1;padding:14px 20px;border-radius:var(--r-control);text-decoration:none;white-space:nowrap}
+.btn.primary{background:var(--accent);color:var(--on-accent)}
+.btn.quiet{background:var(--fill);color:var(--ink)}
+.btn svg{width:18px;height:18px;flex:none}
+.soon{display:inline-flex;align-items:center;gap:8px;font-size:15px;color:var(--hero-ink-2);padding:12px 4px}
+.soon svg{width:18px;height:18px;flex:none}
+
+/* content */
+main{max-width:var(--wide);margin:0 auto;padding:32px 20px 64px}
+.grid{display:grid;grid-template-columns:minmax(0,1fr);gap:20px}
+@media (min-width:900px){.grid.with-toc{grid-template-columns:240px minmax(0,1fr);align-items:start}}
+.toc{position:sticky;top:var(--anchor);padding:20px 22px;border-radius:var(--r-card);background:var(--surface);box-shadow:var(--card-shadow),inset 0 0 0 1px var(--card-edge);max-height:calc(100vh - var(--anchor) - 20px);overflow-y:auto}
+@media (max-width:899px){.toc{position:static;max-height:none}}
+.toc .lbl{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2);margin-bottom:10px}
+.toc ol{list-style:none;padding:0;margin:0}
+.toc li{margin:0}
+.toc a{display:block;padding:6px 0;font-size:15px;color:var(--ink-2);text-decoration:none;border-bottom:1px solid var(--line)}
+.toc li:last-child a{border-bottom:0}
+.toc a:hover{color:var(--accent-ink)}
+.stack{display:grid;gap:20px;min-width:0}
+.card .lead{max-width:62ch}
+.card{background:var(--surface);border-radius:var(--r-card);padding:clamp(22px,3.4vw,32px);box-shadow:var(--card-shadow),inset 0 0 0 1px var(--card-edge);min-width:0}
+.card h2{margin-bottom:12px;scroll-margin-top:calc(var(--anchor) + 8px)}
+.card[id]{scroll-margin-top:calc(var(--anchor) + 8px)}
+.card h3{margin:20px 0 6px}
+.card h3:first-of-type{margin-top:0}
+.card p+h3,.card ul+h3,.card .table-wrap+h3{margin-top:22px}
+@media (max-width:640px){:root{--anchor:140px}}
+.lead{font-size:clamp(18px,2vw,21px);line-height:1.5;color:var(--ink)}
+.stamp{font-size:14px;color:var(--ink-2);margin:0 0 4px}
+.callout{display:flex;gap:14px;align-items:flex-start;padding:16px 18px;border-radius:var(--r-control);background:var(--accent-soft)}
+.callout .tile{flex:none;width:32px;height:32px;border-radius:var(--r-tile);display:grid;place-items:center;background:var(--accent);color:#fff}
+.callout .tile svg{width:18px;height:18px}
+.callout.warm{background:var(--amber-soft)}.callout.warm .tile{background:var(--amber);color:#fff}
+.rows{list-style:none;padding:0;margin:0;display:grid;gap:2px}
+.rows li{display:grid;grid-template-columns:40px minmax(0,1fr);gap:14px;padding:12px 0;margin:0;border-bottom:1px solid var(--line);align-items:start}
+.rows li:last-child{border-bottom:0}
+.rows .tile{width:40px;height:40px;border-radius:var(--r-tile);display:grid;place-items:center;background:var(--accent-soft);color:var(--accent-ink)}
+.rows .tile svg{width:20px;height:20px}
+.rows b{display:block;font-weight:600}
+.rows span{color:var(--ink-2);font-size:15.5px}
+.features{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.features .card{display:flex;flex-direction:column;gap:10px}
+.features .tile{width:44px;height:44px;border-radius:var(--r-chip);display:grid;place-items:center;background:var(--accent-soft);color:var(--accent-ink);margin-bottom:6px}
+.features .tile svg{width:22px;height:22px}
+.features .card h3{margin:0}
+.features .card p{color:var(--ink-2);font-size:16px}
+.tiers{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.tier{background:var(--surface);border-radius:var(--r-card);padding:22px;box-shadow:inset 0 0 0 1px var(--line);display:flex;flex-direction:column;gap:8px}
+.tier .lbl{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2)}
+.tier .price{font-size:24px;font-weight:700;letter-spacing:-.02em}
+.tier .price small{font-size:14px;font-weight:500;color:var(--ink-2)}
+.tier ul{margin-top:4px;color:var(--ink-2);font-size:15.5px}
+.tier.pro{background:linear-gradient(135deg,var(--hero-a),var(--hero-b));color:var(--hero-ink);box-shadow:inset 0 0 0 1px var(--hero-stroke)}
+.tier.pro .lbl,.tier.pro ul,.tier.pro .price small{color:var(--hero-ink-2)}
+.tier.pro li::marker{color:#ADD9FF}
+dl.faq{margin:0}
+dl.faq dt{font-weight:600;margin-top:18px}
+dl.faq dt:first-child{margin-top:0}
+dl.faq dd{margin:6px 0 0;color:var(--ink-2)}
+table{width:100%;border-collapse:collapse;font-size:15.5px}
+th,td{text-align:left;vertical-align:top;padding:10px 12px 10px 0;border-bottom:1px solid var(--line)}
+th{font-weight:600;color:var(--ink-2);font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+tr:last-child td{border-bottom:0}
+.table-wrap{overflow-x:auto}
+@media (max-width:640px){
+  .table-wrap table,.table-wrap tbody,.table-wrap tr,.table-wrap th,.table-wrap td{display:block;width:auto}
+  .table-wrap tr{padding:12px 0;border-bottom:1px solid var(--line)}
+  .table-wrap tr:last-child{border-bottom:0}
+  .table-wrap tr.head{display:none}
+  .table-wrap th,.table-wrap td{border:0;padding:2px 0}
+  .table-wrap td[data-label]::before{content:attr(data-label);display:block;margin-top:6px;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2)}
+  .table-wrap td[data-label]:first-of-type::before{margin-top:0}
+  kbd{white-space:normal;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+}
+.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.steps li{display:grid;grid-template-columns:32px minmax(0,1fr);gap:14px;margin:0;align-items:start}
+.steps li::before{counter-increment:s;content:counter(s);width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:#fff;font-weight:700;font-size:14px}
+
+/* footer */
+footer{border-top:1px solid var(--line);padding:28px 20px 44px;color:var(--ink-2);font-size:14.5px;background:var(--bg)}
+footer .in{max-width:var(--wide);margin:0 auto;display:flex;gap:10px 22px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+footer nav{display:flex;gap:6px 16px;flex-wrap:wrap}
+footer a{color:var(--ink-2)}
+footer a:hover{color:var(--accent-ink)}
+</style>
+</head>
+<body>
+<a class="skip" href="#content">본문으로 건너뛰기</a>
+<header class="topbar">
+  <div class="in">
+    <a class="brand" href="/second-brain-links/ko/"><img src="/second-brain-links/mascot.png" alt="" width="30" height="30">Second Brain</a>
+    <nav class="pages" aria-label="페이지"><a href="/second-brain-links/ko/">지원</a><a href="/second-brain-links/ko/about/" aria-current="page">소개</a><a href="/second-brain-links/ko/privacy/">개인정보</a><a href="/second-brain-links/ko/terms/">이용 약관</a><a href="/second-brain-links/ko/delete-data/">내 데이터</a></nav>
+  </div>
+  <div class="langrow"><div class="in">
+    <span class="lbl">언어</span>
+    <nav class="langs" aria-label="언어"><a href="/second-brain-links/about/" lang="en" hreflang="en">English</a><a href="/second-brain-links/de/about/" lang="de" hreflang="de">Deutsch</a><a href="/second-brain-links/es/about/" lang="es" hreflang="es">Español</a><a href="/second-brain-links/fr/about/" lang="fr" hreflang="fr">Français</a><a href="/second-brain-links/ja/about/" lang="ja" hreflang="ja">日本語</a><a href="/second-brain-links/ko/about/" lang="ko" hreflang="ko" aria-current="page">한국어</a><a href="/second-brain-links/pt-BR/about/" lang="pt-BR" hreflang="pt-BR">Português (Brasil)</a><a href="/second-brain-links/zh-Hans/about/" lang="zh-Hans" hreflang="zh-Hans">简体中文</a></nav>
+  </div></div>
+</header>
+<div class="hero-wrap"><section class="hero"><img class="mascot" src="/second-brain-links/mascot.png" alt="" width="176" height="176"><div class="copy"><div class="eyebrow"><span class="dot" aria-hidden="true"></span>Second Brain 소개</div><h1>그냥 말하세요. 정리는 저희가 할게요.</h1><p class="sub">생각하는 대로 말하세요. Second Brain이 할 일, 일정, 메모, 아이디어로 바꾸고, 원본을 보관하며, 물어보면 다시 찾아 줍니다.</p><div class="ctas"><span class="soon"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.6c0-2.4 2-3.6 2.1-3.7-1.1-1.7-2.9-1.9-3.5-1.9-1.5-.2-2.9.9-3.7.9-.8 0-1.9-.9-3.2-.8-1.6 0-3.1 1-4 2.4-1.7 3-.4 7.3 1.2 9.7.8 1.2 1.8 2.5 3 2.4 1.2 0 1.7-.8 3.2-.8s1.9.8 3.2.8 2.1-1.2 2.9-2.4c.9-1.4 1.3-2.7 1.3-2.8-.1 0-2.5-1-2.5-3.8zM14 5.5c.7-.8 1.1-1.9 1-3-1 0-2.1.7-2.8 1.5-.6.7-1.2 1.8-1 2.9 1.1.1 2.2-.6 2.8-1.4z"/></svg> App Store 출시 예정</span><a class="btn quiet" href="/second-brain-links/ko/">지원</a></div><p class="meta">iPhone 및 iPad · iOS 18 이상 · 8개 언어 · 계정 없이 사용 가능</p></div></section></div>
+<main id="content"><div class="grid"><div class="stack"><section class="card"><p class="lead">Second Brain은 머릿속의 모든 것을 위한 차분한 공간입니다. 음성이나 텍스트로 몇 초 만에 기록하고, 스마트 채우기가 만든 결과를 확인하고, 다시 필요할 때 브레인에게 물어보세요. 열어서 확인할 수 있는 출처도 함께 표시됩니다.</p></section><div class="features"><section class="card"><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg></span><h3>그냥 말하세요.</h3><p>음성 기록은 열리는 순간부터 8개 언어로 듣기 시작합니다. 말하는 동안 모든 할 일, 계획, 아이디어를 담아내며, 원본도 보관합니다.</p></section><section class="card"><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 4.9L18.7 9.7l-4.9 1.8L12 16.4l-1.8-4.9L5.3 9.7l4.9-1.8L12 3z"/><path d="M18.5 16.5l.7 1.9 1.9.7-1.9.7-.7 1.9-.7-1.9-1.9-.7 1.9-.7.7-1.9z"/></svg></span><h3>한 문장으로 세 가지를 한 번에.</h3><p>스마트 채우기가 말한 내용을 날짜와 시간이 채워진 할 일, 일정, 메모로 바꿉니다. 항목이 만들어지기 전에 모든 필드를 확인할 수 있습니다.</p></section><section class="card"><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/><path d="M9 10h6M9 14h4"/></svg></span><h3>무엇이든 물어보세요.</h3><p>답변은 저장한 내용에서만 나오며, 출처가 함께 표시되어 열어서 확인할 수 있습니다.</p></section><section class="card"><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span><h3>오늘 하루, 그리고 이번 주.</h3><p>마감인 일과 다음에 할 일을 차분한 한 화면에서 보여 주고, 할 일 옆에 Apple 캘린더를 함께 보여 줍니다. 미리 알림과 원할 때 켤 수 있는 아침 요약도 있습니다.</p></section><section class="card"><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 14L4 9l5-5"/><path d="M4 9h10a6 6 0 0 1 0 12h-3"/></svg></span><h3>아무것도 잃어버리지 않습니다.</h3><p>처음 말한 그대로의 내용이 그로부터 만들어진 모든 항목 옆에 남습니다. 어떤 정리든 되돌릴 수 있고, 언제든 전체 보관함을 내보낼 수 있습니다.</p></section><section class="card"><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></span><h3>기본적으로 비공개.</h3><p>기기 내 AI가 먼저 실행되며, 광고도 추적도 없습니다. 클라우드 동기화와 클라우드 AI는 각각 사용자가 허락해야 시작되며, 어떤 기록이든 이 iPhone에만 보관할 수 있습니다. <a href="/second-brain-links/ko/privacy/">작동 방식 보기.</a></p></section></div><section class="card" id="pricing"><h2>플랜</h2>
+<p>Second Brain은 무료로 사용할 수 있으며, 저장이 막히는 일은 없습니다. Light와 Pro는 월간 한도를 없애고 동기화와 클라우드 AI를 더합니다.</p>
+<div class="tiers" style="margin-top:16px">
+  <div class="tier"><div class="lbl">무료</div><div class="price">$0</div><ul><li>텍스트 기록, 할 일, 프로젝트, 검색, 미리 알림, 내보내기 무제한</li><li>매월 음성 기록 5회, 스마트 채우기 3회, 질문 5회</li><li>지원 기기에서 기기 내 AI</li></ul></div>
+  <div class="tier"><div class="lbl">Light</div><div class="price">월간</div><ul><li>음성 기록, 스마트 채우기, 질문 무제한</li><li>빠른 모드</li><li>비공개 iCloud 동기화</li><li>매월 클라우드 AI 기록 300회와 클라우드 답변 100회</li></ul></div>
+  <div class="tier pro"><div class="lbl">Pro</div><div class="price">월간 · 연간</div><ul><li>Light의 모든 기능</li><li>매월 클라우드 AI 기록 700회와 클라우드 답변 250회</li><li>클라우드 일일 요약</li><li>웹 페이지 텍스트 가져오기</li><li>연간 플랜은 7일 무료로 시작</li></ul></div>
+</div>
+<p class="small" style="margin-top:14px">가격은 앱과 해당 국가의 App Store에 표시됩니다. 결제는 Apple이 처리합니다. <a href="/second-brain-links/ko/terms/#subscriptions">구독 약관.</a></p>
+</section><section class="card" id="platform"><h2>Apple 기기를 위한 설계</h2>
+<ul class="rows">
+  <li><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></span><div><b>iPhone 및 iPad</b><span>iOS 18 또는 iPadOS 18 이상. Apple Intelligence를 지원하는 기기에서는 기기 내 AI를 사용할 수 있습니다.</span></div></li>
+  <li><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3M7 8l5-5 5 5M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg></span><div><b>어디에서나</b><span>모든 앱에서 저장할 수 있는 공유 시트, 홈 화면 위젯, Siri 및 단축어, 그리고 원할 때 켤 수 있는 Spotlight 검색.</span></div></li>
+  <li><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 18h10a4 4 0 0 0 .6-8A6 6 0 0 0 6.1 9.4 4.3 4.3 0 0 0 7 18z"/></svg></span><div><b>저희가 아닌 나의 iCloud</b><span>동기화는 본인의 비공개 iCloud 저장 공간을 통해 이루어지므로, 저희는 보관함의 사본을 갖지 않습니다.</span></div></li>
+  <li><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.7 3.8 9S14.5 18.4 12 21c-2.5-2.6-3.8-5.7-3.8-9S9.5 5.6 12 3z"/></svg></span><div><b>8개 언어</b><span>영어, 독일어, 스페인어, 프랑스어, 일본어, 한국어, 브라질 포르투갈어, 중국어 간체를 음성 기록까지 지원합니다. <kbd>설정</kbd> → <kbd>언어</kbd>에서 선택하세요.</span></div></li>
+</ul>
+</section></div></div></main>
+<footer><div class="in">
+  <div>© 2026 Second Brain · TOPSOL · 모든 권리 보유.</div>
+  <nav aria-label="바닥글"><a href="/second-brain-links/ko/">지원</a> · <a href="/second-brain-links/ko/about/">소개</a> · <a href="/second-brain-links/ko/privacy/">개인정보</a> · <a href="/second-brain-links/ko/terms/">이용 약관</a> · <a href="/second-brain-links/ko/delete-data/">내 데이터</a> · <a href="mailto:topsol.org@gmail.com">topsol.org@gmail.com</a></nav>
+</div></footer>
+</body>
+</html>
