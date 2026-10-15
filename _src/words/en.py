@@ -32,7 +32,7 @@ COPY = {
 "ui.rights": "All rights reserved.",
 "ui.store_soon": "Coming soon to the App Store",
 "ui.store_get": "Download on the App Store",
-"ui.date": "14 October 2026",
+"ui.date": "16 October 2026",
 "ui.last_updated": "Last updated: {DATE}",
 # Shown only on translated Privacy and Terms pages.
 "ui.prevails": "This translation is provided for convenience. If it differs from the English version, the English version applies.",
@@ -111,7 +111,7 @@ COPY = {
 <div class="table-wrap"><table>
 <tr><th>Device</th><td><strong>iPhone or iPad</strong> with <strong>iOS 18 or iPadOS 18</strong> or later.</td></tr>
 <tr><th>On-device AI</th><td>A device that supports <strong>Apple Intelligence</strong>, running iOS 26 or iPadOS 26 or later, with Apple Intelligence turned on and its model downloaded. On other devices you can still capture, organize by hand, search and set reminders. Smart fill and answers can then use Luna in the cloud, if you sign in and allow it.</td></tr>
-<tr><th>Account</th><td><strong>Optional.</strong> Capture, organizing, search, export and deletion work without one. Sign in with Apple is needed to buy Light or Pro, sync with iCloud, use Luna, or import page text.</td></tr>
+<tr><th>Account</th><td><strong>Optional.</strong> Capture, organizing, search, export and deletion work without one, and so does buying Light or Pro. Sign in with Apple is needed to sync with iCloud, use Luna, or import page text.</td></tr>
 <tr><th>Internet</th><td>Not needed for capturing, on-device AI, search or export. Needed for signing in, purchases, iCloud sync, Luna, page import, and the first download of Apple's speech files for your language.</td></tr>
 <tr><th>Permissions</th><td>Microphone and Speech Recognition for voice capture. Camera or Photos only when you attach a picture. Calendars only if you connect Apple Calendar. Notifications only for reminders and the morning summary. Each one is asked when you first use it.</td></tr>
 <tr><th>iCloud</th><td>For sync, an iCloud account with enough free space. Sync is included with Light and Pro.</td></tr>
@@ -134,9 +134,9 @@ COPY = {
 "s.faq.b": """
 <dl class="faq">
 <dt>Do I need an account?</dt>
-<dd>No. Capture, organizing, search, reminders, export and deletion all work without one, on your device. An account is only needed to buy a plan, sync with iCloud, use Luna in the cloud, or import page text. Signing in never uploads your existing guest library. You choose which thoughts to copy into the account.</dd>
+<dd>No. Capture, organizing, search, reminders, export and deletion all work without one, on your device. An account is only needed to sync with iCloud, use Luna in the cloud, or import page text. You can buy a plan without one. Signing in never uploads your existing guest library. You choose which thoughts to copy into the account.</dd>
 <dt>What is free?</dt>
-<dd>Typed capture, tasks and projects, local search, on-device transcription, reminders, editing, export and deletion are free and unlimited. Free also includes <strong>5 voice captures, 3 Smart fills and 5 questions to {K_ask} each month</strong>, counted on each device and reset on the first of the month. Saving is never blocked: when a limit is reached you can still type and save. A signed-in account that allows cloud AI also gets a one-time sample of 10 cloud AI captures and 5 answers.</dd>
+<dd>Typed capture, tasks and projects, local search, on-device transcription, reminders, editing, export and deletion are free and unlimited. Free also includes <strong>20 voice captures, 40 Smart fills and 5 questions to {K_ask} each month</strong>, counted on each device and reset on the first of the month. Saving is never blocked: when a limit is reached you can still type and save. A signed-in account that allows cloud AI also gets a one-time sample of 10 cloud AI captures and 5 answers.</dd>
 <dt>What do Light and Pro add?</dt>
 <dd><strong>Light</strong> removes the monthly limits on voice capture, Smart fill and Ask your Brain, adds {K_quick} and private iCloud sync, and includes 300 cloud AI captures and 100 cloud answers a month. <strong>Pro</strong> includes everything in Light, raises the cloud allowance to 700 cloud AI captures and 250 cloud answers a month, and adds a cloud daily summary and importing a web page's text. Light is billed monthly. Pro is monthly or yearly, and the yearly plan starts with 7 days free for eligible new subscribers. Prices are shown in the app and on the App Store for your country, and Apple handles billing.</dd>
 <dt>What is the difference between on-device AI and Luna?</dt>
@@ -152,7 +152,7 @@ COPY = {
 <dt>What happens if my subscription ends?</dt>
 <dd>Nothing you saved is removed. Reading, editing, search, export and deletion keep working, and the free monthly limits apply again. Sync and cloud allowances stop until you subscribe again.</dd>
 <dt>How do I restore a purchase on a new device?</dt>
-<dd>Sign in with the same Apple Account you used when you subscribed, then tap {K_restore} on the plans screen. A plan belongs to your Second Brain account, which is tied to your Apple Account.</dd>
+<dd>On the new device, use the same Apple Account you subscribed with and tap {K_restore} on the plans screen. The plan's features on that iPhone turn on straight away. If the plan is linked to your Second Brain account, also sign in with Apple to get iCloud sync and your cloud allowance back.</dd>
 <dt>Can I use the app in my own language?</dt>
 <dd>Second Brain speaks eight languages and follows your device's language. To pick a different one without changing anything else, open {K_settings} → {K_language}. Voice capture then listens in that language.</dd>
 <dt>How do I get my data out, or delete it?</dt>
@@ -183,7 +183,7 @@ COPY = {
 <h3>Reminders don't arrive</h3>
 <p>{K_settings} shows whether {K_reminders} are on. If they were turned off, tap the row to open iOS Settings and allow them.</p>
 <h3>My plan isn't recognised</h3>
-<p>Make sure you are signed in to Second Brain with the same Apple Account you subscribed with, then tap {K_restore}. Refunds and billing questions are handled by Apple through <a href="https://support.apple.com/billing">Apple Support</a>.</p>
+<p>Make sure your iPhone uses the same Apple Account you subscribed with, then tap {K_restore}. If the plan is linked to your Second Brain account, sign in with Apple as well. Refunds and billing questions are handled by Apple through <a href="https://support.apple.com/billing">Apple Support</a>.</p>
 <h3>The app is in the wrong language</h3>
 <p>Open {K_settings} → {K_language} and pick the one you want. The app, its widgets and the Share extension follow straight away.</p>
 """,
@@ -226,7 +226,7 @@ COPY = {
 "a.price.b": """
 <p>Second Brain is free to use, and saving is never blocked. Light and Pro remove the monthly limits and add sync and cloud AI.</p>
 <div class="tiers" style="margin-top:16px">
-  <div class="tier"><div class="lbl">Free</div><div class="price">$0</div><ul><li>Unlimited typed capture, tasks, projects, search, reminders and export</li><li>5 voice captures, 3 Smart fills and 5 questions a month</li><li>On-device AI on supported devices</li></ul></div>
+  <div class="tier"><div class="lbl">Free</div><div class="price">$0</div><ul><li>Unlimited typed capture, tasks, projects, search, reminders and export</li><li>20 voice captures, 40 Smart fills and 5 questions a month</li><li>On-device AI on supported devices</li></ul></div>
   <div class="tier"><div class="lbl">Light</div><div class="price">Monthly</div><ul><li>Unlimited voice capture, Smart fill and questions</li><li>Quick mode</li><li>Private iCloud sync</li><li>300 cloud AI captures and 100 cloud answers a month</li></ul></div>
   <div class="tier pro"><div class="lbl">Pro</div><div class="price">Monthly · Yearly</div><ul><li>Everything in Light</li><li>700 cloud AI captures and 250 cloud answers a month</li><li>A cloud daily summary</li><li>Import a web page's text</li><li>Yearly starts with 7 days free</li></ul></div>
 </div>
@@ -353,7 +353,7 @@ COPY = {
 
 "p.purchases.h": "Purchases",
 "p.purchases.b": """
-<p>Light and Pro are sold through Apple's App Store. Payment happens between you and Apple, under <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>, and we never see your payment details. Buying a plan requires a Second Brain account, so the plan can follow you to your other devices. Our server checks the transaction Apple signs, stores it with your account, and receives Apple's notices about renewals, refunds and cancellations so your plan stays correct.</p>
+<p>Light and Pro are sold through Apple's App Store. Payment happens between you and Apple, under <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>, and we never see your payment details. You can buy a plan without an account: your iPhone checks the transaction Apple signs, and our server keeps nothing about the purchase. If you sign in, our server checks that transaction and stores it with your account, so the plan can follow you to your other devices. A purchase made without an account is linked to the first account that sends it. Our server also receives Apple's notices about renewals, refunds and cancellations, and applies them only to purchases linked to an account, so your plan stays correct.</p>
 """,
 
 "p.third.h": "Service providers",
@@ -466,7 +466,7 @@ COPY = {
   <li><strong>Pro Monthly</strong>: billed monthly.</li>
   <li><strong>Pro Yearly</strong>: billed yearly, beginning with a <strong>7-day free trial</strong> for eligible new subscribers.</li>
 </ul>
-<p>You need a Second Brain account (Sign in with Apple) to subscribe. Payment is charged to your Apple Account when you confirm the purchase. A free trial converts to a paid subscription unless you cancel at least 24 hours before it ends. Subscriptions renew automatically at the same price and period unless auto-renew is turned off at least 24 hours before the end of the current period. Your Apple Account is charged for renewal within the 24 hours before that period ends. You can manage or cancel a subscription in your <a href="https://apps.apple.com/account/subscriptions">App Store subscription settings</a> or from {K_manage} in the app. Cancellation takes effect at the end of the current period. Refunds are handled by Apple under its policies. Use {K_restore} to recover a plan on another device. Subscriptions are not shared through Family Sharing.</p>
+<p>You can subscribe without a Second Brain account. Without one, the plan's on-device features work on iPhones that use the Apple Account you subscribed with. Signing in with Apple links the plan to your account and adds its cloud features. Payment is charged to your Apple Account when you confirm the purchase. A free trial converts to a paid subscription unless you cancel at least 24 hours before it ends. Subscriptions renew automatically at the same price and period unless auto-renew is turned off at least 24 hours before the end of the current period. Your Apple Account is charged for renewal within the 24 hours before that period ends. You can manage or cancel a subscription in your <a href="https://apps.apple.com/account/subscriptions">App Store subscription settings</a> or from {K_manage} in the app. Cancellation takes effect at the end of the current period. Refunds are handled by Apple under its policies. Use {K_restore} to recover a plan on another device. Subscriptions are not shared through Family Sharing.</p>
 <p><strong>If a subscription ends</strong>, nothing you saved is removed. Reading, editing, search, export and deletion keep working, the free monthly limits apply again, and sync and cloud allowances stop. Deleting the app or your account does not cancel a subscription. Cancel it with Apple. We may change prices or the features of a plan. Apple will tell you before a price increase applies to you, as its rules require.</p>
 """,
 "t.licence.h": "9. Licence and intellectual property",

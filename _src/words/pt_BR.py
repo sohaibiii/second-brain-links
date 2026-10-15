@@ -18,7 +18,7 @@ COPY = {
 "ui.rights": "Todos os direitos reservados.",
 "ui.store_soon": "Em breve na App Store",
 "ui.store_get": "Baixar na App Store",
-"ui.date": "14 de outubro de 2026",
+"ui.date": "16 de outubro de 2026",
 "ui.last_updated": "Última atualização: {DATE}",
 # Shown only on translated Privacy and Terms pages.
 "ui.prevails": "Esta tradução é oferecida por conveniência. Se houver diferença em relação à versão em inglês, prevalece a versão em inglês.",
@@ -97,7 +97,7 @@ COPY = {
 <div class="table-wrap"><table>
 <tr><th>Aparelho</th><td><strong>iPhone ou iPad</strong> com <strong>iOS 18 ou iPadOS 18</strong> ou posterior.</td></tr>
 <tr><th>IA no aparelho</th><td>Um aparelho compatível com a <strong>Apple Intelligence</strong>, com iOS 26 ou iPadOS 26 ou posterior, a Apple Intelligence ativada e o modelo dela baixado. Em outros aparelhos, você ainda pode capturar, organizar manualmente, buscar e definir lembretes. Nesse caso, o Preenchimento inteligente e as respostas podem usar a Luna na nuvem, se você entrar na sua conta e permitir.</td></tr>
-<tr><th>Conta</th><td><strong>Opcional.</strong> Captura, organização, busca, exportação e exclusão funcionam sem conta. É preciso usar o Iniciar sessão com a Apple para comprar o Light ou o Pro, sincronizar com o iCloud, usar a Luna ou importar o texto de páginas.</td></tr>
+<tr><th>Conta</th><td><strong>Opcional.</strong> Captura, organização, busca, exportação e exclusão funcionam sem conta, e você também pode comprar o Light ou o Pro sem ela. É preciso usar o Iniciar sessão com a Apple para sincronizar com o iCloud, usar a Luna ou importar o texto de páginas.</td></tr>
 <tr><th>Internet</th><td>Não é necessária para capturar, para a IA no aparelho, para buscar nem para exportar. É necessária para entrar na conta, fazer compras, sincronizar com o iCloud, usar a Luna, importar páginas e baixar pela primeira vez os arquivos de fala da Apple para o seu idioma.</td></tr>
 <tr><th>Permissões</th><td>Microfone e Reconhecimento de Fala para a captura por voz. Câmera ou Fotos só quando você anexa uma imagem. Calendários só se você conectar o Calendário da Apple. Notificações só para lembretes e o resumo da manhã. Cada uma é pedida na primeira vez que você usa o recurso.</td></tr>
 <tr><th>iCloud</th><td>Para sincronizar, uma conta do iCloud com espaço livre suficiente. A sincronização está incluída no Light e no Pro.</td></tr>
@@ -120,9 +120,9 @@ COPY = {
 "s.faq.b": """
 <dl class="faq">
 <dt>Preciso de uma conta?</dt>
-<dd>Não. Captura, organização, busca, lembretes, exportação e exclusão funcionam sem conta, no seu aparelho. Uma conta só é necessária para comprar um plano, sincronizar com o iCloud, usar a Luna na nuvem ou importar o texto de páginas. Entrar na conta nunca envia a sua biblioteca de convidado existente. Você escolhe quais pensamentos copiar para a conta.</dd>
+<dd>Não. Captura, organização, busca, lembretes, exportação e exclusão funcionam sem conta, no seu aparelho. Uma conta só é necessária para sincronizar com o iCloud, usar a Luna na nuvem ou importar o texto de páginas. Você pode comprar um plano sem ela. Entrar na conta nunca envia a sua biblioteca de convidado existente. Você escolhe quais pensamentos copiar para a conta.</dd>
 <dt>O que é grátis?</dt>
-<dd>Captura digitada, tarefas e projetos, busca local, transcrição no aparelho, lembretes, edição, exportação e exclusão são grátis e ilimitados. O plano Grátis também inclui <strong>5 capturas por voz, 3 Preenchimentos inteligentes e 5 perguntas em {K_ask} por mês</strong>, contados em cada aparelho e renovados no primeiro dia do mês. Salvar nunca é bloqueado: quando um limite é atingido, você ainda pode digitar e salvar. Uma conta conectada que permite a IA na nuvem também ganha uma amostra única de 10 capturas com IA na nuvem e 5 respostas.</dd>
+<dd>Captura digitada, tarefas e projetos, busca local, transcrição no aparelho, lembretes, edição, exportação e exclusão são grátis e ilimitados. O plano Grátis também inclui <strong>20 capturas por voz, 40 Preenchimentos inteligentes e 5 perguntas em {K_ask} por mês</strong>, contados em cada aparelho e renovados no primeiro dia do mês. Salvar nunca é bloqueado: quando um limite é atingido, você ainda pode digitar e salvar. Uma conta conectada que permite a IA na nuvem também ganha uma amostra única de 10 capturas com IA na nuvem e 5 respostas.</dd>
 <dt>O que o Light e o Pro acrescentam?</dt>
 <dd>O <strong>Light</strong> remove os limites mensais de captura por voz, Preenchimento inteligente e Pergunte ao seu Cérebro, acrescenta o {K_quick} e a sincronização privada com o iCloud, e inclui 300 capturas com IA na nuvem e 100 respostas na nuvem por mês. O <strong>Pro</strong> traz 700 capturas com IA na nuvem e 250 respostas na nuvem por mês, um resumo diário na nuvem e a importação do texto de páginas da web. O Light é cobrado mensalmente. O Pro é mensal ou anual, e o plano anual começa com 7 dias grátis para novos assinantes elegíveis. Os preços aparecem no app e na App Store para o seu país, e a cobrança é feita pela Apple.</dd>
 <dt>Qual é a diferença entre a IA no aparelho e a Luna?</dt>
@@ -138,7 +138,7 @@ COPY = {
 <dt>O que acontece se a minha assinatura terminar?</dt>
 <dd>Nada do que você salvou é removido. Leitura, edição, busca, exportação e exclusão continuam funcionando, e os limites mensais grátis voltam a valer. A sincronização e as cotas na nuvem param até você assinar de novo.</dd>
 <dt>Como restauro uma compra em um aparelho novo?</dt>
-<dd>Entre com a mesma Conta Apple que você usou ao assinar e toque em {K_restore} na tela de planos. Um plano pertence à sua conta do Second Brain, que está vinculada à sua Conta Apple.</dd>
+<dd>No aparelho novo, use a mesma Conta Apple com que você assinou e toque em {K_restore} na tela de planos. Os recursos do plano nesse iPhone são ativados na hora. Se o plano estiver vinculado à sua conta do Second Brain, entre também com a Apple para recuperar a sincronização com o iCloud e a sua cota na nuvem.</dd>
 <dt>Posso usar o app no meu idioma?</dt>
 <dd>O Second Brain fala oito idiomas e segue o idioma do seu aparelho. Para escolher outro sem mudar mais nada, abra {K_settings} → {K_language}. A captura por voz passa a ouvir nesse idioma.</dd>
 <dt>Como tiro os meus dados do app ou os apago?</dt>
@@ -169,7 +169,7 @@ COPY = {
 <h3>Os lembretes não chegam</h3>
 <p>Em {K_settings}, você vê se as {K_reminders} estão ativadas. Se tiverem sido desativadas, toque na linha para abrir os Ajustes do iOS e permiti-las.</p>
 <h3>O meu plano não é reconhecido</h3>
-<p>Verifique se você entrou no Second Brain com a mesma Conta Apple usada na assinatura e toque em {K_restore}. Reembolsos e dúvidas sobre cobrança são tratados pela Apple, pelo <a href="https://support.apple.com/billing">Suporte da Apple</a>.</p>
+<p>Verifique se o seu iPhone usa a mesma Conta Apple usada na assinatura e toque em {K_restore}. Se o plano estiver vinculado à sua conta do Second Brain, entre também com a Apple. Reembolsos e dúvidas sobre cobrança são tratados pela Apple, pelo <a href="https://support.apple.com/billing">Suporte da Apple</a>.</p>
 <h3>O app está no idioma errado</h3>
 <p>Abra {K_settings} → {K_language} e escolha o idioma que você quer. O app, os widgets e a extensão de compartilhamento mudam na hora.</p>
 """,
@@ -206,7 +206,7 @@ COPY = {
 "a.price.b": """
 <p>O Second Brain é grátis para usar, e salvar nunca é bloqueado. O Light e o Pro removem os limites mensais e acrescentam sincronização e IA na nuvem.</p>
 <div class="tiers" style="margin-top:16px">
-  <div class="tier"><div class="lbl">Grátis</div><div class="price">R$ 0</div><ul><li>Captura digitada, tarefas, projetos, busca, lembretes e exportação ilimitados</li><li>5 capturas por voz, 3 Preenchimentos inteligentes e 5 perguntas por mês</li><li>IA no aparelho nos aparelhos compatíveis</li></ul></div>
+  <div class="tier"><div class="lbl">Grátis</div><div class="price">R$ 0</div><ul><li>Captura digitada, tarefas, projetos, busca, lembretes e exportação ilimitados</li><li>20 capturas por voz, 40 Preenchimentos inteligentes e 5 perguntas por mês</li><li>IA no aparelho nos aparelhos compatíveis</li></ul></div>
   <div class="tier"><div class="lbl">Light</div><div class="price">Mensal</div><ul><li>Captura por voz, Preenchimento inteligente e perguntas ilimitados</li><li>Modo rápido</li><li>Sincronização privada com o iCloud</li><li>300 capturas com IA na nuvem e 100 respostas na nuvem por mês</li></ul></div>
   <div class="tier pro"><div class="lbl">Pro</div><div class="price">Mensal · Anual</div><ul><li>Tudo do Light</li><li>700 capturas com IA na nuvem e 250 respostas na nuvem por mês</li><li>Um resumo diário na nuvem</li><li>Importação do texto de páginas da web</li><li>O anual começa com 7 dias grátis</li></ul></div>
 </div>
@@ -333,7 +333,7 @@ COPY = {
 
 "p.purchases.h": "Compras",
 "p.purchases.b": """
-<p>O Light e o Pro são vendidos pela App Store da Apple. O pagamento acontece entre você e a Apple, de acordo com a <a href="https://www.apple.com/legal/privacy/">política de privacidade da Apple</a>, e nunca vemos os seus dados de pagamento. Comprar um plano exige uma conta do Second Brain, para que o plano acompanhe você nos seus outros aparelhos. O nosso servidor verifica a transação que a Apple assina, armazena-a com a sua conta e recebe os avisos da Apple sobre renovações, reembolsos e cancelamentos, para que o seu plano fique sempre correto.</p>
+<p>O Light e o Pro são vendidos pela App Store da Apple. O pagamento acontece entre você e a Apple, de acordo com a <a href="https://www.apple.com/legal/privacy/">política de privacidade da Apple</a>, e nunca vemos os seus dados de pagamento. Você pode comprar um plano sem conta: o seu iPhone verifica a transação que a Apple assina, e o nosso servidor não guarda nada sobre a compra. Se você entrar na conta, o nosso servidor verifica essa transação e a armazena com a sua conta, para que o plano acompanhe você nos seus outros aparelhos. Uma compra feita sem conta fica vinculada à primeira conta que a enviar. O nosso servidor também recebe os avisos da Apple sobre renovações, reembolsos e cancelamentos e só os aplica a compras vinculadas a uma conta, para que o seu plano fique sempre correto.</p>
 """,
 
 "p.third.h": "Prestadores de serviços",
@@ -446,7 +446,7 @@ COPY = {
   <li><strong>Pro mensal</strong>: cobrado mensalmente.</li>
   <li><strong>Pro anual</strong>: cobrado anualmente, começando com um <strong>teste grátis de 7 dias</strong> para novos assinantes elegíveis.</li>
 </ul>
-<p>Você precisa de uma conta do Second Brain (Iniciar sessão com a Apple) para assinar. O pagamento é cobrado na sua Conta Apple quando você confirma a compra. Um teste grátis se converte em uma assinatura paga, a menos que você cancele pelo menos 24 horas antes do fim dele. As assinaturas são renovadas automaticamente pelo mesmo preço e período, a menos que a renovação automática seja desativada pelo menos 24 horas antes do fim do período atual. A renovação é cobrada na sua Conta Apple nas 24 horas anteriores ao fim desse período. Você pode gerenciar ou cancelar uma assinatura nos <a href="https://apps.apple.com/account/subscriptions">ajustes de assinatura da App Store</a> ou em {K_manage} no app. O cancelamento passa a valer no fim do período atual. Os reembolsos são tratados pela Apple de acordo com as políticas dela. Use {K_restore} para recuperar um plano em outro aparelho. As assinaturas não são compartilhadas pelo Compartilhamento Familiar.</p>
+<p>Você pode assinar sem uma conta do Second Brain. Sem conta, os recursos do plano no aparelho funcionam nos iPhones que usam a Conta Apple com que você assinou. Iniciar sessão com a Apple vincula o plano à sua conta e adiciona os recursos na nuvem. O pagamento é cobrado na sua Conta Apple quando você confirma a compra. Um teste grátis se converte em uma assinatura paga, a menos que você cancele pelo menos 24 horas antes do fim dele. As assinaturas são renovadas automaticamente pelo mesmo preço e período, a menos que a renovação automática seja desativada pelo menos 24 horas antes do fim do período atual. A renovação é cobrada na sua Conta Apple nas 24 horas anteriores ao fim desse período. Você pode gerenciar ou cancelar uma assinatura nos <a href="https://apps.apple.com/account/subscriptions">ajustes de assinatura da App Store</a> ou em {K_manage} no app. O cancelamento passa a valer no fim do período atual. Os reembolsos são tratados pela Apple de acordo com as políticas dela. Use {K_restore} para recuperar um plano em outro aparelho. As assinaturas não são compartilhadas pelo Compartilhamento Familiar.</p>
 <p><strong>Se uma assinatura terminar</strong>, nada do que você salvou é removido. Leitura, edição, busca, exportação e exclusão continuam funcionando, os limites mensais grátis voltam a valer, e a sincronização e as cotas na nuvem param. Apagar o app ou a sua conta não cancela uma assinatura. Cancele-a com a Apple. Podemos mudar os preços ou os recursos de um plano. A Apple vai avisar você antes que um aumento de preço seja aplicado, como as regras dela exigem.</p>
 """,
 "t.licence.h": "9. Licença e propriedade intelectual",

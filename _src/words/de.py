@@ -18,7 +18,7 @@ COPY = {
 "ui.rights": "Alle Rechte vorbehalten.",
 "ui.store_soon": "Bald im App Store",
 "ui.store_get": "Laden im App Store",
-"ui.date": "14. Oktober 2026",
+"ui.date": "16. Oktober 2026",
 "ui.last_updated": "Zuletzt aktualisiert: {DATE}",
 # Shown only on translated Privacy and Terms pages.
 "ui.prevails": "Diese Übersetzung dient nur der besseren Verständlichkeit. Weicht sie von der englischen Fassung ab, gilt die englische Fassung.",
@@ -97,7 +97,7 @@ COPY = {
 <div class="table-wrap"><table>
 <tr><th>Gerät</th><td><strong>iPhone oder iPad</strong> mit <strong>iOS 18 oder iPadOS 18</strong> oder neuer.</td></tr>
 <tr><th>KI auf dem Gerät</th><td>Ein Gerät, das <strong>Apple Intelligence</strong> unterstützt, mit iOS 26 oder iPadOS 26 oder neuer, eingeschalteter Apple Intelligence und heruntergeladenem Modell. Auf anderen Geräten kannst du trotzdem Gedanken festhalten, von Hand organisieren, suchen und Erinnerungen einstellen. Smart Fill und Antworten können dann Luna in der Cloud nutzen, wenn du dich anmeldest und es erlaubst.</td></tr>
-<tr><th>Account</th><td><strong>Optional.</strong> Festhalten, Organisieren, Suche, Export und Löschen funktionieren ohne Account. „Mit Apple anmelden“ brauchst du, um Light oder Pro zu kaufen, mit iCloud zu synchronisieren, Luna zu nutzen oder Seitentext zu importieren.</td></tr>
+<tr><th>Account</th><td><strong>Optional.</strong> Festhalten, Organisieren, Suche, Export und Löschen funktionieren ohne Account, und auch Light oder Pro kannst du ohne Account kaufen. „Mit Apple anmelden“ brauchst du, um mit iCloud zu synchronisieren, Luna zu nutzen oder Seitentext zu importieren.</td></tr>
 <tr><th>Internet</th><td>Nicht nötig zum Festhalten, für KI auf dem Gerät, Suche oder Export. Nötig für die Anmeldung, Käufe, iCloud-Synchronisierung, Luna, den Seitenimport und den ersten Download von Apples Sprachdateien für deine Sprache.</td></tr>
 <tr><th>Berechtigungen</th><td>Mikrofon und Spracherkennung für die Sprachaufnahme. Kamera oder Fotos nur, wenn du ein Bild anhängst. Kalender nur, wenn du die Kalender-App verbindest. Mitteilungen nur für Erinnerungen und den Morgenüberblick. Jede Berechtigung wird erst abgefragt, wenn du sie zum ersten Mal brauchst.</td></tr>
 <tr><th>iCloud</th><td>Für die Synchronisierung ein iCloud-Account mit genug freiem Speicherplatz. Die Synchronisierung ist in Light und Pro enthalten.</td></tr>
@@ -120,9 +120,9 @@ COPY = {
 "s.faq.b": """
 <dl class="faq">
 <dt>Brauche ich einen Account?</dt>
-<dd>Nein. Festhalten, Organisieren, Suche, Erinnerungen, Export und Löschen funktionieren alle ohne Account auf deinem Gerät. Einen Account brauchst du nur, um einen Plan zu kaufen, mit iCloud zu synchronisieren, Luna in der Cloud zu nutzen oder Seitentext zu importieren. Beim Anmelden wird deine bestehende Gastbibliothek nie hochgeladen. Du wählst selbst, welche Gedanken du in den Account kopierst.</dd>
+<dd>Nein. Festhalten, Organisieren, Suche, Erinnerungen, Export und Löschen funktionieren alle ohne Account auf deinem Gerät. Einen Account brauchst du nur, um mit iCloud zu synchronisieren, Luna in der Cloud zu nutzen oder Seitentext zu importieren. Einen Plan kannst du auch ohne Account kaufen. Beim Anmelden wird deine bestehende Gastbibliothek nie hochgeladen. Du wählst selbst, welche Gedanken du in den Account kopierst.</dd>
 <dt>Was ist kostenlos?</dt>
-<dd>Getippte Gedanken, Aufgaben und Projekte, lokale Suche, Transkription auf dem Gerät, Erinnerungen, Bearbeiten, Export und Löschen sind kostenlos und unbegrenzt. Außerdem enthält die kostenlose Nutzung <strong>pro Monat 5 Sprachaufnahmen, 3 Smart Fills und 5 Fragen über {K_ask}</strong>, gezählt auf jedem Gerät und am Monatsersten zurückgesetzt. Speichern wird nie blockiert: Ist ein Limit erreicht, kannst du weiterhin tippen und speichern. Ein angemeldeter Account, der Cloud-KI erlaubt, erhält außerdem einmalig ein Probekontingent von 10 Cloud-KI-Aufnahmen und 5 Antworten.</dd>
+<dd>Getippte Gedanken, Aufgaben und Projekte, lokale Suche, Transkription auf dem Gerät, Erinnerungen, Bearbeiten, Export und Löschen sind kostenlos und unbegrenzt. Außerdem enthält die kostenlose Nutzung <strong>pro Monat 20 Sprachaufnahmen, 40 Smart Fills und 5 Fragen über {K_ask}</strong>, gezählt auf jedem Gerät und am Monatsersten zurückgesetzt. Speichern wird nie blockiert: Ist ein Limit erreicht, kannst du weiterhin tippen und speichern. Ein angemeldeter Account, der Cloud-KI erlaubt, erhält außerdem einmalig ein Probekontingent von 10 Cloud-KI-Aufnahmen und 5 Antworten.</dd>
 <dt>Was bieten Light und Pro zusätzlich?</dt>
 <dd><strong>Light</strong> hebt die monatlichen Limits für Sprachaufnahmen, Smart Fill und „Frag dein Brain“ auf, bietet den {K_quick} und private iCloud-Synchronisierung und enthält pro Monat 300 Cloud-KI-Aufnahmen und 100 Cloud-Antworten. <strong>Pro</strong> bietet pro Monat 700 Cloud-KI-Aufnahmen und 250 Cloud-Antworten, eine Cloud-Tageszusammenfassung und den Import des Texts einer Webseite. Light wird monatlich abgerechnet. Pro gibt es monatlich oder jährlich, und das Jahresabo beginnt für berechtigte Neuabonnenten mit 7 kostenlosen Tagen. Die Preise für dein Land siehst du in der App und im App Store, und die Abrechnung übernimmt Apple.</dd>
 <dt>Was ist der Unterschied zwischen KI auf dem Gerät und Luna?</dt>
@@ -138,7 +138,7 @@ COPY = {
 <dt>Was passiert, wenn mein Abo endet?</dt>
 <dd>Nichts, was du gespeichert hast, wird entfernt. Lesen, Bearbeiten, Suche, Export und Löschen funktionieren weiter, und die kostenlosen Monatslimits gelten wieder. Synchronisierung und Cloud-Kontingente stehen erst wieder zur Verfügung, wenn du erneut ein Abo abschließt.</dd>
 <dt>Wie stelle ich einen Kauf auf einem neuen Gerät wieder her?</dt>
-<dd>Melde dich mit demselben Apple Account an, mit dem du das Abo abgeschlossen hast, und tippe dann im Bildschirm „Pläne“ auf {K_restore}. Ein Plan gehört zu deinem Account bei Second Brain, der mit deinem Apple Account verknüpft ist.</dd>
+<dd>Verwende auf dem neuen Gerät denselben Apple Account, mit dem du das Abo abgeschlossen hast, und tippe im Bildschirm „Pläne“ auf {K_restore}. Die Funktionen deines Plans auf diesem iPhone sind sofort aktiv. Ist der Plan mit deinem Account bei Second Brain verknüpft, melde dich zusätzlich mit Apple an, um iCloud-Synchronisierung und dein Cloud-Kontingent zurückzubekommen.</dd>
 <dt>Kann ich die App in meiner Sprache nutzen?</dt>
 <dd>Second Brain spricht acht Sprachen und folgt der Sprache deines Geräts. Um eine andere zu wählen, ohne sonst etwas zu ändern, öffne {K_settings} → {K_language}. Die Sprachaufnahme hört dann in dieser Sprache zu.</dd>
 <dt>Wie bekomme ich meine Daten heraus oder lösche sie?</dt>
@@ -169,7 +169,7 @@ COPY = {
 <h3>Erinnerungen kommen nicht an</h3>
 <p>In den {K_settings} siehst du, ob {K_reminders} eingeschaltet sind. Wurden sie ausgeschaltet, tippe auf die Zeile, um die iOS-Einstellungen zu öffnen, und erlaube sie dort.</p>
 <h3>Mein Plan wird nicht erkannt</h3>
-<p>Achte darauf, dass du bei Second Brain mit demselben Apple Account angemeldet bist, mit dem du das Abo abgeschlossen hast, und tippe dann auf {K_restore}. Erstattungen und Fragen zur Abrechnung bearbeitet Apple über den <a href="https://support.apple.com/billing">Apple Support</a>.</p>
+<p>Achte darauf, dass dein iPhone denselben Apple Account verwendet, mit dem du das Abo abgeschlossen hast, und tippe dann auf {K_restore}. Ist der Plan mit deinem Account bei Second Brain verknüpft, melde dich zusätzlich mit Apple an. Erstattungen und Fragen zur Abrechnung bearbeitet Apple über den <a href="https://support.apple.com/billing">Apple Support</a>.</p>
 <h3>Die App ist in der falschen Sprache</h3>
 <p>Öffne {K_settings} → {K_language} und wähle die gewünschte Sprache. Die App, ihre Widgets und das Teilen-Menü wechseln sofort mit.</p>
 """,
@@ -206,7 +206,7 @@ COPY = {
 "a.price.b": """
 <p>Second Brain ist kostenlos nutzbar, und Speichern wird nie blockiert. Light und Pro heben die monatlichen Limits auf und bieten Synchronisierung und Cloud-KI.</p>
 <div class="tiers" style="margin-top:16px">
-  <div class="tier"><div class="lbl">Kostenlos</div><div class="price">0 $</div><ul><li>Unbegrenzt: getippte Gedanken, Aufgaben, Projekte, Suche, Erinnerungen und Export</li><li>5 Sprachaufnahmen, 3 Smart Fills und 5 Fragen pro Monat</li><li>KI auf dem Gerät auf unterstützten Geräten</li></ul></div>
+  <div class="tier"><div class="lbl">Kostenlos</div><div class="price">0 $</div><ul><li>Unbegrenzt: getippte Gedanken, Aufgaben, Projekte, Suche, Erinnerungen und Export</li><li>20 Sprachaufnahmen, 40 Smart Fills und 5 Fragen pro Monat</li><li>KI auf dem Gerät auf unterstützten Geräten</li></ul></div>
   <div class="tier"><div class="lbl">Light</div><div class="price">Monatlich</div><ul><li>Unbegrenzte Sprachaufnahmen, Smart Fill und Fragen</li><li>Schnellmodus</li><li>Private iCloud-Synchronisierung</li><li>300 Cloud-KI-Aufnahmen und 100 Cloud-Antworten pro Monat</li></ul></div>
   <div class="tier pro"><div class="lbl">Pro</div><div class="price">Monatlich · Jährlich</div><ul><li>Alles aus Light</li><li>700 Cloud-KI-Aufnahmen und 250 Cloud-Antworten pro Monat</li><li>Eine Cloud-Tageszusammenfassung</li><li>Text einer Webseite importieren</li><li>Jahresabo beginnt mit 7 kostenlosen Tagen</li></ul></div>
 </div>
@@ -333,7 +333,7 @@ COPY = {
 
 "p.purchases.h": "Käufe",
 "p.purchases.b": """
-<p>Light und Pro werden über Apples App Store verkauft. Die Zahlung erfolgt zwischen dir und Apple gemäß der <a href="https://www.apple.com/legal/privacy/">Datenschutzrichtlinie von Apple</a>, und wir sehen deine Zahlungsdaten nie. Für den Kauf eines Plans brauchst du einen Account bei Second Brain, damit der Plan dir auf deine anderen Geräte folgen kann. Unser Server prüft die von Apple signierte Transaktion, speichert sie mit deinem Account und erhält Apples Benachrichtigungen zu Verlängerungen, Erstattungen und Kündigungen, damit dein Plan stets korrekt ist.</p>
+<p>Light und Pro werden über Apples App Store verkauft. Die Zahlung erfolgt zwischen dir und Apple gemäß der <a href="https://www.apple.com/legal/privacy/">Datenschutzrichtlinie von Apple</a>, und wir sehen deine Zahlungsdaten nie. Einen Plan kannst du ohne Account kaufen: Dein iPhone prüft die von Apple signierte Transaktion, und unser Server speichert nichts über den Kauf. Wenn du dich anmeldest, prüft unser Server diese Transaktion und speichert sie mit deinem Account, damit der Plan dir auf deine anderen Geräte folgen kann. Ein ohne Account getätigter Kauf wird mit dem ersten Account verknüpft, der ihn übermittelt. Unser Server erhält außerdem Apples Benachrichtigungen zu Verlängerungen, Erstattungen und Kündigungen und wendet sie nur auf Käufe an, die mit einem Account verknüpft sind, damit dein Plan stets korrekt ist.</p>
 """,
 
 "p.third.h": "Dienstleister",
@@ -446,7 +446,7 @@ COPY = {
   <li><strong>Pro Monatsabo</strong>: monatliche Abrechnung.</li>
   <li><strong>Pro Jahresabo</strong>: jährliche Abrechnung, beginnend mit einer <strong>7-tägigen kostenlosen Testphase</strong> für berechtigte Neuabonnenten.</li>
 </ul>
-<p>Um ein Abo abzuschließen, brauchst du einen Account bei Second Brain („Mit Apple anmelden“). Die Zahlung wird deinem Apple Account belastet, wenn du den Kauf bestätigst. Eine kostenlose Testphase geht in ein bezahltes Abo über, sofern du nicht mindestens 24 Stunden vor ihrem Ende kündigst. Abos verlängern sich automatisch zum gleichen Preis und für den gleichen Zeitraum, sofern die automatische Verlängerung nicht mindestens 24 Stunden vor dem Ende des aktuellen Zeitraums ausgeschaltet wird. Die Verlängerung wird deinem Apple Account innerhalb der 24 Stunden vor dem Ende dieses Zeitraums belastet. Du kannst ein Abo in deinen <a href="https://apps.apple.com/account/subscriptions">Abo-Einstellungen im App Store</a> oder über {K_manage} in der App verwalten oder kündigen. Eine Kündigung wird zum Ende des aktuellen Zeitraums wirksam. Erstattungen bearbeitet Apple gemäß seinen Richtlinien. Mit {K_restore} stellst du einen Plan auf einem anderen Gerät wieder her. Abos werden nicht über die Familienfreigabe geteilt.</p>
+<p>Ein Abo kannst du auch ohne Account bei Second Brain abschließen. Ohne Account funktionieren die Gerätefunktionen des Plans auf iPhones, die den Apple Account verwenden, mit dem du das Abo abgeschlossen hast. Mit „Mit Apple anmelden“ verknüpfst du den Plan mit deinem Account und erhältst seine Cloud-Funktionen. Die Zahlung wird deinem Apple Account belastet, wenn du den Kauf bestätigst. Eine kostenlose Testphase geht in ein bezahltes Abo über, sofern du nicht mindestens 24 Stunden vor ihrem Ende kündigst. Abos verlängern sich automatisch zum gleichen Preis und für den gleichen Zeitraum, sofern die automatische Verlängerung nicht mindestens 24 Stunden vor dem Ende des aktuellen Zeitraums ausgeschaltet wird. Die Verlängerung wird deinem Apple Account innerhalb der 24 Stunden vor dem Ende dieses Zeitraums belastet. Du kannst ein Abo in deinen <a href="https://apps.apple.com/account/subscriptions">Abo-Einstellungen im App Store</a> oder über {K_manage} in der App verwalten oder kündigen. Eine Kündigung wird zum Ende des aktuellen Zeitraums wirksam. Erstattungen bearbeitet Apple gemäß seinen Richtlinien. Mit {K_restore} stellst du einen Plan auf einem anderen Gerät wieder her. Abos werden nicht über die Familienfreigabe geteilt.</p>
 <p><strong>Wenn ein Abo endet</strong>, wird nichts entfernt, was du gespeichert hast. Lesen, Bearbeiten, Suche, Export und Löschen funktionieren weiter, die kostenlosen Monatslimits gelten wieder, und Synchronisierung und Cloud-Kontingente enden. Wenn du die App oder deinen Account löschst, wird ein Abo nicht gekündigt. Kündige es bei Apple. Wir können Preise oder die Funktionen eines Plans ändern. Apple informiert dich, bevor eine Preiserhöhung für dich gilt, wie es seine Regeln verlangen.</p>
 """,
 "t.licence.h": "9. Lizenz und geistiges Eigentum",

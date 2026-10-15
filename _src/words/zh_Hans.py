@@ -18,7 +18,7 @@ COPY = {
 "ui.rights": "保留所有权利。",
 "ui.store_soon": "即将登陆 App Store",
 "ui.store_get": "在 App Store 下载",
-"ui.date": "2026年10月14日",
+"ui.date": "2026年10月16日",
 "ui.last_updated": "最后更新：{DATE}",
 # Shown only on translated Privacy and Terms pages.
 "ui.prevails": "本译文仅为方便阅读而提供。如与英文版本有任何不一致，以英文版本为准。",
@@ -97,7 +97,7 @@ COPY = {
 <div class="table-wrap"><table>
 <tr><th>设备</th><td>装有 <strong>iOS 18 或 iPadOS 18</strong> 或更高版本的 <strong>iPhone 或 iPad</strong>。</td></tr>
 <tr><th>设备端 AI</th><td>支持 <strong>Apple Intelligence</strong> 的设备，运行 iOS 26 或 iPadOS 26 或更高版本，并已打开 Apple Intelligence 且下载了其模型。在其他设备上，你仍然可以记录、手动整理、搜索和设置提醒。届时，如果你登录并允许，智能填写和回答可以使用云端的 Luna。</td></tr>
-<tr><th>账户</th><td><strong>可选。</strong>记录、整理、搜索、导出和删除都无需账户。购买 Light 或 Pro、通过 iCloud 同步、使用 Luna 或导入网页文字时，需要通过 Apple 登录。</td></tr>
+<tr><th>账户</th><td><strong>可选。</strong>记录、整理、搜索、导出和删除都无需账户，购买 Light 或 Pro 也无需账户。通过 iCloud 同步、使用 Luna 或导入网页文字时，需要通过 Apple 登录。</td></tr>
 <tr><th>网络</th><td>记录、设备端 AI、搜索和导出无需联网。登录、购买、iCloud 同步、Luna、网页导入，以及首次下载你所用语言的 Apple 语音文件时需要联网。</td></tr>
 <tr><th>权限</th><td>语音记录需要麦克风和语音识别权限。仅在你附加图片时才需要相机或照片权限。仅在你连接“日历”App 时才需要日历权限。仅在使用提醒和晨间摘要时才需要通知权限。每项权限都会在你首次使用相应功能时询问。</td></tr>
 <tr><th>iCloud</th><td>同步需要一个有足够可用空间的 iCloud 账户。Light 和 Pro 均包含同步功能。</td></tr>
@@ -120,9 +120,9 @@ COPY = {
 "s.faq.b": """
 <dl class="faq">
 <dt>我需要账户吗？</dt>
-<dd>不需要。记录、整理、搜索、提醒、导出和删除都无需账户，在你的设备上即可使用。只有在购买方案、通过 iCloud 同步、使用云端的 Luna 或导入网页文字时才需要账户。登录绝不会上传你现有的访客资料库。你可以自行选择要将哪些想法复制到账户中。</dd>
+<dd>不需要。记录、整理、搜索、提醒、导出和删除都无需账户，在你的设备上即可使用。只有在通过 iCloud 同步、使用云端的 Luna 或导入网页文字时才需要账户。购买方案无需账户。登录绝不会上传你现有的访客资料库。你可以自行选择要将哪些想法复制到账户中。</dd>
 <dt>哪些功能是免费的？</dt>
-<dd>文字记录、任务和项目、本地搜索、设备端转写、提醒、编辑、导出和删除均免费且不限次数。免费版每月还包含 <strong>5 次语音记录、3 次智能填写和 5 次{K_ask}提问</strong>，在每台设备上分别计数，并于每月 1 日重置。保存永远不会被阻止：达到限制后，你仍然可以输入并保存。已登录且允许云端 AI 的账户还可获得一次性体验：10 次云端 AI 记录和 5 次回答。</dd>
+<dd>文字记录、任务和项目、本地搜索、设备端转写、提醒、编辑、导出和删除均免费且不限次数。免费版每月还包含 <strong>20 次语音记录、40 次智能填写和 5 次{K_ask}提问</strong>，在每台设备上分别计数，并于每月 1 日重置。保存永远不会被阻止：达到限制后，你仍然可以输入并保存。已登录且允许云端 AI 的账户还可获得一次性体验：10 次云端 AI 记录和 5 次回答。</dd>
 <dt>Light 和 Pro 增加了什么？</dt>
 <dd><strong>Light</strong> 取消语音记录、智能填写和“问问你的大脑”的每月限制，增加{K_quick}和私密的 iCloud 同步，并且每月包含 300 次云端 AI 记录和 100 次云端回答。<strong>Pro</strong> 提供每月 700 次云端 AI 记录和 250 次云端回答、云端每日摘要，以及网页文字导入。Light 按月计费。Pro 可按月或按年计费，年付方案为符合条件的新订阅者提供 7 天免费试用。价格会按你所在的国家或地区显示在 App 内和 App Store 中，计费由 Apple 处理。</dd>
 <dt>设备端 AI 和 Luna 有什么区别？</dt>
@@ -138,7 +138,7 @@ COPY = {
 <dt>订阅结束后会怎样？</dt>
 <dd>你保存的内容都不会被删除。阅读、编辑、搜索、导出和删除仍可正常使用，免费版的每月限制会重新生效。同步和云端额度会停止，直到你再次订阅。</dd>
 <dt>如何在新设备上恢复购买？</dt>
-<dd>使用订阅时所用的同一个 Apple 账户登录，然后在方案页面点按{K_restore}。方案属于你的 Second Brain 账户，而该账户与你的 Apple 账户相关联。</dd>
+<dd>在新设备上使用订阅时所用的同一个 Apple 账户，然后在方案页面点按{K_restore}。方案在这台 iPhone 上的功能会立即启用。如果方案已关联到你的 Second Brain 账户，还需通过 Apple 登录，才能恢复 iCloud 同步和云端额度。</dd>
 <dt>可以用我自己的语言使用 App 吗？</dt>
 <dd>Second Brain 支持八种语言，并会跟随你设备的语言。如果只想换一种语言而不改动其他设置，请打开{K_settings} → {K_language}。之后语音记录也会使用该语言进行识别。</dd>
 <dt>如何导出或删除我的数据？</dt>
@@ -169,7 +169,7 @@ COPY = {
 <h3>收不到提醒</h3>
 <p>{K_settings}中会显示{K_reminders}是否已打开。如果已关闭，请点按该行以打开 iOS“设置”，然后允许通知。</p>
 <h3>无法识别我的方案</h3>
-<p>请确保你使用订阅时所用的同一个 Apple 账户登录了 Second Brain，然后点按{K_restore}。退款和账单问题由 Apple 通过 <a href="https://support.apple.com/billing">Apple 支持</a>处理。</p>
+<p>请确保你的 iPhone 使用的是订阅时所用的同一个 Apple 账户，然后点按{K_restore}。如果方案已关联到你的 Second Brain 账户，还需通过 Apple 登录。退款和账单问题由 Apple 通过 <a href="https://support.apple.com/billing">Apple 支持</a>处理。</p>
 <h3>App 显示的语言不对</h3>
 <p>打开{K_settings} → {K_language}，选择你想要的语言。App、它的小组件和共享表单会立即随之更改。</p>
 """,
@@ -206,7 +206,7 @@ COPY = {
 "a.price.b": """
 <p>Second Brain 可免费使用，保存永远不会被阻止。Light 和 Pro 取消每月限制，并增加同步和云端 AI。</p>
 <div class="tiers" style="margin-top:16px">
-  <div class="tier"><div class="lbl">免费</div><div class="price">$0</div><ul><li>不限次数的文字记录、任务、项目、搜索、提醒和导出</li><li>每月 5 次语音记录、3 次智能填写和 5 次提问</li><li>在支持的设备上使用设备端 AI</li></ul></div>
+  <div class="tier"><div class="lbl">免费</div><div class="price">$0</div><ul><li>不限次数的文字记录、任务、项目、搜索、提醒和导出</li><li>每月 20 次语音记录、40 次智能填写和 5 次提问</li><li>在支持的设备上使用设备端 AI</li></ul></div>
   <div class="tier"><div class="lbl">Light</div><div class="price">月付</div><ul><li>不限次数的语音记录、智能填写和提问</li><li>快速模式</li><li>私密的 iCloud 同步</li><li>每月 300 次云端 AI 记录和 100 次云端回答</li></ul></div>
   <div class="tier pro"><div class="lbl">Pro</div><div class="price">月付 · 年付</div><ul><li>包含 Light 的全部内容</li><li>每月 700 次云端 AI 记录和 250 次云端回答</li><li>云端每日摘要</li><li>导入网页文字</li><li>年付方案含 7 天免费试用</li></ul></div>
 </div>
@@ -333,7 +333,7 @@ COPY = {
 
 "p.purchases.h": "购买",
 "p.purchases.b": """
-<p>Light 和 Pro 通过 Apple 的 App Store 销售。付款在你与 Apple 之间进行，受 <a href="https://www.apple.com/legal/privacy/">Apple 的隐私政策</a>约束，我们从不会看到你的付款详情。购买方案需要 Second Brain 账户，这样方案才能跟随你到其他设备上。我们的服务器会验证 Apple 签名的交易，将其与你的账户一起存储，并接收 Apple 关于续订、退款和取消的通知，以确保你的方案状态正确。</p>
+<p>Light 和 Pro 通过 Apple 的 App Store 销售。付款在你与 Apple 之间进行，受 <a href="https://www.apple.com/legal/privacy/">Apple 的隐私政策</a>约束，我们从不会看到你的付款详情。购买方案无需账户：你的 iPhone 会验证 Apple 签名的交易，我们的服务器不会保存与此次购买有关的任何信息。如果你登录，我们的服务器会验证该交易并将其与你的账户一起存储，这样方案就能跟随你到其他设备上。未登录时进行的购买会关联到第一个发送它的账户。我们的服务器还会接收 Apple 关于续订、退款和取消的通知，并且只将其应用于已关联账户的购买，以确保你的方案状态正确。</p>
 """,
 
 "p.third.h": "服务提供商",
@@ -446,7 +446,7 @@ COPY = {
   <li><strong>Pro 月付</strong>：按月计费。</li>
   <li><strong>Pro 年付</strong>：按年计费，符合条件的新订阅者可先享受 <strong>7 天免费试用</strong>。</li>
 </ul>
-<p>订阅需要 Second Brain 账户（通过 Apple 登录）。确认购买时，费用将从你的 Apple 账户中扣除。除非你在免费试用结束前至少 24 小时取消，否则免费试用将转为付费订阅。除非在当前周期结束前至少 24 小时关闭自动续订，否则订阅将以相同的价格和周期自动续订。你的 Apple 账户将在当前周期结束前的 24 小时内被扣取续订费用。你可以在 <a href="https://apps.apple.com/account/subscriptions">App Store 订阅设置</a>中或通过 App 内的{K_manage}管理或取消订阅。取消将在当前周期结束时生效。退款由 Apple 根据其政策处理。使用{K_restore}可在另一台设备上恢复方案。订阅不支持通过家人共享来共享。</p>
+<p>订阅无需 Second Brain 账户。没有账户时，方案的设备端功能可在使用你订阅时所用 Apple 账户的 iPhone 上使用。通过 Apple 登录后，方案会关联到你的账户，并增加云端功能。确认购买时，费用将从你的 Apple 账户中扣除。除非你在免费试用结束前至少 24 小时取消，否则免费试用将转为付费订阅。除非在当前周期结束前至少 24 小时关闭自动续订，否则订阅将以相同的价格和周期自动续订。你的 Apple 账户将在当前周期结束前的 24 小时内被扣取续订费用。你可以在 <a href="https://apps.apple.com/account/subscriptions">App Store 订阅设置</a>中或通过 App 内的{K_manage}管理或取消订阅。取消将在当前周期结束时生效。退款由 Apple 根据其政策处理。使用{K_restore}可在另一台设备上恢复方案。订阅不支持通过家人共享来共享。</p>
 <p><strong>如果订阅结束</strong>，你保存的内容都不会被删除。阅读、编辑、搜索、导出和删除仍可正常使用，免费版的每月限制将重新生效，同步和云端额度会停止。删除 App 或你的账户不会取消订阅，请通过 Apple 取消。我们可能会更改方案的价格或功能。按照 Apple 的规则要求，在涨价对你生效之前，Apple 会通知你。</p>
 """,
 "t.licence.h": "9. 许可和知识产权",

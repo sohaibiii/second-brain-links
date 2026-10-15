@@ -18,7 +18,7 @@ COPY = {
 "ui.rights": "Todos los derechos reservados.",
 "ui.store_soon": "Próximamente en el App Store",
 "ui.store_get": "Descárgalo en el App Store",
-"ui.date": "14 de octubre de 2026",
+"ui.date": "16 de octubre de 2026",
 "ui.last_updated": "Última actualización: {DATE}",
 # Shown only on translated Privacy and Terms pages.
 "ui.prevails": "Esta traducción se ofrece para tu comodidad. Si difiere de la versión en inglés, prevalece la versión en inglés.",
@@ -97,7 +97,7 @@ COPY = {
 <div class="table-wrap"><table>
 <tr><th>Dispositivo</th><td><strong>iPhone o iPad</strong> con <strong>iOS 18 o iPadOS 18</strong> o posterior.</td></tr>
 <tr><th>IA en el dispositivo</th><td>Un dispositivo compatible con <strong>Apple Intelligence</strong>, con iOS 26 o iPadOS 26 o posterior, Apple Intelligence activado y su modelo descargado. En otros dispositivos puedes seguir capturando, organizando a mano, buscando y creando recordatorios. En ese caso, el Relleno inteligente y las respuestas pueden usar Luna en la nube, si inicias sesión y lo permites.</td></tr>
-<tr><th>Cuenta</th><td><strong>Opcional.</strong> La captura, la organización, la búsqueda, la exportación y la eliminación funcionan sin cuenta. Necesitas Iniciar sesión con Apple para comprar Light o Pro, sincronizar con iCloud, usar Luna o importar el texto de páginas.</td></tr>
+<tr><th>Cuenta</th><td><strong>Opcional.</strong> La captura, la organización, la búsqueda, la exportación y la eliminación funcionan sin cuenta, y también puedes comprar Light o Pro sin ella. Necesitas Iniciar sesión con Apple para sincronizar con iCloud, usar Luna o importar el texto de páginas.</td></tr>
 <tr><th>Conexión a internet</th><td>No es necesaria para capturar, usar la IA en el dispositivo, buscar ni exportar. Sí lo es para iniciar sesión, hacer compras, sincronizar con iCloud, usar Luna, importar páginas y descargar por primera vez los archivos de voz de Apple para tu idioma.</td></tr>
 <tr><th>Permisos</th><td>Micrófono y Reconocimiento de voz para la captura de voz. Cámara o Fotos solo cuando adjuntas una imagen. Calendarios solo si conectas el Calendario de Apple. Notificaciones solo para los recordatorios y el resumen matutino. Cada permiso se pide la primera vez que lo usas.</td></tr>
 <tr><th>iCloud</th><td>Para sincronizar, una cuenta de iCloud con suficiente espacio libre. La sincronización está incluida en Light y Pro.</td></tr>
@@ -120,9 +120,9 @@ COPY = {
 "s.faq.b": """
 <dl class="faq">
 <dt>¿Necesito una cuenta?</dt>
-<dd>No. La captura, la organización, la búsqueda, los recordatorios, la exportación y la eliminación funcionan sin cuenta, en tu dispositivo. Solo necesitas una cuenta para comprar un plan, sincronizar con iCloud, usar Luna en la nube o importar el texto de páginas. Iniciar sesión nunca sube tu biblioteca de invitado existente. Tú eliges qué pensamientos copiar en la cuenta.</dd>
+<dd>No. La captura, la organización, la búsqueda, los recordatorios, la exportación y la eliminación funcionan sin cuenta, en tu dispositivo. Solo necesitas una cuenta para sincronizar con iCloud, usar Luna en la nube o importar el texto de páginas. Puedes comprar un plan sin ella. Iniciar sesión nunca sube tu biblioteca de invitado existente. Tú eliges qué pensamientos copiar en la cuenta.</dd>
 <dt>¿Qué es gratis?</dt>
-<dd>La captura escrita, las tareas y los proyectos, la búsqueda local, la transcripción en el dispositivo, los recordatorios, la edición, la exportación y la eliminación son gratis e ilimitados. El plan Gratis también incluye <strong>5 capturas de voz, 3 usos de Relleno inteligente y 5 preguntas en {K_ask} al mes</strong>, contados en cada dispositivo y restablecidos el día 1 de cada mes. Guardar nunca se bloquea: cuando llegas a un límite, puedes seguir escribiendo y guardando. Una cuenta con sesión iniciada que permita la IA en la nube también recibe una muestra única de 10 capturas con IA en la nube y 5 respuestas.</dd>
+<dd>La captura escrita, las tareas y los proyectos, la búsqueda local, la transcripción en el dispositivo, los recordatorios, la edición, la exportación y la eliminación son gratis e ilimitados. El plan Gratis también incluye <strong>20 capturas de voz, 40 usos de Relleno inteligente y 5 preguntas en {K_ask} al mes</strong>, contados en cada dispositivo y restablecidos el día 1 de cada mes. Guardar nunca se bloquea: cuando llegas a un límite, puedes seguir escribiendo y guardando. Una cuenta con sesión iniciada que permita la IA en la nube también recibe una muestra única de 10 capturas con IA en la nube y 5 respuestas.</dd>
 <dt>¿Qué añaden Light y Pro?</dt>
 <dd><strong>Light</strong> elimina los límites mensuales de captura de voz, Relleno inteligente y «Pregunta a tu cerebro», añade el {K_quick} y la sincronización privada con iCloud, e incluye 300 capturas con IA en la nube y 100 respuestas en la nube al mes. <strong>Pro</strong> ofrece 700 capturas con IA en la nube y 250 respuestas en la nube al mes, un resumen diario en la nube y la importación del texto de páginas web. Light se factura cada mes. Pro puede ser mensual o anual, y el plan anual empieza con 7 días gratis para nuevos suscriptores que cumplan los requisitos. Los precios se muestran en la app y en el App Store para tu país, y Apple gestiona la facturación.</dd>
 <dt>¿En qué se diferencian la IA en el dispositivo y Luna?</dt>
@@ -138,7 +138,7 @@ COPY = {
 <dt>¿Qué pasa si termina mi suscripción?</dt>
 <dd>No se elimina nada de lo que guardaste. La lectura, la edición, la búsqueda, la exportación y la eliminación siguen funcionando, y vuelven a aplicarse los límites mensuales gratuitos. La sincronización y los cupos en la nube se detienen hasta que vuelvas a suscribirte.</dd>
 <dt>¿Cómo restauro una compra en un dispositivo nuevo?</dt>
-<dd>Inicia sesión con la misma Cuenta de Apple que usaste al suscribirte y toca {K_restore} en la pantalla de planes. Un plan pertenece a tu cuenta de Second Brain, que está vinculada a tu Cuenta de Apple.</dd>
+<dd>En el dispositivo nuevo, usa la misma Cuenta de Apple con la que te suscribiste y toca {K_restore} en la pantalla de planes. Las funciones del plan en ese iPhone se activan al momento. Si el plan está vinculado a tu cuenta de Second Brain, inicia sesión también con Apple para recuperar la sincronización con iCloud y tu cupo en la nube.</dd>
 <dt>¿Puedo usar la app en mi idioma?</dt>
 <dd>Second Brain habla ocho idiomas y sigue el idioma de tu dispositivo. Para elegir otro sin cambiar nada más, abre {K_settings} → {K_language}. A partir de entonces, la captura de voz escucha en ese idioma.</dd>
 <dt>¿Cómo saco mis datos o los elimino?</dt>
@@ -169,7 +169,7 @@ COPY = {
 <h3>No llegan los recordatorios</h3>
 <p>{K_settings} muestra si las {K_reminders} están activadas. Si se desactivaron, toca la fila para abrir los Ajustes de iOS y permitirlas.</p>
 <h3>No se reconoce mi plan</h3>
-<p>Asegúrate de haber iniciado sesión en Second Brain con la misma Cuenta de Apple con la que te suscribiste y toca {K_restore}. Los reembolsos y las dudas sobre facturación los gestiona Apple a través del <a href="https://support.apple.com/billing">Soporte técnico de Apple</a>.</p>
+<p>Asegúrate de que tu iPhone usa la misma Cuenta de Apple con la que te suscribiste y toca {K_restore}. Si el plan está vinculado a tu cuenta de Second Brain, inicia sesión también con Apple. Los reembolsos y las dudas sobre facturación los gestiona Apple a través del <a href="https://support.apple.com/billing">Soporte técnico de Apple</a>.</p>
 <h3>La app está en el idioma equivocado</h3>
 <p>Abre {K_settings} → {K_language} y elige el que quieras. La app, sus widgets y su opción del menú Compartir cambian al instante.</p>
 """,
@@ -212,7 +212,7 @@ COPY = {
 "a.price.b": """
 <p>Second Brain se puede usar gratis, y guardar nunca se bloquea. Light y Pro eliminan los límites mensuales y añaden sincronización e IA en la nube.</p>
 <div class="tiers" style="margin-top:16px">
-  <div class="tier"><div class="lbl">Gratis</div><div class="price">$0</div><ul><li>Captura escrita, tareas, proyectos, búsqueda, recordatorios y exportación ilimitados</li><li>5 capturas de voz, 3 usos de Relleno inteligente y 5 preguntas al mes</li><li>IA en el dispositivo en los dispositivos compatibles</li></ul></div>
+  <div class="tier"><div class="lbl">Gratis</div><div class="price">$0</div><ul><li>Captura escrita, tareas, proyectos, búsqueda, recordatorios y exportación ilimitados</li><li>20 capturas de voz, 40 usos de Relleno inteligente y 5 preguntas al mes</li><li>IA en el dispositivo en los dispositivos compatibles</li></ul></div>
   <div class="tier"><div class="lbl">Light</div><div class="price">Mensual</div><ul><li>Captura de voz, Relleno inteligente y preguntas ilimitados</li><li>Modo rápido</li><li>Sincronización privada con iCloud</li><li>300 capturas con IA en la nube y 100 respuestas en la nube al mes</li></ul></div>
   <div class="tier pro"><div class="lbl">Pro</div><div class="price">Mensual · Anual</div><ul><li>Todo lo de Light</li><li>700 capturas con IA en la nube y 250 respuestas en la nube al mes</li><li>Un resumen diario en la nube</li><li>Importación del texto de páginas web</li><li>El plan anual empieza con 7 días gratis</li></ul></div>
 </div>
@@ -339,7 +339,7 @@ COPY = {
 
 "p.purchases.h": "Compras",
 "p.purchases.b": """
-<p>Light y Pro se venden a través del App Store de Apple. El pago se realiza entre tú y Apple, según la <a href="https://www.apple.com/legal/privacy/">política de privacidad de Apple</a>, y nunca vemos tus datos de pago. Para comprar un plan se necesita una cuenta de Second Brain, de modo que el plan te acompañe en tus otros dispositivos. Nuestro servidor verifica la transacción que firma Apple, la almacena con tu cuenta y recibe los avisos de Apple sobre renovaciones, reembolsos y cancelaciones para que tu plan esté siempre al día.</p>
+<p>Light y Pro se venden a través del App Store de Apple. El pago se realiza entre tú y Apple, según la <a href="https://www.apple.com/legal/privacy/">política de privacidad de Apple</a>, y nunca vemos tus datos de pago. Puedes comprar un plan sin cuenta: tu iPhone verifica la transacción que firma Apple y nuestro servidor no guarda nada sobre la compra. Si inicias sesión, nuestro servidor verifica esa transacción y la almacena con tu cuenta, de modo que el plan te acompañe en tus otros dispositivos. Una compra hecha sin cuenta se vincula a la primera cuenta que la envía. Nuestro servidor también recibe los avisos de Apple sobre renovaciones, reembolsos y cancelaciones y solo los aplica a compras vinculadas a una cuenta, para que tu plan esté siempre al día.</p>
 """,
 
 "p.third.h": "Proveedores de servicios",
@@ -452,7 +452,7 @@ COPY = {
   <li><strong>Pro mensual</strong>: se factura cada mes.</li>
   <li><strong>Pro anual</strong>: se factura cada año y empieza con una <strong>prueba gratuita de 7 días</strong> para nuevos suscriptores que cumplan los requisitos.</li>
 </ul>
-<p>Necesitas una cuenta de Second Brain (Iniciar sesión con Apple) para suscribirte. El pago se carga en tu Cuenta de Apple cuando confirmas la compra. Una prueba gratuita se convierte en una suscripción de pago a menos que la canceles al menos 24 horas antes de que termine. Las suscripciones se renuevan automáticamente al mismo precio y por el mismo periodo, a menos que se desactive la renovación automática al menos 24 horas antes del final del periodo actual. La renovación se cobra en tu Cuenta de Apple dentro de las 24 horas anteriores al final de ese periodo. Puedes gestionar o cancelar una suscripción en los <a href="https://apps.apple.com/account/subscriptions">ajustes de suscripciones del App Store</a> o desde {K_manage} en la app. La cancelación se hace efectiva al final del periodo actual. Apple gestiona los reembolsos según sus políticas. Usa {K_restore} para recuperar un plan en otro dispositivo. Las suscripciones no se comparten mediante En familia.</p>
+<p>Puedes suscribirte sin una cuenta de Second Brain. Sin cuenta, las funciones del plan en el dispositivo funcionan en los iPhone que usan la Cuenta de Apple con la que te suscribiste. Iniciar sesión con Apple vincula el plan a tu cuenta y añade sus funciones en la nube. El pago se carga en tu Cuenta de Apple cuando confirmas la compra. Una prueba gratuita se convierte en una suscripción de pago a menos que la canceles al menos 24 horas antes de que termine. Las suscripciones se renuevan automáticamente al mismo precio y por el mismo periodo, a menos que se desactive la renovación automática al menos 24 horas antes del final del periodo actual. La renovación se cobra en tu Cuenta de Apple dentro de las 24 horas anteriores al final de ese periodo. Puedes gestionar o cancelar una suscripción en los <a href="https://apps.apple.com/account/subscriptions">ajustes de suscripciones del App Store</a> o desde {K_manage} en la app. La cancelación se hace efectiva al final del periodo actual. Apple gestiona los reembolsos según sus políticas. Usa {K_restore} para recuperar un plan en otro dispositivo. Las suscripciones no se comparten mediante En familia.</p>
 <p><strong>Si una suscripción termina</strong>, no se elimina nada de lo que guardaste. La lectura, la edición, la búsqueda, la exportación y la eliminación siguen funcionando, vuelven a aplicarse los límites mensuales gratuitos, y la sincronización y los cupos en la nube se detienen. Eliminar la app o tu cuenta no cancela una suscripción. Cancélala con Apple. Podemos cambiar los precios o las funciones de un plan. Apple te avisará antes de que se te aplique una subida de precio, como exigen sus normas.</p>
 """,
 "t.licence.h": "9. Licencia y propiedad intelectual",

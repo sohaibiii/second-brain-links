@@ -18,7 +18,7 @@ COPY = {
 "ui.rights": "Tous droits réservés.",
 "ui.store_soon": "Bientôt sur l’App Store",
 "ui.store_get": "Télécharger dans l’App Store",
-"ui.date": "14 octobre 2026",
+"ui.date": "16 octobre 2026",
 "ui.last_updated": "Dernière mise à jour : {DATE}",
 # Shown only on translated Privacy and Terms pages.
 "ui.prevails": "Cette traduction est fournie pour votre commodité. En cas de divergence avec la version anglaise, la version anglaise prévaut.",
@@ -97,7 +97,7 @@ COPY = {
 <div class="table-wrap"><table>
 <tr><th>Appareil</th><td><strong>iPhone ou iPad</strong> avec <strong>iOS 18 ou iPadOS 18</strong> ou version ultérieure.</td></tr>
 <tr><th>IA sur l’appareil</th><td>Un appareil compatible avec <strong>Apple Intelligence</strong>, sous iOS 26 ou iPadOS 26 ou version ultérieure, avec Apple Intelligence activée et son modèle téléchargé. Sur les autres appareils, vous pouvez quand même capturer, organiser à la main, rechercher et définir des rappels. Le Remplissage intelligent et les réponses peuvent alors utiliser Luna dans le cloud, si vous vous connectez et l’autorisez.</td></tr>
-<tr><th>Compte</th><td><strong>Facultatif.</strong> La capture, l’organisation, la recherche, l’exportation et la suppression fonctionnent sans compte. « Se connecter avec Apple » est nécessaire pour acheter Light ou Pro, synchroniser avec iCloud, utiliser Luna ou importer le texte d’une page.</td></tr>
+<tr><th>Compte</th><td><strong>Facultatif.</strong> La capture, l’organisation, la recherche, l’exportation et la suppression fonctionnent sans compte, tout comme l’achat de Light ou Pro. « Se connecter avec Apple » est nécessaire pour synchroniser avec iCloud, utiliser Luna ou importer le texte d’une page.</td></tr>
 <tr><th>Connexion Internet</th><td>Inutile pour la capture, l’IA sur l’appareil, la recherche ou l’exportation. Nécessaire pour la connexion au compte, les achats, la synchronisation iCloud, Luna, l’import de pages et le premier téléchargement des ressources vocales d’Apple pour votre langue.</td></tr>
 <tr><th>Autorisations</th><td>Micro et Reconnaissance vocale pour la capture vocale. Appareil photo ou Photos uniquement quand vous joignez une image. Calendriers uniquement si vous connectez l’app Calendrier. Notifications uniquement pour les rappels et le résumé du matin. Chaque autorisation est demandée la première fois que vous en avez besoin.</td></tr>
 <tr><th>iCloud</th><td>Pour la synchronisation, un compte iCloud avec suffisamment d’espace libre. La synchronisation est incluse avec Light et Pro.</td></tr>
@@ -120,9 +120,9 @@ COPY = {
 "s.faq.b": """
 <dl class="faq">
 <dt>Ai-je besoin d’un compte ?</dt>
-<dd>Non. La capture, l’organisation, la recherche, les rappels, l’exportation et la suppression fonctionnent tous sans compte, sur votre appareil. Un compte n’est nécessaire que pour acheter une formule, synchroniser avec iCloud, utiliser Luna dans le cloud ou importer le texte d’une page. Se connecter n’envoie jamais votre bibliothèque invité existante : vous choisissez quelles pensées copier dans le compte.</dd>
+<dd>Non. La capture, l’organisation, la recherche, les rappels, l’exportation et la suppression fonctionnent tous sans compte, sur votre appareil. Un compte n’est nécessaire que pour synchroniser avec iCloud, utiliser Luna dans le cloud ou importer le texte d’une page. Vous pouvez acheter une formule sans compte. Se connecter n’envoie jamais votre bibliothèque invité existante : vous choisissez quelles pensées copier dans le compte.</dd>
 <dt>Qu’est-ce qui est gratuit ?</dt>
-<dd>La capture écrite, les tâches et les projets, la recherche locale, la transcription sur l’appareil, les rappels, la modification, l’exportation et la suppression sont gratuits et illimités. La formule Gratuit inclut aussi <strong>5 captures vocales, 3 Remplissages intelligents et 5 questions dans {K_ask} chaque mois</strong>, comptés sur chaque appareil et renouvelés le 1er du mois. L’enregistrement n’est jamais bloqué : quand une limite est atteinte, vous pouvez toujours taper et enregistrer. Un compte connecté qui autorise l’IA cloud reçoit aussi un essai unique de 10 captures avec l’IA cloud et 5 réponses.</dd>
+<dd>La capture écrite, les tâches et les projets, la recherche locale, la transcription sur l’appareil, les rappels, la modification, l’exportation et la suppression sont gratuits et illimités. La formule Gratuit inclut aussi <strong>20 captures vocales, 40 Remplissages intelligents et 5 questions dans {K_ask} chaque mois</strong>, comptés sur chaque appareil et renouvelés le 1er du mois. L’enregistrement n’est jamais bloqué : quand une limite est atteinte, vous pouvez toujours taper et enregistrer. Un compte connecté qui autorise l’IA cloud reçoit aussi un essai unique de 10 captures avec l’IA cloud et 5 réponses.</dd>
 <dt>Qu’apportent Light et Pro ?</dt>
 <dd><strong>Light</strong> supprime les limites mensuelles de la capture vocale, du Remplissage intelligent et d’Interroger votre Brain, ajoute le {K_quick} et la synchronisation iCloud privée, et inclut 300 captures IA cloud et 100 réponses cloud par mois. <strong>Pro</strong> porte ce quota à 700 captures IA cloud et 250 réponses cloud par mois, et ajoute un résumé quotidien cloud et l’import du texte d’une page web. Light est facturé tous les mois. Pro est mensuel ou annuel, et la formule annuelle commence par 7 jours gratuits pour les nouveaux abonnés éligibles. Les prix sont affichés dans l’app et sur l’App Store pour votre pays, et la facturation est gérée par Apple.</dd>
 <dt>Quelle est la différence entre l’IA sur l’appareil et Luna ?</dt>
@@ -138,7 +138,7 @@ COPY = {
 <dt>Que se passe-t-il si mon abonnement prend fin ?</dt>
 <dd>Rien de ce que vous avez enregistré n’est supprimé. La lecture, la modification, la recherche, l’exportation et la suppression continuent de fonctionner, et les limites mensuelles gratuites s’appliquent de nouveau. La synchronisation et les quotas cloud s’arrêtent jusqu’à ce que vous vous réabonniez.</dd>
 <dt>Comment restaurer un achat sur un nouvel appareil ?</dt>
-<dd>Connectez-vous avec le compte Apple utilisé lors de votre abonnement, puis touchez {K_restore} sur l’écran des formules. Une formule appartient à votre compte Second Brain, qui est lié à votre compte Apple.</dd>
+<dd>Sur le nouvel appareil, utilisez le compte Apple avec lequel vous vous êtes abonné, puis touchez {K_restore} sur l’écran des formules. Les fonctions de votre formule sur cet iPhone s’activent aussitôt. Si la formule est liée à votre compte Second Brain, connectez-vous aussi avec Apple pour retrouver la synchronisation iCloud et votre quota cloud.</dd>
 <dt>Puis-je utiliser l’app dans ma langue ?</dt>
 <dd>Second Brain parle huit langues et suit la langue de votre appareil. Pour en choisir une autre sans rien changer d’autre, ouvrez {K_settings} → {K_language}. La capture vocale écoute alors dans cette langue.</dd>
 <dt>Comment récupérer mes données, ou les supprimer ?</dt>
@@ -169,7 +169,7 @@ COPY = {
 <h3>Les rappels n’arrivent pas</h3>
 <p>{K_settings} indique si les {K_reminders} sont activées. Si elles ont été désactivées, touchez la ligne pour ouvrir les Réglages d’iOS et les autoriser.</p>
 <h3>Ma formule n’est pas reconnue</h3>
-<p>Vérifiez que vous êtes connecté à Second Brain avec le compte Apple utilisé pour vous abonner, puis touchez {K_restore}. Les remboursements et les questions de facturation sont traités par Apple via l’<a href="https://support.apple.com/billing">Assistance Apple</a>.</p>
+<p>Vérifiez que votre iPhone utilise le compte Apple avec lequel vous vous êtes abonné, puis touchez {K_restore}. Si la formule est liée à votre compte Second Brain, connectez-vous aussi avec Apple. Les remboursements et les questions de facturation sont traités par Apple via l’<a href="https://support.apple.com/billing">Assistance Apple</a>.</p>
 <h3>L’app n’est pas dans la bonne langue</h3>
 <p>Ouvrez {K_settings} → {K_language} et choisissez celle que vous voulez. L’app, ses widgets et l’extension de partage suivent immédiatement.</p>
 """,
@@ -206,7 +206,7 @@ COPY = {
 "a.price.b": """
 <p>Second Brain est gratuit, et l’enregistrement n’est jamais bloqué. Light et Pro suppriment les limites mensuelles et ajoutent la synchronisation et l’IA cloud.</p>
 <div class="tiers" style="margin-top:16px">
-  <div class="tier"><div class="lbl">Gratuit</div><div class="price">0 $</div><ul><li>Capture écrite, tâches, projets, recherche, rappels et exportation illimités</li><li>5 captures vocales, 3 Remplissages intelligents et 5 questions par mois</li><li>IA sur l’appareil sur les appareils compatibles</li></ul></div>
+  <div class="tier"><div class="lbl">Gratuit</div><div class="price">0 $</div><ul><li>Capture écrite, tâches, projets, recherche, rappels et exportation illimités</li><li>20 captures vocales, 40 Remplissages intelligents et 5 questions par mois</li><li>IA sur l’appareil sur les appareils compatibles</li></ul></div>
   <div class="tier"><div class="lbl">Light</div><div class="price">Mensuel</div><ul><li>Capture vocale, Remplissage intelligent et questions illimités</li><li>Mode rapide</li><li>Synchronisation iCloud privée</li><li>300 captures IA cloud et 100 réponses cloud par mois</li></ul></div>
   <div class="tier pro"><div class="lbl">Pro</div><div class="price">Mensuel · Annuel</div><ul><li>Tout Light</li><li>700 captures IA cloud et 250 réponses cloud par mois</li><li>Un résumé quotidien cloud</li><li>Import du texte d’une page web</li><li>L’annuel commence par 7 jours gratuits</li></ul></div>
 </div>
@@ -333,7 +333,7 @@ COPY = {
 
 "p.purchases.h": "Achats",
 "p.purchases.b": """
-<p>Light et Pro sont vendus via l’App Store d’Apple. Le paiement se fait entre vous et Apple, conformément à la <a href="https://www.apple.com/legal/privacy/">politique de confidentialité d’Apple</a>, et nous ne voyons jamais vos informations de paiement. L’achat d’une formule nécessite un compte Second Brain, pour que la formule vous suive sur vos autres appareils. Notre serveur vérifie la transaction signée par Apple, la stocke avec votre compte, et reçoit les avis d’Apple concernant les renouvellements, remboursements et résiliations, pour que votre formule reste à jour.</p>
+<p>Light et Pro sont vendus via l’App Store d’Apple. Le paiement se fait entre vous et Apple, conformément à la <a href="https://www.apple.com/legal/privacy/">politique de confidentialité d’Apple</a>, et nous ne voyons jamais vos informations de paiement. Vous pouvez acheter une formule sans compte : votre iPhone vérifie la transaction signée par Apple, et notre serveur ne conserve rien sur l’achat. Si vous vous connectez, notre serveur vérifie cette transaction et la stocke avec votre compte, pour que la formule vous suive sur vos autres appareils. Un achat fait sans compte est lié au premier compte qui l’envoie. Notre serveur reçoit aussi les avis d’Apple concernant les renouvellements, remboursements et résiliations, et ne les applique qu’aux achats liés à un compte, pour que votre formule reste à jour.</p>
 """,
 
 "p.third.h": "Prestataires de services",
@@ -446,7 +446,7 @@ COPY = {
   <li><strong>Pro mensuel</strong> : facturé tous les mois.</li>
   <li><strong>Pro annuel</strong> : facturé tous les ans, en commençant par un <strong>essai gratuit de 7 jours</strong> pour les nouveaux abonnés éligibles.</li>
 </ul>
-<p>Vous devez avoir un compte Second Brain (« Se connecter avec Apple ») pour vous abonner. Le paiement est débité de votre compte Apple lorsque vous confirmez l’achat. Un essai gratuit se transforme en abonnement payant, sauf si vous l’annulez au moins 24 heures avant sa fin. Les abonnements se renouvellent automatiquement au même prix et pour la même durée, sauf si le renouvellement automatique est désactivé au moins 24 heures avant la fin de la période en cours. Le renouvellement est débité de votre compte Apple dans les 24 heures précédant la fin de cette période. Vous pouvez gérer ou résilier un abonnement dans les <a href="https://apps.apple.com/account/subscriptions">réglages d’abonnement de l’App Store</a> ou depuis {K_manage} dans l’app. La résiliation prend effet à la fin de la période en cours. Les remboursements sont gérés par Apple selon ses propres règles. Utilisez {K_restore} pour récupérer une formule sur un autre appareil. Les abonnements ne sont pas partagés via le Partage familial.</p>
+<p>Vous pouvez vous abonner sans compte Second Brain. Sans compte, les fonctions de la formule sur l’appareil fonctionnent sur les iPhone qui utilisent le compte Apple avec lequel vous vous êtes abonné. Se connecter avec Apple lie la formule à votre compte et ajoute ses fonctions cloud. Le paiement est débité de votre compte Apple lorsque vous confirmez l’achat. Un essai gratuit se transforme en abonnement payant, sauf si vous l’annulez au moins 24 heures avant sa fin. Les abonnements se renouvellent automatiquement au même prix et pour la même durée, sauf si le renouvellement automatique est désactivé au moins 24 heures avant la fin de la période en cours. Le renouvellement est débité de votre compte Apple dans les 24 heures précédant la fin de cette période. Vous pouvez gérer ou résilier un abonnement dans les <a href="https://apps.apple.com/account/subscriptions">réglages d’abonnement de l’App Store</a> ou depuis {K_manage} dans l’app. La résiliation prend effet à la fin de la période en cours. Les remboursements sont gérés par Apple selon ses propres règles. Utilisez {K_restore} pour récupérer une formule sur un autre appareil. Les abonnements ne sont pas partagés via le Partage familial.</p>
 <p><strong>Si un abonnement prend fin</strong>, rien de ce que vous avez enregistré n’est supprimé. La lecture, la modification, la recherche, l’exportation et la suppression continuent de fonctionner, les limites mensuelles gratuites s’appliquent de nouveau, et la synchronisation et les quotas cloud s’arrêtent. Supprimer l’app ou votre compte ne résilie pas un abonnement : résiliez-le auprès d’Apple. Nous pouvons modifier les prix ou les fonctionnalités d’une formule. Apple vous informera avant qu’une hausse de prix ne s’applique à vous, comme l’exigent ses règles.</p>
 """,
 "t.licence.h": "9. Licence et propriété intellectuelle",
