@@ -49,7 +49,7 @@ COPY = {
 "k.smart_org": "Organización inteligente",
 "k.smart_fill": "Relleno inteligente",
 "k.quick": "Modo rápido",
-"k.ask": "Pregunta a tu cerebro",
+"k.ask": "Pregunta a tus notas",
 "k.calendars": "Conectar el Calendario de Apple",
 "k.morning": "Resumen matutino",
 "k.reminders": "Notificaciones de recordatorios",
@@ -58,17 +58,17 @@ COPY = {
 "k.undo": "Deshacer",
 "k.widgets": "Mostrar títulos en los widgets",
 
-"meta.support.title": "Second Brain — Soporte",
-"meta.support.desc": "Soporte oficial de Second Brain: cómo funcionan la captura, el Relleno inteligente y «Pregunta a tu cerebro», qué necesita la app, respuestas a preguntas frecuentes y cómo contactarnos.",
-"meta.about.title": "Second Brain — Solo dilo. Nosotros lo ordenamos.",
+"meta.support.title": "Second Brain: Voice Planner — Soporte",
+"meta.support.desc": "Soporte oficial de Second Brain: cómo funcionan la captura, el Relleno inteligente y «Pregunta a tus notas», qué necesita la app, respuestas a preguntas frecuentes y cómo contactarnos.",
+"meta.about.title": "Second Brain: Voice Planner — Tareas y notas con IA privada",
 "meta.about.desc": "Second Brain convierte lo que dices o escribes en tareas, eventos, notas e ideas, conserva tu original y responde preguntas a partir de lo que has guardado, con la IA en el dispositivo como primera opción.",
-"meta.privacy.title": "Política de privacidad — Second Brain",
+"meta.privacy.title": "Política de privacidad — Second Brain: Voice Planner",
 "meta.privacy.desc": "Qué guarda Second Brain en tu dispositivo, qué llega a iCloud, qué conserva nuestro servidor y cuándo exactamente se envían tus palabras a la IA en la nube.",
-"meta.terms.title": "Términos de uso — Second Brain",
+"meta.terms.title": "Términos de uso — Second Brain: Voice Planner",
 "meta.terms.desc": "Términos de uso (EULA) de Second Brain: tu contenido, las funciones de IA, los cupos en la nube y cómo se facturan las suscripciones Light y Pro.",
-"meta.data.title": "Elimina tus datos — Second Brain",
+"meta.data.title": "Elimina tus datos — Second Brain: Voice Planner",
 "meta.data.desc": "Cómo exportar tu biblioteca, eliminarla de este dispositivo y eliminar tu cuenta de Second Brain y todo lo que contiene en iCloud y en nuestro servidor.",
-"meta.nf.title": "Página no encontrada — Second Brain",
+"meta.nf.title": "Página no encontrada — Second Brain: Voice Planner",
 "meta.nf.desc": "No se ha encontrado la página.",
 
 # --- support --------------------------------------------------------------
@@ -85,7 +85,7 @@ COPY = {
 <ul class="rows">
   <li><span class="tile">{mic}</span><div><b>Captura</b><span>La captura de voz empieza a grabar en cuanto se abre. También puedes escribir, compartir texto, enlaces, fotos o archivos desde otras apps, o adjuntarlos a una captura.</span></div></li>
   <li><span class="tile">{sparkle}</span><div><b>Relleno inteligente y revisión</b><span>Toca Listo y el Relleno inteligente prepara borradores de tareas, eventos, notas e ideas con sus fechas y horas. Puedes editar cada campo antes de tocar Crear. Lo que no tenga claro queda resaltado o va a {K_needs_review}.</span></div></li>
-  <li><span class="tile">{chat}</span><div><b>Pregunta a tu cerebro</b><span>Haz una pregunta con tus propias palabras. Las respuestas salen solo de lo que has guardado, con las fuentes indicadas para que puedas abrirlas y comprobarlas.</span></div></li>
+  <li><span class="tile">{chat}</span><div><b>Pregunta a tus notas</b><span>Haz una pregunta con tus propias palabras. Las respuestas salen solo de lo que has guardado, con las fuentes indicadas para que puedas abrirlas y comprobarlas.</span></div></li>
   <li><span class="tile">{calendar}</span><div><b>Hoy y Calendario</b><span>Lo que vence, lo que viene y lo que importa, además de una vista semanal con tu Calendario de Apple junto a tus tareas. Recordatorios opcionales y un resumen matutino.</span></div></li>
   <li><span class="tile">{undo}</span><div><b>Tu original, siempre</b><span>Las palabras que capturaste se quedan en tu biblioteca junto a lo que se creó a partir de ellas. {K_undo} revierte cualquier organización, y los elementos eliminados esperan en {K_recently_deleted} durante 30 días.</span></div></li>
   <li><span class="tile">{lock}</span><div><b>Privado por defecto</b><span>La organización y las respuestas se generan en tu dispositivo con el modelo integrado de Apple, si tu dispositivo es compatible. La sincronización en la nube y la IA en la nube permanecen desactivadas hasta que tú las elijas. Consulta <a href="{BASE}{L}/privacy/">Privacidad</a>.</span></div></li>
@@ -111,7 +111,7 @@ COPY = {
   <li><div><b>Abre Second Brain.</b> No hace falta registrarse. Tu biblioteca está en tu dispositivo desde el primer segundo.</div></li>
   <li><div><b>Toca el micrófono y di lo que tienes en mente.</b> Permite el acceso al micrófono y al reconocimiento de voz cuando iOS te lo pida. O escribe.</div></li>
   <li><div><b>Toca Listo.</b> El Relleno inteligente prepara borradores de tareas, eventos, notas e ideas. Revisa cada campo, cambia lo que quieras y toca Crear.</div></li>
-  <li><div><b>Pregunta a tu cerebro.</b> Pregunta «¿qué le prometí a Sam?» o «¿cuándo es el dentista?» y abre las fuentes citadas para comprobarlo.</div></li>
+  <li><div><b>Pregunta a tus notas.</b> Pregunta «¿qué le prometí a Sam?» o «¿cuándo es el dentista?» y abre las fuentes citadas para comprobarlo.</div></li>
   <li><div><b>Opcional:</b> para sincronizar con iCloud o usar Luna, abre {K_settings} → {K_cloud_choices} e inicia sesión con Apple. Cada opción tiene su propio interruptor.</div></li>
 </ol>
 """,
@@ -124,7 +124,7 @@ COPY = {
 <dt>¿Qué es gratis?</dt>
 <dd>La captura escrita, las tareas y los proyectos, la búsqueda local, la transcripción en el dispositivo, los recordatorios, la edición, la exportación y la eliminación son gratis e ilimitados. El plan Gratis también incluye <strong>20 capturas de voz, 40 usos de Relleno inteligente y 5 preguntas en {K_ask} al mes</strong>, contados en cada dispositivo y restablecidos el día 1 de cada mes. Guardar nunca se bloquea: cuando llegas a un límite, puedes seguir escribiendo y guardando. Una cuenta con sesión iniciada que permita la IA en la nube también recibe una muestra única de 10 capturas con IA en la nube y 5 respuestas.</dd>
 <dt>¿Qué añaden Light y Pro?</dt>
-<dd><strong>Light</strong> elimina los límites mensuales de captura de voz, Relleno inteligente y «Pregunta a tu cerebro», añade el {K_quick} y la sincronización privada con iCloud, e incluye 300 capturas con IA en la nube y 100 respuestas en la nube al mes. <strong>Pro</strong> ofrece 700 capturas con IA en la nube y 250 respuestas en la nube al mes, un resumen diario en la nube y la importación del texto de páginas web. Light se factura cada mes. Pro puede ser mensual o anual, y el plan anual empieza con 7 días gratis para nuevos suscriptores que cumplan los requisitos. Los precios se muestran en la app y en el App Store para tu país, y Apple gestiona la facturación.</dd>
+<dd><strong>Light</strong> elimina los límites mensuales de captura de voz, Relleno inteligente y «Pregunta a tus notas», añade el {K_quick} y la sincronización privada con iCloud, e incluye 300 capturas con IA en la nube y 100 respuestas en la nube al mes. <strong>Pro</strong> ofrece 700 capturas con IA en la nube y 250 respuestas en la nube al mes, un resumen diario en la nube y la importación del texto de páginas web. Light se factura cada mes. Pro puede ser mensual o anual, y el plan anual empieza con 7 días gratis para nuevos suscriptores que cumplan los requisitos. Los precios se muestran en la app y en el App Store para tu país, y Apple gestiona la facturación.</dd>
 <dt>¿En qué se diferencian la IA en el dispositivo y Luna?</dt>
 <dd>La IA en el dispositivo es el modelo de Apple que funciona en tu dispositivo. Nada de lo que escribes sale de él. Luna es un modelo en la nube de OpenAI que funciona a través de nuestro servidor. Solo se usa si inicias sesión y activas {K_luna}, y solo dentro del cupo en la nube de tu plan. La IA en el dispositivo va primero. Luna se encarga cuando tu dispositivo no puede. Light y Pro pueden elegir Luna como motor principal en {K_settings}. Las capturas marcadas con {K_device_only} nunca van a Luna, elijas el motor que elijas.</dd>
 <dt>¿Qué hace «{K_device_only}»?</dt>
@@ -182,12 +182,12 @@ COPY = {
 """,
 
 # --- about ----------------------------------------------------------------
-"a.eyebrow": "Acerca de Second Brain",
+"a.eyebrow": "Second Brain: Voice Planner",
 "a.h1": "Solo dilo. Nosotros lo ordenamos.",
 "a.sub": "Habla como piensas. Second Brain lo convierte en tareas, eventos, notas e ideas, conserva tu original y lo vuelve a encontrar cuando preguntas.",
 "a.cta": "Soporte",
-"a.meta": "iPhone y iPad · iOS 18+ · ocho idiomas · funciona sin cuenta",
-"a.lead": "Second Brain es un lugar tranquilo para todo lo que tienes en mente. Captúralo en segundos con la voz o por escrito, comprueba lo que el Relleno inteligente ha hecho con ello y pregunta a tu cerebro cuando lo necesites, con fuentes que puedes abrir y comprobar.",
+"a.meta": "Tareas y notas con IA privada · iPhone y iPad · iOS 18+ · ocho idiomas · funciona sin cuenta",
+"a.lead": "Second Brain es un lugar tranquilo para todo lo que tienes en mente. Captúralo en segundos con la voz o por escrito, comprueba lo que el Relleno inteligente ha hecho con ello y pregunta a tus notas cuando lo necesites, con fuentes que puedes abrir y comprobar.",
 
 "a.f1.icon": "mic",
 "a.f1.h": "Solo dilo.",
@@ -287,7 +287,7 @@ COPY = {
 <p>En cada solicitud solo se envía el texto necesario para ella:</p>
 <ul>
   <li><strong>Organización y Relleno inteligente</strong>: el texto de la captura que se organiza, incluido el texto extraído en tu dispositivo de una foto o un PDF adjuntos, tu zona horaria y tu idioma, y los nombres y breves resúmenes de hasta 30 de tus proyectos.</li>
-  <li><strong>Pregunta a tu cerebro</strong>: tu pregunta y breves fragmentos de hasta 12 elementos guardados que tu dispositivo eligió como relevantes.</li>
+  <li><strong>Pregunta a tus notas</strong>: tu pregunta y breves fragmentos de hasta 12 elementos guardados que tu dispositivo eligió como relevantes.</li>
   <li><strong>Ordenar</strong> (Light y Pro): el texto de la nota que pediste ordenar.</li>
   <li><strong>Resumen diario</strong> (Pro): recuentos de lo que vence y breves fragmentos de hasta 10 de tus elementos de ese día.</li>
 </ul>
@@ -446,7 +446,7 @@ COPY = {
 """,
 "t.subscriptions.h": "8. Suscripciones y facturación",
 "t.subscriptions.b": """
-<p>Second Brain se puede descargar y usar gratis, con límites mensuales de captura de voz, Relleno inteligente y «Pregunta a tu cerebro» en cada dispositivo. Guardar lo que capturas nunca se bloquea. Los planes de pago son suscripciones con renovación automática que se venden a través de Apple, al precio que se muestra en la app y en el App Store para tu país:</p>
+<p>Second Brain se puede descargar y usar gratis, con límites mensuales de captura de voz, Relleno inteligente y «Pregunta a tus notas» en cada dispositivo. Guardar lo que capturas nunca se bloquea. Los planes de pago son suscripciones con renovación automática que se venden a través de Apple, al precio que se muestra en la app y en el App Store para tu país:</p>
 <ul>
   <li><strong>Light mensual</strong>: se factura cada mes.</li>
   <li><strong>Pro mensual</strong>: se factura cada mes.</li>
@@ -457,7 +457,7 @@ COPY = {
 """,
 "t.licence.h": "9. Licencia y propiedad intelectual",
 "t.licence.b": """
-<p>Te concedemos una licencia personal, no exclusiva, intransferible y revocable para usar Second Brain en dispositivos Apple de tu propiedad o bajo tu control, conforme a estos Términos y a las Reglas de uso del App Store. Second Brain, su nombre, diseño, ilustraciones (incluido el personaje del cerebro), textos y código pertenecen a {COMPANY} y están protegidos por la ley. No puedes copiar, modificar, distribuir, vender, arrendar ni aplicar ingeniería inversa a la app, ni crear obras derivadas de ella, salvo cuando la ley lo permita expresamente.</p>
+<p>Te concedemos una licencia personal, no exclusiva, intransferible y revocable para usar Second Brain en dispositivos Apple de tu propiedad o bajo tu control, conforme a estos Términos y a las Reglas de uso del App Store. Second Brain, su nombre, diseño, ilustraciones (incluido el personaje acompañante), textos y código pertenecen a {COMPANY} y están protegidos por la ley. No puedes copiar, modificar, distribuir, vender, arrendar ni aplicar ingeniería inversa a la app, ni crear obras derivadas de ella, salvo cuando la ley lo permita expresamente.</p>
 """,
 "t.use.h": "10. Uso aceptable",
 "t.use.b": """

@@ -63,7 +63,7 @@ COPY = {
 "k.smart_org": "Smart organization",
 "k.smart_fill": "Smart fill",
 "k.quick": "Quick mode",
-"k.ask": "Ask your Brain",
+"k.ask": "Ask your notes",
 "k.calendars": "Connect Apple Calendar",
 "k.morning": "Morning summary",
 "k.reminders": "Reminder notifications",
@@ -72,17 +72,17 @@ COPY = {
 "k.undo": "Undo",
 "k.widgets": "Show titles in widgets",
 
-"meta.support.title": "Second Brain — Support",
-"meta.support.desc": "Official support for Second Brain: how capture, Smart fill and Ask your Brain work, what the app needs, answers to common questions, and how to reach us.",
-"meta.about.title": "Second Brain — Just say it. We'll sort it out.",
+"meta.support.title": "Second Brain: Voice Planner — Support",
+"meta.support.desc": "Official support for Second Brain: how capture, Smart fill and Ask your notes work, what the app needs, answers to common questions, and how to reach us.",
+"meta.about.title": "Second Brain: Voice Planner — Tasks & notes with private AI",
 "meta.about.desc": "Second Brain turns what you say or type into tasks, events, notes and ideas, keeps your original, and answers questions from what you saved, with on-device AI first.",
-"meta.privacy.title": "Privacy Policy — Second Brain",
+"meta.privacy.title": "Privacy Policy — Second Brain: Voice Planner",
 "meta.privacy.desc": "What Second Brain keeps on your device, what reaches iCloud, what our server holds, and exactly when your words are sent for cloud AI.",
-"meta.terms.title": "Terms of Use — Second Brain",
+"meta.terms.title": "Terms of Use — Second Brain: Voice Planner",
 "meta.terms.desc": "Terms of Use (EULA) for Second Brain: your content, the AI features, cloud allowances, and how Light and Pro subscriptions are billed.",
-"meta.data.title": "Delete your data — Second Brain",
+"meta.data.title": "Delete your data — Second Brain: Voice Planner",
 "meta.data.desc": "How to export your library, delete it from this device, and delete your Second Brain account and everything it holds in iCloud and on our server.",
-"meta.nf.title": "Not found — Second Brain",
+"meta.nf.title": "Not found — Second Brain: Voice Planner",
 "meta.nf.desc": "Page not found.",
 
 # --- support --------------------------------------------------------------
@@ -99,7 +99,7 @@ COPY = {
 <ul class="rows">
   <li><span class="tile">{mic}</span><div><b>Capture</b><span>Voice capture starts recording as soon as it opens. You can also type, share text, links, photos or files from other apps, or attach them to a capture.</span></div></li>
   <li><span class="tile">{sparkle}</span><div><b>Smart fill and review</b><span>Tap Done and Smart fill drafts tasks, events, notes and ideas with their dates and times. Every field can be edited before you tap Create. Anything it isn't sure about stays highlighted, or goes to {K_needs_review}.</span></div></li>
-  <li><span class="tile">{chat}</span><div><b>Ask your Brain</b><span>Ask a question in plain words. Answers come only from what you saved, with the sources listed so you can open and check them.</span></div></li>
+  <li><span class="tile">{chat}</span><div><b>Ask your notes</b><span>Ask a question in plain words. Answers come only from what you saved, with the sources listed so you can open and check them.</span></div></li>
   <li><span class="tile">{calendar}</span><div><b>Today and Calendar</b><span>What's due, what's next and what matters, plus a week view with your Apple Calendar beside your tasks. Optional reminders and a morning summary.</span></div></li>
   <li><span class="tile">{undo}</span><div><b>Your original, always</b><span>The words you captured stay in your library next to what was made from them. {K_undo} reverses any organizing, and deleted items wait in {K_recently_deleted} for 30 days.</span></div></li>
   <li><span class="tile">{lock}</span><div><b>Private by default</b><span>Organizing and answers run on your device with Apple's on-device model when your device supports it. Cloud sync and cloud AI stay off until you choose them. See <a href="{BASE}{L}/privacy/">Privacy</a>.</span></div></li>
@@ -125,7 +125,7 @@ COPY = {
   <li><div><b>Open Second Brain.</b> There is no sign-up. Your library lives on your device from the first second.</div></li>
   <li><div><b>Tap the microphone and say what's on your mind.</b> Allow the microphone and speech recognition when iOS asks. Or type.</div></li>
   <li><div><b>Tap Done.</b> Smart fill drafts tasks, events, notes and ideas. Check each field, change anything, then tap Create.</div></li>
-  <li><div><b>Ask your Brain.</b> Ask "what did I promise Sam?" or "when is the dentist?" and open the cited sources to check.</div></li>
+  <li><div><b>Ask your notes.</b> Ask "what did I promise Sam?" or "when is the dentist?" and open the cited sources to check.</div></li>
   <li><div><b>Optional:</b> to sync with iCloud or use Luna, open {K_settings} → {K_cloud_choices} and sign in with Apple. Each one has its own switch.</div></li>
 </ol>
 """,
@@ -138,7 +138,7 @@ COPY = {
 <dt>What is free?</dt>
 <dd>Typed capture, tasks and projects, local search, on-device transcription, reminders, editing, export and deletion are free and unlimited. Free also includes <strong>20 voice captures, 40 Smart fills and 5 questions to {K_ask} each month</strong>, counted on each device and reset on the first of the month. Saving is never blocked: when a limit is reached you can still type and save. A signed-in account that allows cloud AI also gets a one-time sample of 10 cloud AI captures and 5 answers.</dd>
 <dt>What do Light and Pro add?</dt>
-<dd><strong>Light</strong> removes the monthly limits on voice capture, Smart fill and Ask your Brain, adds {K_quick} and private iCloud sync, and includes 300 cloud AI captures and 100 cloud answers a month. <strong>Pro</strong> includes everything in Light, raises the cloud allowance to 700 cloud AI captures and 250 cloud answers a month, and adds a cloud daily summary and importing a web page's text. Light is billed monthly. Pro is monthly or yearly, and the yearly plan starts with 7 days free for eligible new subscribers. Prices are shown in the app and on the App Store for your country, and Apple handles billing.</dd>
+<dd><strong>Light</strong> removes the monthly limits on voice capture, Smart fill and Ask your notes, adds {K_quick} and private iCloud sync, and includes 300 cloud AI captures and 100 cloud answers a month. <strong>Pro</strong> includes everything in Light, raises the cloud allowance to 700 cloud AI captures and 250 cloud answers a month, and adds a cloud daily summary and importing a web page's text. Light is billed monthly. Pro is monthly or yearly, and the yearly plan starts with 7 days free for eligible new subscribers. Prices are shown in the app and on the App Store for your country, and Apple handles billing.</dd>
 <dt>What is the difference between on-device AI and Luna?</dt>
 <dd>On-device AI is Apple's model running on your device. Nothing you write leaves it. Luna is a cloud model from OpenAI that runs through our server. It is used only if you sign in and turn on {K_luna}, and only within your plan's cloud allowance. On-device AI goes first. Luna covers when your device can't help. Light and Pro can choose Luna as their main engine in {K_settings}. Captures marked {K_device_only} never go to Luna, whichever engine you choose.</dd>
 <dt>What does "{K_device_only}" do?</dt>
@@ -196,12 +196,12 @@ COPY = {
 """,
 
 # --- about ----------------------------------------------------------------
-"a.eyebrow": "About Second Brain",
+"a.eyebrow": "Second Brain: Voice Planner",
 "a.h1": "Just say it. We'll sort it out.",
 "a.sub": "Talk the way you think. Second Brain turns it into tasks, events, notes and ideas, keeps your original, and finds it again when you ask.",
 "a.cta": "Support",
-"a.meta": "iPhone and iPad · iOS 18+ · eight languages · works without an account",
-"a.lead": "Second Brain is a calm place for everything on your mind. Capture it in seconds by voice or text, check what Smart fill made of it, and ask your Brain when you need it back, with sources you can open and check.",
+"a.meta": "Tasks & notes with private AI · iPhone and iPad · iOS 18+ · eight languages · works without an account",
+"a.lead": "Second Brain is a calm place for everything on your mind. Capture it in seconds by voice or text, check what Smart fill made of it, and ask your notes when you need it back, with sources you can open and check.",
 
 "a.f1.icon": "mic",
 "a.f1.h": "Just say it.",
@@ -301,7 +301,7 @@ COPY = {
 <p>For each request, only the text needed for it is sent:</p>
 <ul>
   <li><strong>Organizing and Smart fill</strong>: the text of the capture being organized, including text read on your device from an attached photo or PDF, your time zone and language, and the names and short summaries of up to 30 of your projects.</li>
-  <li><strong>Ask your Brain</strong>: your question and short excerpts from up to 12 saved items your device picked as relevant.</li>
+  <li><strong>Ask your notes</strong>: your question and short excerpts from up to 12 saved items your device picked as relevant.</li>
   <li><strong>Tidy-up</strong> (Light and Pro): the text of the note you asked to tidy.</li>
   <li><strong>Daily summary</strong> (Pro): counts of what's due and short excerpts from up to 10 of your items for that day.</li>
 </ul>
@@ -460,7 +460,7 @@ COPY = {
 """,
 "t.subscriptions.h": "8. Subscriptions and billing",
 "t.subscriptions.b": """
-<p>Second Brain is free to download and use, with monthly limits on voice capture, Smart fill and Ask your Brain on each device. Saving what you capture is never blocked. Paid plans are auto-renewing subscriptions sold through Apple, at the price shown in the app and on the App Store for your country:</p>
+<p>Second Brain is free to download and use, with monthly limits on voice capture, Smart fill and Ask your notes on each device. Saving what you capture is never blocked. Paid plans are auto-renewing subscriptions sold through Apple, at the price shown in the app and on the App Store for your country:</p>
 <ul>
   <li><strong>Light Monthly</strong>: billed monthly.</li>
   <li><strong>Pro Monthly</strong>: billed monthly.</li>
@@ -471,7 +471,7 @@ COPY = {
 """,
 "t.licence.h": "9. Licence and intellectual property",
 "t.licence.b": """
-<p>We grant you a personal, non-exclusive, non-transferable, revocable licence to use Second Brain on Apple devices you own or control, under these Terms and the App Store's Usage Rules. Second Brain, its name, design, artwork (including the brain character), text and code belong to {COMPANY} and are protected by law. You may not copy, modify, distribute, sell, lease, reverse-engineer or create derivative works of the app, except where the law expressly allows it.</p>
+<p>We grant you a personal, non-exclusive, non-transferable, revocable licence to use Second Brain on Apple devices you own or control, under these Terms and the App Store's Usage Rules. Second Brain, its name, design, artwork (including the companion character), text and code belong to {COMPANY} and are protected by law. You may not copy, modify, distribute, sell, lease, reverse-engineer or create derivative works of the app, except where the law expressly allows it.</p>
 """,
 "t.use.h": "10. Acceptable use",
 "t.use.b": """

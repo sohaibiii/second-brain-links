@@ -49,7 +49,7 @@ COPY = {
 "k.smart_org": "Organisation intelligente",
 "k.smart_fill": "Remplissage intelligent",
 "k.quick": "Mode rapide",
-"k.ask": "Interroger votre Brain",
+"k.ask": "Interrogez vos notes",
 "k.calendars": "Connecter l’app Calendrier",
 "k.morning": "Résumé du matin",
 "k.reminders": "Notifications de rappel",
@@ -58,17 +58,17 @@ COPY = {
 "k.undo": "Annuler",
 "k.widgets": "Afficher les titres dans les widgets",
 
-"meta.support.title": "Second Brain — Assistance",
-"meta.support.desc": "Assistance officielle de Second Brain : fonctionnement de la capture, du Remplissage intelligent et d’Interroger votre Brain, ce dont l’app a besoin, réponses aux questions fréquentes et comment nous contacter.",
-"meta.about.title": "Second Brain — Dites-le, tout simplement. On s’occupe du reste.",
+"meta.support.title": "Second Brain: Voice Planner — Assistance",
+"meta.support.desc": "Assistance officielle de Second Brain : fonctionnement de la capture, du Remplissage intelligent et d’« Interrogez vos notes », ce dont l’app a besoin, réponses aux questions fréquentes et comment nous contacter.",
+"meta.about.title": "Second Brain: Voice Planner — Tâches et notes avec IA privée",
 "meta.about.desc": "Second Brain transforme ce que vous dites ou tapez en tâches, événements, notes et idées, conserve votre original et répond à vos questions à partir de ce que vous avez enregistré, avec l’IA sur l’appareil en priorité.",
-"meta.privacy.title": "Politique de confidentialité — Second Brain",
+"meta.privacy.title": "Politique de confidentialité — Second Brain: Voice Planner",
 "meta.privacy.desc": "Ce que Second Brain garde sur votre appareil, ce qui va dans iCloud, ce que conserve notre serveur, et quand exactement vos mots sont envoyés à l’IA cloud.",
-"meta.terms.title": "Conditions d’utilisation — Second Brain",
+"meta.terms.title": "Conditions d’utilisation — Second Brain: Voice Planner",
 "meta.terms.desc": "Conditions d’utilisation (CLUF) de Second Brain : votre contenu, les fonctionnalités d’IA, les quotas cloud et la facturation des abonnements Light et Pro.",
-"meta.data.title": "Supprimer vos données — Second Brain",
+"meta.data.title": "Supprimer vos données — Second Brain: Voice Planner",
 "meta.data.desc": "Comment exporter votre bibliothèque, la supprimer de cet appareil, et supprimer votre compte Second Brain ainsi que tout ce qu’il contient dans iCloud et sur notre serveur.",
-"meta.nf.title": "Page introuvable — Second Brain",
+"meta.nf.title": "Page introuvable — Second Brain: Voice Planner",
 "meta.nf.desc": "Page introuvable.",
 
 # --- support --------------------------------------------------------------
@@ -85,7 +85,7 @@ COPY = {
 <ul class="rows">
   <li><span class="tile">{mic}</span><div><b>Capture</b><span>La capture vocale commence à enregistrer dès son ouverture. Vous pouvez aussi taper, partager du texte, des liens, des photos ou des fichiers depuis d’autres apps, ou les joindre à une capture.</span></div></li>
   <li><span class="tile">{sparkle}</span><div><b>Remplissage intelligent et vérification</b><span>Touchez Terminé et le Remplissage intelligent prépare des tâches, des événements, des notes et des idées avec leurs dates et heures. Chaque champ peut être modifié avant que vous touchiez Créer. Tout ce dont il n’est pas sûr reste surligné, ou va dans {K_needs_review}.</span></div></li>
-  <li><span class="tile">{chat}</span><div><b>Interroger votre Brain</b><span>Posez une question avec vos propres mots. Les réponses viennent uniquement de ce que vous avez enregistré, avec la liste des sources pour que vous puissiez les ouvrir et les vérifier.</span></div></li>
+  <li><span class="tile">{chat}</span><div><b>Interrogez vos notes</b><span>Posez une question avec vos propres mots. Les réponses viennent uniquement de ce que vous avez enregistré, avec la liste des sources pour que vous puissiez les ouvrir et les vérifier.</span></div></li>
   <li><span class="tile">{calendar}</span><div><b>Aujourd’hui et Calendrier</b><span>Ce qui est à faire, ce qui vient ensuite et ce qui compte, plus une vue de la semaine avec l’app Calendrier à côté de vos tâches. Rappels et résumé du matin facultatifs.</span></div></li>
   <li><span class="tile">{undo}</span><div><b>Votre original, toujours</b><span>Les mots que vous avez capturés restent dans votre bibliothèque, à côté de ce qui en a été tiré. {K_undo} annule toute organisation, et les éléments supprimés attendent 30 jours dans {K_recently_deleted}.</span></div></li>
   <li><span class="tile">{lock}</span><div><b>Privé par défaut</b><span>L’organisation et les réponses s’effectuent sur votre appareil avec le modèle sur l’appareil d’Apple, si votre appareil le prend en charge. La synchronisation cloud et l’IA cloud restent désactivées tant que vous ne les choisissez pas. Voir <a href="{BASE}{L}/privacy/">Confidentialité</a>.</span></div></li>
@@ -111,7 +111,7 @@ COPY = {
   <li><div><b>Ouvrez Second Brain.</b> Aucune inscription. Votre bibliothèque vit sur votre appareil dès la première seconde.</div></li>
   <li><div><b>Touchez le micro et dites ce qui vous passe par la tête.</b> Autorisez le micro et la reconnaissance vocale quand iOS vous le demande. Ou tapez.</div></li>
   <li><div><b>Touchez Terminé.</b> Le Remplissage intelligent prépare des tâches, des événements, des notes et des idées. Vérifiez chaque champ, modifiez ce que vous voulez, puis touchez Créer.</div></li>
-  <li><div><b>Interrogez votre Brain.</b> Demandez « qu’ai-je promis à Sam ? » ou « quand ai-je rendez-vous chez le dentiste ? » et ouvrez les sources citées pour vérifier.</div></li>
+  <li><div><b>Interrogez vos notes.</b> Demandez « qu’ai-je promis à Sam ? » ou « quand ai-je rendez-vous chez le dentiste ? » et ouvrez les sources citées pour vérifier.</div></li>
   <li><div><b>Facultatif :</b> pour synchroniser avec iCloud ou utiliser Luna, ouvrez {K_settings} → {K_cloud_choices} et connectez-vous avec Apple. Chaque option a son propre bouton.</div></li>
 </ol>
 """,
@@ -124,7 +124,7 @@ COPY = {
 <dt>Qu’est-ce qui est gratuit ?</dt>
 <dd>La capture écrite, les tâches et les projets, la recherche locale, la transcription sur l’appareil, les rappels, la modification, l’exportation et la suppression sont gratuits et illimités. La formule Gratuit inclut aussi <strong>20 captures vocales, 40 Remplissages intelligents et 5 questions dans {K_ask} chaque mois</strong>, comptés sur chaque appareil et renouvelés le 1er du mois. L’enregistrement n’est jamais bloqué : quand une limite est atteinte, vous pouvez toujours taper et enregistrer. Un compte connecté qui autorise l’IA cloud reçoit aussi un essai unique de 10 captures avec l’IA cloud et 5 réponses.</dd>
 <dt>Qu’apportent Light et Pro ?</dt>
-<dd><strong>Light</strong> supprime les limites mensuelles de la capture vocale, du Remplissage intelligent et d’Interroger votre Brain, ajoute le {K_quick} et la synchronisation iCloud privée, et inclut 300 captures IA cloud et 100 réponses cloud par mois. <strong>Pro</strong> porte ce quota à 700 captures IA cloud et 250 réponses cloud par mois, et ajoute un résumé quotidien cloud et l’import du texte d’une page web. Light est facturé tous les mois. Pro est mensuel ou annuel, et la formule annuelle commence par 7 jours gratuits pour les nouveaux abonnés éligibles. Les prix sont affichés dans l’app et sur l’App Store pour votre pays, et la facturation est gérée par Apple.</dd>
+<dd><strong>Light</strong> supprime les limites mensuelles de la capture vocale, du Remplissage intelligent et d’« Interrogez vos notes », ajoute le {K_quick} et la synchronisation iCloud privée, et inclut 300 captures IA cloud et 100 réponses cloud par mois. <strong>Pro</strong> porte ce quota à 700 captures IA cloud et 250 réponses cloud par mois, et ajoute un résumé quotidien cloud et l’import du texte d’une page web. Light est facturé tous les mois. Pro est mensuel ou annuel, et la formule annuelle commence par 7 jours gratuits pour les nouveaux abonnés éligibles. Les prix sont affichés dans l’app et sur l’App Store pour votre pays, et la facturation est gérée par Apple.</dd>
 <dt>Quelle est la différence entre l’IA sur l’appareil et Luna ?</dt>
 <dd>L’IA sur l’appareil est le modèle d’Apple qui s’exécute sur votre appareil. Rien de ce que vous écrivez n’en sort. Luna est un modèle cloud d’OpenAI qui passe par notre serveur. Elle n’est utilisée que si vous vous connectez et activez {K_luna}, et seulement dans la limite du quota cloud de votre formule. L’IA sur l’appareil passe en premier, et Luna prend le relais quand votre appareil ne peut pas aider. Light et Pro peuvent choisir Luna comme moteur principal dans {K_settings}. Les captures marquées {K_device_only} ne sont jamais envoyées à Luna, quel que soit le moteur choisi.</dd>
 <dt>Que fait « {K_device_only} » ?</dt>
@@ -182,12 +182,12 @@ COPY = {
 """,
 
 # --- about ----------------------------------------------------------------
-"a.eyebrow": "À propos de Second Brain",
+"a.eyebrow": "Second Brain: Voice Planner",
 "a.h1": "Dites-le, tout simplement. On s’occupe du reste.",
 "a.sub": "Parlez comme vous pensez. Second Brain en fait des tâches, des événements, des notes et des idées, conserve votre original et le retrouve quand vous le demandez.",
 "a.cta": "Assistance",
-"a.meta": "iPhone et iPad · iOS 18+ · huit langues · fonctionne sans compte",
-"a.lead": "Second Brain est un endroit serein pour tout ce que vous avez en tête. Capturez-le en quelques secondes, à la voix ou par écrit, vérifiez ce que le Remplissage intelligent en a fait, et interrogez votre Brain quand vous en avez besoin, avec des sources que vous pouvez ouvrir et vérifier.",
+"a.meta": "Tâches et notes avec IA privée · iPhone et iPad · iOS 18+ · huit langues · fonctionne sans compte",
+"a.lead": "Second Brain est un endroit serein pour tout ce que vous avez en tête. Capturez-le en quelques secondes, à la voix ou par écrit, vérifiez ce que le Remplissage intelligent en a fait, et interrogez vos notes quand vous en avez besoin, avec des sources que vous pouvez ouvrir et vérifier.",
 
 "a.f1.h": "Dites-le, tout simplement.",
 "a.f1.p": "La capture vocale se met à écouter dès son ouverture, en huit langues. Chaque tâche, chaque projet, chaque idée est saisi au vol pendant que vous parlez, et l’original est conservé.",
@@ -281,7 +281,7 @@ COPY = {
 <p>Pour chaque requête, seul le texte nécessaire est envoyé :</p>
 <ul>
   <li><strong>Organisation et Remplissage intelligent</strong> : le texte de la capture à organiser, y compris le texte extrait sur votre appareil d’une photo ou d’un PDF joint, votre fuseau horaire et votre langue, ainsi que les noms et de courts résumés de 30 de vos projets au maximum.</li>
-  <li><strong>Interroger votre Brain</strong> : votre question et de courts extraits de 12 éléments enregistrés au maximum, que votre appareil a jugés pertinents.</li>
+  <li><strong>Interrogez vos notes</strong> : votre question et de courts extraits de 12 éléments enregistrés au maximum, que votre appareil a jugés pertinents.</li>
   <li><strong>Rangement</strong> (Light et Pro) : le texte de la note que vous avez demandé de ranger.</li>
   <li><strong>Résumé quotidien</strong> (Pro) : le décompte de ce qui est à faire et de courts extraits de 10 de vos éléments au maximum pour ce jour-là.</li>
 </ul>
@@ -440,7 +440,7 @@ COPY = {
 """,
 "t.subscriptions.h": "8. Abonnements et facturation",
 "t.subscriptions.b": """
-<p>Second Brain est gratuit à télécharger et à utiliser, avec des limites mensuelles par appareil pour la capture vocale, le Remplissage intelligent et Interroger votre Brain. L’enregistrement de ce que vous capturez n’est jamais bloqué. Les formules payantes sont des abonnements à renouvellement automatique vendus par l’intermédiaire d’Apple, au prix affiché dans l’app et sur l’App Store pour votre pays :</p>
+<p>Second Brain est gratuit à télécharger et à utiliser, avec des limites mensuelles par appareil pour la capture vocale, le Remplissage intelligent et « Interrogez vos notes ». L’enregistrement de ce que vous capturez n’est jamais bloqué. Les formules payantes sont des abonnements à renouvellement automatique vendus par l’intermédiaire d’Apple, au prix affiché dans l’app et sur l’App Store pour votre pays :</p>
 <ul>
   <li><strong>Light mensuel</strong> : facturé tous les mois.</li>
   <li><strong>Pro mensuel</strong> : facturé tous les mois.</li>
@@ -451,7 +451,7 @@ COPY = {
 """,
 "t.licence.h": "9. Licence et propriété intellectuelle",
 "t.licence.b": """
-<p>Nous vous accordons une licence personnelle, non exclusive, non transférable et révocable pour utiliser Second Brain sur les appareils Apple dont vous êtes propriétaire ou que vous contrôlez, conformément aux présentes Conditions et aux Règles d’utilisation de l’App Store. Second Brain, son nom, son design, ses illustrations (y compris le personnage du cerveau), ses textes et son code appartiennent à {COMPANY} et sont protégés par la loi. Vous ne pouvez pas copier, modifier, distribuer, vendre ou louer l’app, en faire de l’ingénierie inverse ni en créer des œuvres dérivées, sauf lorsque la loi l’autorise expressément.</p>
+<p>Nous vous accordons une licence personnelle, non exclusive, non transférable et révocable pour utiliser Second Brain sur les appareils Apple dont vous êtes propriétaire ou que vous contrôlez, conformément aux présentes Conditions et aux Règles d’utilisation de l’App Store. Second Brain, son nom, son design, ses illustrations (y compris le personnage compagnon), ses textes et son code appartiennent à {COMPANY} et sont protégés par la loi. Vous ne pouvez pas copier, modifier, distribuer, vendre ou louer l’app, en faire de l’ingénierie inverse ni en créer des œuvres dérivées, sauf lorsque la loi l’autorise expressément.</p>
 """,
 "t.use.h": "10. Utilisation acceptable",
 "t.use.b": """

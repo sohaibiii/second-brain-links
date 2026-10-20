@@ -49,7 +49,7 @@ COPY = {
 "k.smart_org": "智能整理",
 "k.smart_fill": "智能填写",
 "k.quick": "快速模式",
-"k.ask": "问问你的大脑",
+"k.ask": "向你的笔记提问",
 "k.calendars": "连接“日历”App",
 "k.morning": "晨间摘要",
 "k.reminders": "提醒通知",
@@ -58,17 +58,17 @@ COPY = {
 "k.undo": "撤销",
 "k.widgets": "在小组件中显示标题",
 
-"meta.support.title": "Second Brain — 支持",
-"meta.support.desc": "Second Brain 官方支持：记录、智能填写和“问问你的大脑”如何运作，App 需要什么，常见问题解答，以及如何联系我们。",
-"meta.about.title": "Second Brain — 只管说出来，我们来整理。",
+"meta.support.title": "Second Brain: Voice Planner — 支持",
+"meta.support.desc": "Second Brain 官方支持：记录、智能填写和“向你的笔记提问”如何运作，App 需要什么，常见问题解答，以及如何联系我们。",
+"meta.about.title": "Second Brain: Voice Planner — 用私密 AI 管理任务和笔记",
 "meta.about.desc": "Second Brain 会把你说的话或输入的文字变成任务、日程、笔记和灵感，保留你的原始记录，并根据你保存的内容回答问题，优先使用设备端 AI。",
-"meta.privacy.title": "隐私政策 — Second Brain",
+"meta.privacy.title": "隐私政策 — Second Brain: Voice Planner",
 "meta.privacy.desc": "Second Brain 在你的设备上保存什么、什么会进入 iCloud、我们的服务器保存什么，以及你的文字究竟在何时会被发送给云端 AI。",
-"meta.terms.title": "使用条款 — Second Brain",
+"meta.terms.title": "使用条款 — Second Brain: Voice Planner",
 "meta.terms.desc": "Second Brain 使用条款（EULA）：你的内容、AI 功能、云端额度，以及 Light 和 Pro 订阅如何计费。",
-"meta.data.title": "删除你的数据 — Second Brain",
+"meta.data.title": "删除你的数据 — Second Brain: Voice Planner",
 "meta.data.desc": "如何导出你的资料库、将它从这台设备上删除，以及删除你的 Second Brain 账户及其在 iCloud 和我们服务器上保存的全部内容。",
-"meta.nf.title": "未找到页面 — Second Brain",
+"meta.nf.title": "未找到页面 — Second Brain: Voice Planner",
 "meta.nf.desc": "未找到该页面。",
 
 # --- support --------------------------------------------------------------
@@ -85,7 +85,7 @@ COPY = {
 <ul class="rows">
   <li><span class="tile">{mic}</span><div><b>记录</b><span>语音记录一打开就会开始录音。你也可以直接输入，从其他 App 共享文字、链接、照片或文件，或者将它们附加到一条记录中。</span></div></li>
   <li><span class="tile">{sparkle}</span><div><b>智能填写与确认</b><span>点按“完成”，智能填写就会起草任务、日程、笔记和灵感，并填好日期和时间。在点按“创建”之前，每个字段都可以编辑。它不确定的内容会保持高亮，或进入{K_needs_review}。</span></div></li>
-  <li><span class="tile">{chat}</span><div><b>问问你的大脑</b><span>用平常的话提一个问题。回答只来自你保存的内容，并会列出来源，方便你打开核对。</span></div></li>
+  <li><span class="tile">{chat}</span><div><b>向你的笔记提问</b><span>用平常的话提一个问题。回答只来自你保存的内容，并会列出来源，方便你打开核对。</span></div></li>
   <li><span class="tile">{calendar}</span><div><b>“今天”与“日历”</b><span>哪些事到期、接下来做什么、什么最重要，一目了然；另有周视图，把“日历”App 中的日程显示在你的任务旁边。还可选择开启提醒和晨间摘要。</span></div></li>
   <li><span class="tile">{undo}</span><div><b>原始记录，始终保留</b><span>你记录下的原话会留在资料库中，就在由它生成的内容旁边。使用{K_undo}可以还原任何整理操作，删除的条目会在{K_recently_deleted}中保留 30 天。</span></div></li>
   <li><span class="tile">{lock}</span><div><b>默认私密</b><span>如果你的设备支持，整理和回答都会在你的设备上通过 Apple 的设备端模型运行。云端同步和云端 AI 在你选择开启之前都保持关闭。请参阅<a href="{BASE}{L}/privacy/">隐私</a>。</span></div></li>
@@ -111,7 +111,7 @@ COPY = {
   <li><div><b>打开 Second Brain。</b>无需注册。从第一秒起，你的资料库就保存在你的设备上。</div></li>
   <li><div><b>点按麦克风，说出你在想的事。</b>iOS 询问时，请允许使用麦克风和语音识别。也可以直接输入。</div></li>
   <li><div><b>点按“完成”。</b>智能填写会起草任务、日程、笔记和灵感。检查每个字段，修改任何内容，然后点按“创建”。</div></li>
-  <li><div><b>问问你的大脑。</b>问一句“我答应过 Sam 什么？”或“牙医预约是什么时候？”，然后打开引用的来源进行核对。</div></li>
+  <li><div><b>向你的笔记提问。</b>问一句“我答应过 Sam 什么？”或“牙医预约是什么时候？”，然后打开引用的来源进行核对。</div></li>
   <li><div><b>可选：</b>如需通过 iCloud 同步或使用 Luna，请打开{K_settings} → {K_cloud_choices}，然后通过 Apple 登录。每项功能都有单独的开关。</div></li>
 </ol>
 """,
@@ -124,7 +124,7 @@ COPY = {
 <dt>哪些功能是免费的？</dt>
 <dd>文字记录、任务和项目、本地搜索、设备端转写、提醒、编辑、导出和删除均免费且不限次数。免费版每月还包含 <strong>20 次语音记录、40 次智能填写和 5 次{K_ask}提问</strong>，在每台设备上分别计数，并于每月 1 日重置。保存永远不会被阻止：达到限制后，你仍然可以输入并保存。已登录且允许云端 AI 的账户还可获得一次性体验：10 次云端 AI 记录和 5 次回答。</dd>
 <dt>Light 和 Pro 增加了什么？</dt>
-<dd><strong>Light</strong> 取消语音记录、智能填写和“问问你的大脑”的每月限制，增加{K_quick}和私密的 iCloud 同步，并且每月包含 300 次云端 AI 记录和 100 次云端回答。<strong>Pro</strong> 提供每月 700 次云端 AI 记录和 250 次云端回答、云端每日摘要，以及网页文字导入。Light 按月计费。Pro 可按月或按年计费，年付方案为符合条件的新订阅者提供 7 天免费试用。价格会按你所在的国家或地区显示在 App 内和 App Store 中，计费由 Apple 处理。</dd>
+<dd><strong>Light</strong> 取消语音记录、智能填写和“向你的笔记提问”的每月限制，增加{K_quick}和私密的 iCloud 同步，并且每月包含 300 次云端 AI 记录和 100 次云端回答。<strong>Pro</strong> 提供每月 700 次云端 AI 记录和 250 次云端回答、云端每日摘要，以及网页文字导入。Light 按月计费。Pro 可按月或按年计费，年付方案为符合条件的新订阅者提供 7 天免费试用。价格会按你所在的国家或地区显示在 App 内和 App Store 中，计费由 Apple 处理。</dd>
 <dt>设备端 AI 和 Luna 有什么区别？</dt>
 <dd>设备端 AI 是在你的设备上运行的 Apple 模型。你写下的任何内容都不会离开设备。Luna 是 OpenAI 提供的云端模型，通过我们的服务器运行。只有当你登录并打开{K_luna}时才会使用它，而且仅在你方案的云端额度内使用。设备端 AI 优先运行，当你的设备无法处理时，由 Luna 接手。Light 和 Pro 可以在{K_settings}中将 Luna 选为主要引擎。无论你选择哪个引擎，标记为{K_device_only}的记录都绝不会发送给 Luna。</dd>
 <dt>{K_device_only}有什么作用？</dt>
@@ -182,12 +182,12 @@ COPY = {
 """,
 
 # --- about ----------------------------------------------------------------
-"a.eyebrow": "关于 Second Brain",
+"a.eyebrow": "Second Brain: Voice Planner",
 "a.h1": "只管说出来，我们来整理。",
 "a.sub": "想到什么就说什么。Second Brain 会把它变成任务、日程、笔记和灵感，保留你的原始记录，并在你提问时帮你找回。",
 "a.cta": "支持",
-"a.meta": "iPhone 和 iPad · iOS 18+ · 八种语言 · 无需账户即可使用",
-"a.lead": "Second Brain 是一个安静的地方，用来存放你脑海中的一切。用语音或文字几秒钟就能记下，再检查智能填写整理出的结果；需要找回时就问问你的大脑，回答附有可以打开核对的来源。",
+"a.meta": "用私密 AI 管理任务和笔记 · iPhone 和 iPad · iOS 18+ · 八种语言 · 无需账户即可使用",
+"a.lead": "Second Brain 是一个安静的地方，用来存放你脑海中的一切。用语音或文字几秒钟就能记下，再检查智能填写整理出的结果；需要找回时就向你的笔记提问，回答附有可以打开核对的来源。",
 
 "a.f1.h": "只管说出来。",
 "a.f1.p": "语音记录一打开就开始聆听，支持八种语言。你说话时，每个任务、计划和灵感都会被记下，原话也会保留。",
@@ -281,7 +281,7 @@ COPY = {
 <p>每次请求只会发送该请求所需的文字：</p>
 <ul>
   <li><strong>整理和智能填写</strong>：正在整理的记录文字（包括在你的设备上从附加的照片或 PDF 中读取的文字）、你的时区和语言，以及你最多 30 个项目的名称和简短摘要。</li>
-  <li><strong>问问你的大脑</strong>：你的问题，以及你的设备挑选出的最多 12 个相关已保存条目的简短摘录。</li>
+  <li><strong>向你的笔记提问</strong>：你的问题，以及你的设备挑选出的最多 12 个相关已保存条目的简短摘录。</li>
   <li><strong>整理笔记</strong>（Light 和 Pro）：你要求整理的那条笔记的文字。</li>
   <li><strong>每日摘要</strong>（Pro）：当天到期事项的数量，以及你当天最多 10 个条目的简短摘录。</li>
 </ul>
@@ -440,7 +440,7 @@ COPY = {
 """,
 "t.subscriptions.h": "8. 订阅和计费",
 "t.subscriptions.b": """
-<p>Second Brain 可免费下载和使用，但每台设备上的语音记录、智能填写和“问问你的大脑”有每月限制。保存你记录的内容永远不会被阻止。付费方案是通过 Apple 销售的自动续期订阅，价格以 App 内和 App Store 中针对你所在国家或地区显示的价格为准：</p>
+<p>Second Brain 可免费下载和使用，但每台设备上的语音记录、智能填写和“向你的笔记提问”有每月限制。保存你记录的内容永远不会被阻止。付费方案是通过 Apple 销售的自动续期订阅，价格以 App 内和 App Store 中针对你所在国家或地区显示的价格为准：</p>
 <ul>
   <li><strong>Light 月付</strong>：按月计费。</li>
   <li><strong>Pro 月付</strong>：按月计费。</li>
@@ -451,7 +451,7 @@ COPY = {
 """,
 "t.licence.h": "9. 许可和知识产权",
 "t.licence.b": """
-<p>我们授予你一项个人的、非排他的、不可转让的、可撤销的许可，允许你依据本条款和 App Store 的使用规则，在你拥有或控制的 Apple 设备上使用 Second Brain。Second Brain 及其名称、设计、美术作品（包括大脑角色）、文字和代码均归 {COMPANY} 所有，并受法律保护。除非法律明确允许，否则你不得复制、修改、分发、出售、租赁、反向工程本 App，或基于本 App 创作衍生作品。</p>
+<p>我们授予你一项个人的、非排他的、不可转让的、可撤销的许可，允许你依据本条款和 App Store 的使用规则，在你拥有或控制的 Apple 设备上使用 Second Brain。Second Brain 及其名称、设计、美术作品（包括伙伴角色）、文字和代码均归 {COMPANY} 所有，并受法律保护。除非法律明确允许，否则你不得复制、修改、分发、出售、租赁、反向工程本 App，或基于本 App 创作衍生作品。</p>
 """,
 "t.use.h": "10. 可接受的使用",
 "t.use.b": """
