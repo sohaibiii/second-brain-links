@@ -324,7 +324,7 @@ COPY = {
   <li><strong>Os nomes dos seus projetos</strong> (só identificadores e nomes), enquanto houver um app conectado, para que ele possa classificar os itens.</li>
   <li><strong>Suas tarefas em aberto</strong>, só se você ativar {K_share_open_tasks}: títulos, prazos, prioridades e nomes de projeto das tarefas ainda não concluídas, para que o app possa listá-las, concluí-las e reagendá-las. Desativar apaga tudo do servidor na hora.</li>
 </ul>
-<p>Apps conectados não conseguem ler suas notas. Cada item que um app adiciona espera sua confirmação no app, a menos que você escolha salvar os itens desse app sem revisão; pode ser desfeito e indica de qual app veio. Aos itens criados assim aplica-se, além da nossa, a política de privacidade do app de IA que você usou.</p>
+<p>Quando um app adiciona algo, a notificação enviada ao seu iPhone pelo serviço push da Apple carrega o texto e os detalhes desse item, para que ele seja mostrado e salvo na hora. Apps conectados não conseguem ler suas notas. Cada item que um app adiciona espera sua confirmação no app, a menos que você escolha salvar os itens desse app sem revisão; pode ser desfeito e indica de qual app veio. Aos itens criados assim aplica-se, além da nossa, a política de privacidade do app de IA que você usou.</p>
 """,
 
 "p.voice.h": "Voz, fala e gravações",

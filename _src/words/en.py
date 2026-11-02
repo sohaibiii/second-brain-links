@@ -344,7 +344,7 @@ COPY = {
   <li><strong>Your project names</strong> (ids and names only), while an app is connected, so it can file items.</li>
   <li><strong>Your open tasks</strong>, only if you turn on {K_share_open_tasks}: the titles, due dates, priorities and project names of tasks not yet done, so the app can list, complete and reschedule them. Turning it off deletes them from the server at once.</li>
 </ul>
-<p>Connected apps cannot read your notes. Every item an app adds waits for your confirmation in the app unless you choose to save that app's items without review, can be undone, and names the app it came from. Items created this way are also governed by the privacy policy of the AI app you used.</p>
+<p>When an app adds something, the notification sent to your iPhone through Apple's push service carries that item's text and details, so it can be shown and saved at once. Connected apps cannot read your notes. Every item an app adds waits for your confirmation in the app unless you choose to save that app's items without review, can be undone, and names the app it came from. Items created this way are also governed by the privacy policy of the AI app you used.</p>
 """,
 
 "p.voice.h": "Voice, speech and recordings",

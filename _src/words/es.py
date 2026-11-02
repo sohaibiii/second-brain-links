@@ -330,7 +330,7 @@ COPY = {
   <li><strong>Los nombres de tus proyectos</strong> (solo identificadores y nombres), mientras haya una app conectada, para que pueda clasificar los elementos.</li>
   <li><strong>Tus tareas pendientes</strong>, solo si activas {K_share_open_tasks}: títulos, fechas límite, prioridades y nombres de proyecto de las tareas aún no hechas, para que la app pueda listarlas, completarlas y reprogramarlas. Al desactivarlo se eliminan del servidor de inmediato.</li>
 </ul>
-<p>Las apps conectadas no pueden leer tus notas. Cada elemento que añade una app espera tu confirmación en la app, salvo que elijas guardar los elementos de esa app sin revisión; se puede deshacer e indica de qué app procede. A los elementos creados así se les aplica, además de la nuestra, la política de privacidad de la app de IA que usaste.</p>
+<p>Cuando una app añade algo, la notificación que llega a tu iPhone a través del servicio de notificaciones push de Apple lleva el texto y los detalles de ese elemento, para mostrarlo y guardarlo de inmediato. Las apps conectadas no pueden leer tus notas. Cada elemento que añade una app espera tu confirmación en la app, salvo que elijas guardar los elementos de esa app sin revisión; se puede deshacer e indica de qué app procede. A los elementos creados así se les aplica, además de la nuestra, la política de privacidad de la app de IA que usaste.</p>
 """,
 
 "p.voice.h": "Voz, reconocimiento de voz y grabaciones",

@@ -324,7 +324,7 @@ COPY = {
   <li><strong>Deine Projektnamen</strong> (nur IDs und Namen), solange eine App verbunden ist, damit sie Einträge einordnen kann.</li>
   <li><strong>Deine offenen Aufgaben</strong>, nur wenn du {K_share_open_tasks} einschaltest: Titel, Fälligkeitsdaten, Prioritäten und Projektnamen noch nicht erledigter Aufgaben, damit die App sie auflisten, abhaken und verschieben kann. Beim Ausschalten werden sie sofort vom Server gelöscht.</li>
 </ul>
-<p>Verbundene Apps können deine Notizen nicht lesen. Jeder Eintrag, den eine App hinzufügt, wartet in der App auf deine Bestätigung, sofern du für diese App nicht das Speichern ohne Prüfung gewählt hast; er lässt sich rückgängig machen und nennt die App, von der er stammt. Für so entstandene Einträge gilt neben unserer auch die Datenschutzerklärung der verwendeten KI-App.</p>
+<p>Wenn eine App etwas hinzufügt, enthält die Mitteilung, die über Apples Push-Dienst an dein iPhone geht, den Text und die Angaben dieses Eintrags, damit er sofort angezeigt und gesichert werden kann. Verbundene Apps können deine Notizen nicht lesen. Jeder Eintrag, den eine App hinzufügt, wartet in der App auf deine Bestätigung, sofern du für diese App nicht das Speichern ohne Prüfung gewählt hast; er lässt sich rückgängig machen und nennt die App, von der er stammt. Für so entstandene Einträge gilt neben unserer auch die Datenschutzerklärung der verwendeten KI-App.</p>
 """,
 
 "p.voice.h": "Stimme, Spracherkennung und Aufnahmen",
