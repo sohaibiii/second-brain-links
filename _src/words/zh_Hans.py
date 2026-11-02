@@ -18,7 +18,7 @@ COPY = {
 "ui.rights": "保留所有权利。",
 "ui.store_soon": "即将登陆 App Store",
 "ui.store_get": "在 App Store 下载",
-"ui.date": "2026年10月16日",
+"ui.date": "2026年11月2日",
 "ui.last_updated": "最后更新：{DATE}",
 # Shown only on translated Privacy and Terms pages.
 "ui.prevails": "本译文仅为方便阅读而提供。如与英文版本有任何不一致，以英文版本为准。",
@@ -32,6 +32,8 @@ COPY = {
 "k.delete_local": "删除所有本地数据",
 "k.export": "准备导出",
 "k.share_export": "共享资料库导出文件",
+"k.connected_apps": "已连接的 App",
+"k.share_open_tasks": "允许已连接的应用查看未完成任务",
 "k.recently_deleted": "最近删除",
 "k.delete_permanently": "永久删除",
 "k.data_handled": "你的数据如何处理",
@@ -313,6 +315,18 @@ COPY = {
 <p><strong>网页导入</strong>（Pro）：当你要求导入某个网页的文字时，我们的服务器会自行获取该公开网页，并将其中可读的文字返回到你的设备。网页的地址和文字不会被存储，也不会发送给 Luna。</p>
 """,
 
+"p.connected.h": "已连接的 AI 应用",
+"p.connected.b": """
+<p><strong>Pro，可选。</strong>你可以允许 Claude 或 ChatGPT 等 AI 应用向 Second Brain 添加任务、日程和笔记。连接时使用应用中显示的一次性代码；网页上不会进行密码或 Apple 登录。为此功能，我们的服务器会保存：</p>
+<ul>
+  <li><strong>连接</strong>：应用的名称、连接时间和上次使用时间，以及其访问令牌的单向哈希。你可以随时在{K_connected_apps}中断开连接。</li>
+  <li><strong>正在送达的项目</strong>：应用请求添加的内容会在服务器收件箱中等待，直到你的 iPhone 保存后删除。未被取走的内容 30 天后删除。</li>
+  <li><strong>你的项目名称</strong>（仅 ID 和名称）：在有应用连接期间保存，以便应用归类项目。</li>
+  <li><strong>你的未完成任务</strong>：仅当你开启{K_share_open_tasks}时。保存未完成任务的标题、截止日期、优先级和项目名称，以便应用列出、完成和改期。关闭后会立即从服务器删除。</li>
+</ul>
+<p>已连接的应用无法读取你的笔记。除非你选择不经检查就保存某个应用的项目，否则应用添加的每一项都会在应用内等待你确认；它可以撤销，并标明来自哪个应用。以这种方式创建的项目，除我们的政策外，还受你所使用的 AI 应用的隐私政策约束。</p>
+""",
+
 "p.voice.h": "语音、语音识别和录音",
 "p.voice.b": """
 <p>语音记录仅在你录音时使用麦克风。语音会通过 Apple 的语音识别<strong>在你的设备上</strong>转写。你的录音不会为了转写而发送给 Apple 或我们，不过首次使用某种语言时会下载 Apple 的语音文件。</p>
@@ -359,6 +373,8 @@ COPY = {
 <tr><td>账户、方案和用量计数</td><td>在你的账户存续期间</td></tr>
 <tr><td>用于防滥用的经哈希处理的 IP 地址</td><td>几分钟</td></tr>
 <tr><td>服务器备份</td><td>我们托管服务商的数据库备份可能会将已删除的数据保留最多 30 天，之后过期。</td></tr>
+<tr><td>已连接 AI 应用送往你 iPhone 的项目</td><td>直到你的 iPhone 保存，最长 30 天</td></tr>
+<tr><td>供已连接应用使用的未完成任务列表</td><td>设置开启期间</td></tr>
 </table></div>
 """,
 

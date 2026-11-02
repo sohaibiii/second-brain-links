@@ -18,7 +18,7 @@ COPY = {
 "ui.rights": "Tous droits réservés.",
 "ui.store_soon": "Bientôt sur l’App Store",
 "ui.store_get": "Télécharger dans l’App Store",
-"ui.date": "16 octobre 2026",
+"ui.date": "2 novembre 2026",
 "ui.last_updated": "Dernière mise à jour : {DATE}",
 # Shown only on translated Privacy and Terms pages.
 "ui.prevails": "Cette traduction est fournie pour votre commodité. En cas de divergence avec la version anglaise, la version anglaise prévaut.",
@@ -32,6 +32,8 @@ COPY = {
 "k.delete_local": "Supprimer toutes les données locales",
 "k.export": "Préparer une exportation",
 "k.share_export": "Partager l’exportation de la bibliothèque",
+"k.connected_apps": "Apps connectées",
+"k.share_open_tasks": "Laisser les apps connectées voir les tâches en cours",
 "k.recently_deleted": "Supprimés récemment",
 "k.delete_permanently": "Supprimer définitivement",
 "k.data_handled": "Comment vos données sont traitées",
@@ -313,6 +315,18 @@ COPY = {
 <p><strong>Import de pages</strong> (Pro) : quand vous demandez à importer le texte d’une page web, notre serveur récupère lui-même cette page publique et renvoie son texte lisible à votre appareil. L’adresse et le texte de la page ne sont ni stockés ni envoyés à Luna.</p>
 """,
 
+"p.connected.h": "Apps d’IA connectées",
+"p.connected.b": """
+<p><strong>Pro, facultatif.</strong> Vous pouvez autoriser une app d’IA comme Claude ou ChatGPT à ajouter des tâches, des événements et des notes à Second Brain. Vous la connectez avec un code à usage unique affiché dans l’app ; aucun mot de passe ni connexion Apple n’a lieu sur le web. Pour cette fonction, notre serveur conserve :</p>
+<ul>
+  <li><strong>La connexion</strong> : le nom de l’app, la date de connexion et de dernière utilisation, et des empreintes à sens unique de ses jetons d’accès. Vous pouvez la déconnecter à tout moment dans {K_connected_apps}.</li>
+  <li><strong>Les éléments en route vers vous</strong> : ce que l’app demande d’ajouter attend dans une boîte de réception sur le serveur jusqu’à ce que votre iPhone l’enregistre, puis est supprimé. Ce qui n’est pas récupéré est supprimé après 30 jours.</li>
+  <li><strong>Les noms de vos projets</strong> (identifiants et noms seulement), tant qu’une app est connectée, pour qu’elle puisse classer les éléments.</li>
+  <li><strong>Vos tâches en cours</strong>, seulement si vous activez {K_share_open_tasks} : titres, échéances, priorités et noms de projet des tâches non terminées, pour que l’app puisse les lister, les terminer et les replanifier. La désactivation les supprime du serveur immédiatement.</li>
+</ul>
+<p>Les apps connectées ne peuvent pas lire vos notes. Chaque élément ajouté par une app attend votre confirmation dans l’app, sauf si vous choisissez d’enregistrer les éléments de cette app sans vérification ; il peut être annulé et indique l’app dont il provient. Les éléments créés ainsi relèvent aussi de la politique de confidentialité de l’app d’IA utilisée.</p>
+""",
+
 "p.voice.h": "Voix, parole et enregistrements",
 "p.voice.b": """
 <p>La capture vocale n’utilise le micro que pendant l’enregistrement. La parole est transcrite <strong>sur votre appareil</strong> avec la reconnaissance vocale d’Apple. Votre enregistrement n’est envoyé ni à Apple ni à nous pour la transcription, mais la première utilisation d’une langue entraîne le téléchargement des ressources vocales d’Apple.</p>
@@ -359,6 +373,8 @@ COPY = {
 <tr><td>Compte, formule et compteurs d’utilisation</td><td>Tant que votre compte existe</td></tr>
 <tr><td>Adresse IP hachée pour la protection contre les abus</td><td>Quelques minutes</td></tr>
 <tr><td>Sauvegardes du serveur</td><td>Les sauvegardes de base de données de notre hébergeur peuvent contenir des données supprimées pendant 30 jours au maximum avant d’expirer.</td></tr>
+<tr><td>Éléments d’apps d’IA connectées en route vers votre iPhone</td><td>Jusqu’à leur enregistrement par votre iPhone, ou 30 jours</td></tr>
+<tr><td>Liste des tâches en cours pour les apps connectées</td><td>Tant que le réglage est activé</td></tr>
 </table></div>
 """,
 

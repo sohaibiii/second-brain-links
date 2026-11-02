@@ -18,7 +18,7 @@ COPY = {
 "ui.rights": "Alle Rechte vorbehalten.",
 "ui.store_soon": "Bald im App Store",
 "ui.store_get": "Laden im App Store",
-"ui.date": "16. Oktober 2026",
+"ui.date": "2. November 2026",
 "ui.last_updated": "Zuletzt aktualisiert: {DATE}",
 # Shown only on translated Privacy and Terms pages.
 "ui.prevails": "Diese Übersetzung dient nur der besseren Verständlichkeit. Weicht sie von der englischen Fassung ab, gilt die englische Fassung.",
@@ -32,6 +32,8 @@ COPY = {
 "k.delete_local": "Alle lokalen Daten löschen",
 "k.export": "Export vorbereiten",
 "k.share_export": "Bibliotheksexport teilen",
+"k.connected_apps": "Verbundene Apps",
+"k.share_open_tasks": "Verbundene Apps dürfen offene Aufgaben sehen",
 "k.recently_deleted": "Zuletzt gelöscht",
 "k.delete_permanently": "Endgültig löschen",
 "k.data_handled": "So werden deine Daten verarbeitet",
@@ -313,6 +315,18 @@ COPY = {
 <p><strong>Seitenimport</strong> (Pro): Wenn du den Text einer Webseite importieren möchtest, ruft unser Server diese öffentliche Seite selbst ab und sendet ihren lesbaren Text an dein Gerät zurück. Adresse und Text der Seite werden weder gespeichert noch an Luna gesendet.</p>
 """,
 
+"p.connected.h": "Verbundene KI-Apps",
+"p.connected.b": """
+<p><strong>Pro, optional.</strong> Du kannst einer KI-App wie Claude oder ChatGPT erlauben, Aufgaben, Termine und Notizen zu Second Brain hinzuzufügen. Du verbindest sie mit einem einmaligen Code, den die App anzeigt; im Web findet weder eine Passwort- noch eine Apple-Anmeldung statt. Für diese Funktion speichert unser Server:</p>
+<ul>
+  <li><strong>Die Verbindung</strong>: den Namen der App, wann sie verbunden und zuletzt verwendet wurde, sowie Einweg-Hashes ihrer Zugriffstoken. Du kannst sie jederzeit unter {K_connected_apps} trennen.</li>
+  <li><strong>Einträge auf dem Weg zu dir</strong>: Was die App hinzufügen möchte, wartet in einem Server-Postfach, bis dein iPhone es gespeichert hat, und wird dann gelöscht. Nicht abgeholte Einträge werden nach 30 Tagen gelöscht.</li>
+  <li><strong>Deine Projektnamen</strong> (nur IDs und Namen), solange eine App verbunden ist, damit sie Einträge einordnen kann.</li>
+  <li><strong>Deine offenen Aufgaben</strong>, nur wenn du {K_share_open_tasks} einschaltest: Titel, Fälligkeitsdaten, Prioritäten und Projektnamen noch nicht erledigter Aufgaben, damit die App sie auflisten, abhaken und verschieben kann. Beim Ausschalten werden sie sofort vom Server gelöscht.</li>
+</ul>
+<p>Verbundene Apps können deine Notizen nicht lesen. Jeder Eintrag, den eine App hinzufügt, wartet in der App auf deine Bestätigung, sofern du für diese App nicht das Speichern ohne Prüfung gewählt hast; er lässt sich rückgängig machen und nennt die App, von der er stammt. Für so entstandene Einträge gilt neben unserer auch die Datenschutzerklärung der verwendeten KI-App.</p>
+""",
+
 "p.voice.h": "Stimme, Spracherkennung und Aufnahmen",
 "p.voice.b": """
 <p>Die Sprachaufnahme nutzt das Mikrofon nur, während du aufnimmst. Gesprochenes wird <strong>auf deinem Gerät</strong> mit Apples Spracherkennung transkribiert. Deine Aufnahme wird für die Transkription weder an Apple noch an uns gesendet; bei der ersten Nutzung einer Sprache werden allerdings Apples Sprachdateien heruntergeladen.</p>
@@ -359,6 +373,8 @@ COPY = {
 <tr><td>Account, Plan und Nutzungszähler</td><td>Solange dein Account besteht</td></tr>
 <tr><td>Gehashte IP-Adresse zum Schutz vor Missbrauch</td><td>Wenige Minuten</td></tr>
 <tr><td>Server-Backups</td><td>Die Datenbank-Backups unseres Hosting-Anbieters können gelöschte Daten bis zu 30 Tage lang enthalten, bevor sie ablaufen.</td></tr>
+<tr><td>Einträge verbundener KI-Apps auf dem Weg zu deinem iPhone</td><td>Bis dein iPhone sie speichert, höchstens 30 Tage</td></tr>
+<tr><td>Liste offener Aufgaben für verbundene Apps</td><td>Solange die Einstellung eingeschaltet ist</td></tr>
 </table></div>
 """,
 

@@ -18,7 +18,7 @@ COPY = {
 "ui.rights": "Todos os direitos reservados.",
 "ui.store_soon": "Em breve na App Store",
 "ui.store_get": "Baixar na App Store",
-"ui.date": "16 de outubro de 2026",
+"ui.date": "2 de novembro de 2026",
 "ui.last_updated": "Última atualização: {DATE}",
 # Shown only on translated Privacy and Terms pages.
 "ui.prevails": "Esta tradução é oferecida por conveniência. Se houver diferença em relação à versão em inglês, prevalece a versão em inglês.",
@@ -32,6 +32,8 @@ COPY = {
 "k.delete_local": "Apagar todos os dados locais",
 "k.export": "Preparar uma exportação",
 "k.share_export": "Compartilhar exportação da biblioteca",
+"k.connected_apps": "Apps conectados",
+"k.share_open_tasks": "Permitir que apps conectados vejam tarefas em aberto",
 "k.recently_deleted": "Apagados recentemente",
 "k.delete_permanently": "Apagar permanentemente",
 "k.data_handled": "Como seus dados são tratados",
@@ -313,6 +315,18 @@ COPY = {
 <p><strong>Importação de páginas</strong> (Pro): quando você pede para importar o texto de uma página da web, o nosso próprio servidor busca essa página pública e devolve o texto legível dela ao seu aparelho. O endereço e o texto da página não são armazenados e não são enviados à Luna.</p>
 """,
 
+"p.connected.h": "Apps de IA conectados",
+"p.connected.b": """
+<p><strong>Pro, opcional.</strong> Você pode permitir que um app de IA como o Claude ou o ChatGPT adicione tarefas, eventos e notas ao Second Brain. A conexão usa um código de uso único mostrado no app; não há senha nem login com a Apple na web. Para esse recurso, nosso servidor guarda:</p>
+<ul>
+  <li><strong>A conexão</strong>: o nome do app, quando foi conectado e usado pela última vez, e hashes unidirecionais dos seus tokens de acesso. Você pode desconectá-lo a qualquer momento em {K_connected_apps}.</li>
+  <li><strong>Itens a caminho</strong>: o que o app pediu para adicionar espera em uma caixa de entrada no servidor até o seu iPhone salvar, e então é apagado. O que não for recolhido é apagado após 30 dias.</li>
+  <li><strong>Os nomes dos seus projetos</strong> (só identificadores e nomes), enquanto houver um app conectado, para que ele possa classificar os itens.</li>
+  <li><strong>Suas tarefas em aberto</strong>, só se você ativar {K_share_open_tasks}: títulos, prazos, prioridades e nomes de projeto das tarefas ainda não concluídas, para que o app possa listá-las, concluí-las e reagendá-las. Desativar apaga tudo do servidor na hora.</li>
+</ul>
+<p>Apps conectados não conseguem ler suas notas. Cada item que um app adiciona espera sua confirmação no app, a menos que você escolha salvar os itens desse app sem revisão; pode ser desfeito e indica de qual app veio. Aos itens criados assim aplica-se, além da nossa, a política de privacidade do app de IA que você usou.</p>
+""",
+
 "p.voice.h": "Voz, fala e gravações",
 "p.voice.b": """
 <p>A captura por voz usa o microfone só enquanto você está gravando. A fala é transcrita <strong>no seu aparelho</strong> com o reconhecimento de fala da Apple. A sua gravação não é enviada para a Apple nem para nós para transcrição, embora o primeiro uso de um idioma baixe os arquivos de fala da Apple.</p>
@@ -359,6 +373,8 @@ COPY = {
 <tr><td>Conta, plano e contagens de uso</td><td>Enquanto a sua conta existir</td></tr>
 <tr><td>Endereço IP em hash para proteção contra abusos</td><td>Alguns minutos</td></tr>
 <tr><td>Backups do servidor</td><td>Os backups do banco de dados do nosso provedor de hospedagem podem conter dados apagados por até 30 dias, até expirarem.</td></tr>
+<tr><td>Itens de apps de IA conectados a caminho do seu iPhone</td><td>Até o seu iPhone salvá-los, ou 30 dias</td></tr>
+<tr><td>Lista de tarefas em aberto para apps conectados</td><td>Enquanto o ajuste estiver ativado</td></tr>
 </table></div>
 """,
 

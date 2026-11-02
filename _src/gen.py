@@ -94,7 +94,7 @@ NAV_ORDER = ["support", "about", "privacy", "terms", "data"]
 SUPPORT_CARDS = ["how", "requirements", "start", "faq", "trouble", "contact"]
 PRIVACY_CARDS = [
     "summary", "collect", "device", "ai", "sync", "account", "voice",
-    "permissions", "purchases", "third", "retention", "delete", "rights",
+    "connected", "permissions", "purchases", "third", "retention", "delete", "rights",
     "children", "transfers", "changes", "contact",
 ]
 TERMS_CARDS = [
@@ -341,7 +341,7 @@ APP_TERMS = (
     "luna", "on_device", "language", "restore", "manage", "sign_out",
     "keep_recording", "needs_review", "smart_org", "smart_fill", "quick",
     "ask", "calendars", "morning", "reminders", "spotlight", "device_only",
-    "undo", "widgets",
+    "undo", "widgets", "connected_apps", "share_open_tasks",
 )
 
 

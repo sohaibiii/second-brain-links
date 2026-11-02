@@ -32,7 +32,7 @@ COPY = {
 "ui.rights": "All rights reserved.",
 "ui.store_soon": "Coming soon to the App Store",
 "ui.store_get": "Download on the App Store",
-"ui.date": "16 October 2026",
+"ui.date": "2 November 2026",
 "ui.last_updated": "Last updated: {DATE}",
 # Shown only on translated Privacy and Terms pages.
 "ui.prevails": "This translation is provided for convenience. If it differs from the English version, the English version applies.",
@@ -46,6 +46,8 @@ COPY = {
 "k.delete_local": "Delete all local data",
 "k.export": "Prepare an export",
 "k.share_export": "Share library export",
+"k.connected_apps": "Connected apps",
+"k.share_open_tasks": "Let connected apps see open tasks",
 "k.recently_deleted": "Recently deleted",
 "k.delete_permanently": "Delete permanently",
 "k.data_handled": "How your data is handled",
@@ -333,6 +335,18 @@ COPY = {
 <p><strong>Page import</strong> (Pro): when you ask to import a web page's text, our server fetches that public page itself and returns its readable text to your device. The page's address and text are not stored and are not sent to Luna.</p>
 """,
 
+"p.connected.h": "Connected AI apps",
+"p.connected.b": """
+<p><strong>Pro, optional.</strong> You can let an AI app such as Claude or ChatGPT add tasks, events and notes to Second Brain. You connect it with a one-time code shown in the app; no password or Apple sign-in happens on the web. For this feature our server keeps:</p>
+<ul>
+  <li><strong>The connection</strong>: the app's name, when it connected and was last used, and one-way hashes of its access tokens. You can disconnect it at any time in {K_connected_apps}.</li>
+  <li><strong>Items on their way to you</strong>: what the app asked to add waits in a server inbox until your iPhone saves it, then it is deleted. Anything not collected is deleted after 30 days.</li>
+  <li><strong>Your project names</strong> (ids and names only), while an app is connected, so it can file items.</li>
+  <li><strong>Your open tasks</strong>, only if you turn on {K_share_open_tasks}: the titles, due dates, priorities and project names of tasks not yet done, so the app can list, complete and reschedule them. Turning it off deletes them from the server at once.</li>
+</ul>
+<p>Connected apps cannot read your notes. Every item an app adds waits for your confirmation in the app unless you choose to save that app's items without review, can be undone, and names the app it came from. Items created this way are also governed by the privacy policy of the AI app you used.</p>
+""",
+
 "p.voice.h": "Voice, speech and recordings",
 "p.voice.b": """
 <p>Voice capture uses the microphone only while you are recording. Speech is transcribed <strong>on your device</strong> with Apple's speech recognition. Your recording is not sent to Apple or to us for transcription, although the first use of a language downloads Apple's speech files.</p>
@@ -379,6 +393,8 @@ COPY = {
 <tr><td>Account, plan and usage counts</td><td>While your account exists</td></tr>
 <tr><td>Hashed IP address for abuse protection</td><td>A few minutes</td></tr>
 <tr><td>Server backups</td><td>Our hosting provider's database backups may hold deleted data for up to 30 days before they expire.</td></tr>
+<tr><td>Items from connected AI apps on their way to your iPhone</td><td>Until your iPhone saves them, or 30 days</td></tr>
+<tr><td>Open-task list for connected apps</td><td>While the setting is on</td></tr>
 </table></div>
 """,
 

@@ -18,7 +18,7 @@ COPY = {
 "ui.rights": "Todos los derechos reservados.",
 "ui.store_soon": "Próximamente en el App Store",
 "ui.store_get": "Descárgalo en el App Store",
-"ui.date": "16 de octubre de 2026",
+"ui.date": "2 de noviembre de 2026",
 "ui.last_updated": "Última actualización: {DATE}",
 # Shown only on translated Privacy and Terms pages.
 "ui.prevails": "Esta traducción se ofrece para tu comodidad. Si difiere de la versión en inglés, prevalece la versión en inglés.",
@@ -32,6 +32,8 @@ COPY = {
 "k.delete_local": "Eliminar todos los datos locales",
 "k.export": "Preparar una exportación",
 "k.share_export": "Compartir exportación de la biblioteca",
+"k.connected_apps": "Apps conectadas",
+"k.share_open_tasks": "Permitir que las apps conectadas vean las tareas pendientes",
 "k.recently_deleted": "Eliminado recientemente",
 "k.delete_permanently": "Eliminar definitivamente",
 "k.data_handled": "Cómo se tratan tus datos",
@@ -319,6 +321,18 @@ COPY = {
 <p><strong>Importación de páginas</strong> (Pro): cuando pides importar el texto de una página web, nuestro propio servidor obtiene esa página pública y devuelve su texto legible a tu dispositivo. La dirección y el texto de la página no se almacenan ni se envían a Luna.</p>
 """,
 
+"p.connected.h": "Apps de IA conectadas",
+"p.connected.b": """
+<p><strong>Pro, opcional.</strong> Puedes permitir que una app de IA como Claude o ChatGPT añada tareas, eventos y notas a Second Brain. La conectas con un código de un solo uso que muestra la app; en la web no hay contraseña ni inicio de sesión con Apple. Para esta función, nuestro servidor guarda:</p>
+<ul>
+  <li><strong>La conexión</strong>: el nombre de la app, cuándo se conectó y se usó por última vez, y hashes unidireccionales de sus tokens de acceso. Puedes desconectarla en cualquier momento en {K_connected_apps}.</li>
+  <li><strong>Elementos en camino hacia ti</strong>: lo que la app pide añadir espera en una bandeja del servidor hasta que tu iPhone lo guarda; después se elimina. Lo que no se recoge se elimina a los 30 días.</li>
+  <li><strong>Los nombres de tus proyectos</strong> (solo identificadores y nombres), mientras haya una app conectada, para que pueda clasificar los elementos.</li>
+  <li><strong>Tus tareas pendientes</strong>, solo si activas {K_share_open_tasks}: títulos, fechas límite, prioridades y nombres de proyecto de las tareas aún no hechas, para que la app pueda listarlas, completarlas y reprogramarlas. Al desactivarlo se eliminan del servidor de inmediato.</li>
+</ul>
+<p>Las apps conectadas no pueden leer tus notas. Cada elemento que añade una app espera tu confirmación en la app, salvo que elijas guardar los elementos de esa app sin revisión; se puede deshacer e indica de qué app procede. A los elementos creados así se les aplica, además de la nuestra, la política de privacidad de la app de IA que usaste.</p>
+""",
+
 "p.voice.h": "Voz, reconocimiento de voz y grabaciones",
 "p.voice.b": """
 <p>La captura de voz usa el micrófono solo mientras grabas. Lo que dices se transcribe <strong>en tu dispositivo</strong> con el reconocimiento de voz de Apple. Tu grabación no se envía a Apple ni a nosotros para transcribirla, aunque el primer uso de un idioma descarga los archivos de voz de Apple.</p>
@@ -365,6 +379,8 @@ COPY = {
 <tr><td>Cuenta, plan y recuentos de uso</td><td>Mientras exista tu cuenta</td></tr>
 <tr><td>Dirección IP con hash para la protección frente a abusos</td><td>Unos minutos</td></tr>
 <tr><td>Copias de seguridad del servidor</td><td>Las copias de seguridad de la base de datos de nuestro proveedor de alojamiento pueden contener datos eliminados durante un máximo de 30 días antes de caducar.</td></tr>
+<tr><td>Elementos de apps de IA conectadas en camino a tu iPhone</td><td>Hasta que tu iPhone los guarda, o 30 días</td></tr>
+<tr><td>Lista de tareas pendientes para apps conectadas</td><td>Mientras el ajuste esté activado</td></tr>
 </table></div>
 """,
 
