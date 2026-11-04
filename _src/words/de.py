@@ -18,7 +18,7 @@ COPY = {
 "ui.rights": "Alle Rechte vorbehalten.",
 "ui.store_soon": "Bald im App Store",
 "ui.store_get": "Laden im App Store",
-"ui.date": "2. November 2026",
+"ui.date": "4. November 2026",
 "ui.last_updated": "Zuletzt aktualisiert: {DATE}",
 # Shown only on translated Privacy and Terms pages.
 "ui.prevails": "Diese Übersetzung dient nur der besseren Verständlichkeit. Weicht sie von der englischen Fassung ab, gilt die englische Fassung.",
@@ -47,6 +47,7 @@ COPY = {
 "k.manage": "Abo verwalten",
 "k.sign_out": "Abmelden und Gastbibliothek öffnen",
 "k.keep_recording": "Diese Aufnahme behalten",
+"k.retranscribe": "Mit Luna neu transkribieren",
 "k.needs_review": "Zu prüfen",
 "k.smart_org": "Smarte Organisation",
 "k.smart_fill": "Smart Fill",
@@ -134,7 +135,7 @@ COPY = {
 <dt>Kann ich den Antworten vertrauen?</dt>
 <dd>Antworten entstehen nur aus dem, was du gespeichert hast, und jede Antwort nennt ihre Quellen, damit du sie öffnen kannst. KI kann trotzdem etwas falsch verstehen oder übersehen. Prüfe also die Quellen, bevor du dich bei etwas Wichtigem auf eine Antwort verlässt.</dd>
 <dt>Was passiert mit meinen Aufnahmen?</dt>
-<dd>Sie werden auf deinem Gerät transkribiert und dafür weder an Apple noch an uns gesendet. Sobald ein Transkript fertig ist, wird das Audio nach 7 Tagen gelöscht, außer du tippst auf {K_keep_recording}. Schlägt ein Transkript fehl, bleibt das Audio erhalten, bis du es löschst, damit du es erneut versuchen kannst. Transkripte bleiben erhalten, auch wenn das Audio gelöscht ist.</dd>
+<dd>Sie werden auf deinem Gerät transkribiert und dafür weder an Apple noch an uns gesendet – mit einer Ausnahme: Wenn du Light oder Pro hast und Luna als Engine gewählt hast, wird eine Aufnahme, bei der sich dein iPhone nicht sicher war, an Luna gesendet und dort transkribiert, bevor sie organisiert wird. Das zählt als eine Cloud-KI-Aufnahme, und wir speichern die Aufnahme nicht. Einzelheiten stehen in der <a href="{BASE}{L}/privacy/">Datenschutzerklärung</a>. Sobald ein Transkript fertig ist, wird das Audio nach 7 Tagen gelöscht, außer du tippst auf {K_keep_recording}. Schlägt ein Transkript fehl, bleibt das Audio erhalten, bis du es löschst, damit du es erneut versuchen kannst. Transkripte bleiben erhalten, auch wenn das Audio gelöscht ist.</dd>
 <dt>Wird zwischen meinem iPhone und iPad synchronisiert?</dt>
 <dd>Ja, mit Light oder Pro. Melde dich auf beiden Geräten mit demselben Apple Account an und schalte {K_sync} ein. Deine Bibliothek wird über deinen eigenen privaten iCloud-Speicher synchronisiert, den wir nicht lesen können.</dd>
 <dt>Was passiert, wenn mein Abo endet?</dt>
@@ -237,7 +238,7 @@ COPY = {
 <p>Drei Dinge ändern das, und jedes davon erfordert deine Entscheidung:</p>
 <ul>
   <li><strong>iCloud-Synchronisierung</strong> (Light und Pro) kopiert deine Bibliothek in <em>deinen eigenen</em> privaten iCloud-Speicher. Wir können ihn nicht lesen.</li>
-  <li><strong>Cloud-KI („Luna“)</strong> sendet den Text, der für eine einzelne Anfrage nötig ist, über unseren Server an OpenAI – wenn die KI auf dem Gerät nicht weiterhelfen kann oder wenn du Luna wählst. Es wird nichts gesendet, solange du dich nicht anmeldest und sie einschaltest.</li>
+  <li><strong>Cloud-KI („Luna“)</strong> sendet den Text, der für eine einzelne Anfrage nötig ist, über unseren Server an OpenAI – wenn die KI auf dem Gerät nicht weiterhelfen kann oder wenn du Luna wählst. Ist Luna deine Engine, geht auch eine Aufnahme, bei der sich dein iPhone nicht sicher war, auf demselben Weg zur Transkription. Es wird nichts gesendet, solange du dich nicht anmeldest und sie einschaltest.</li>
   <li><strong>Ein Account</strong> („Mit Apple anmelden“) lässt unseren Server einen kleinen Datensatz speichern: eine Account-ID, die ein Einweg-Hash ist, deinen Plan, deine Einwilligungen und deine Nutzungszähler. Wir fragen Apple nie nach deinem Namen oder deiner E-Mail-Adresse.</li>
 </ul>
 <div class="callout"><span class="tile">{shield}</span><div>Keine Werbung, keine Analyse, kein Tracking und keine SDKs von Drittanbietern in der App. Wir verkaufen oder teilen keine personenbezogenen Daten und nutzen deine Inhalte nie zum Training von KI-Modellen.</div></div>
@@ -251,7 +252,7 @@ COPY = {
 <tr><th>Kategorie</th><th>Erhoben?</th><th>Was das bedeutet</th></tr>
 <tr><td>Kontaktdaten</td><td>Nein</td><td>„Mit Apple anmelden“ ist so eingerichtet, dass weder dein Name noch deine E-Mail-Adresse mit uns geteilt werden. In der App gibt es kein E-Mail-Feld.</td></tr>
 <tr><td>Kennungen</td><td><strong>Nur mit Account</strong></td><td>Eine Account-ID, die aus einem Einweg-Hash der Kennung entsteht, die Apple uns übermittelt, und der öffentliche Schlüssel, den Apples App Attest auf jedem deiner Geräte erzeugt. Es werden weder eine Werbe-ID noch eine Geräte-ID verwendet.</td></tr>
-<tr><td>Nutzerinhalte</td><td><strong>Nur mit Cloud-KI</strong></td><td>Der Text, der für eine Anfrage an Luna nötig ist, und ihr Ergebnis, kurzzeitig gespeichert wie unten beschrieben. Deine Bibliothek selbst bleibt auf deinem Gerät und in deiner eigenen iCloud.</td></tr>
+<tr><td>Nutzerinhalte</td><td><strong>Nur mit Cloud-KI</strong></td><td>Der Text, der für eine Anfrage an Luna nötig ist, und ihr Ergebnis, kurzzeitig gespeichert wie unten beschrieben. Ist Luna deine Engine, auch eine Aufnahme, bei der sich dein iPhone nicht sicher war; sie wird transkribiert und nicht gespeichert. Deine Bibliothek selbst bleibt auf deinem Gerät und in deiner eigenen iCloud.</td></tr>
 <tr><td>Käufe</td><td><strong>Nur wenn du ein Abo abschließt</strong></td><td>Die signierte Transaktion, die Apple für deinen Plan sendet: Produkt, Datumsangaben, Status von Testphase und Verlängerung. Zahlungsdaten sehen wir nie.</td></tr>
 <tr><td>Nutzungsdaten</td><td><strong>Nur mit Account</strong></td><td>Anzahl und Umfang der Cloud-KI-Anfragen, damit das monatliche Kontingent angewendet werden kann. Keine Analyse und keine Aufzeichnung darüber, wie du die App nutzt.</td></tr>
 <tr><td>Standort, Kontakte, Gesundheit, Browserverlauf, Suchverlauf, Diagnose</td><td>Nein</td><td>Die App fragt weder Standort noch Kontakte ab und enthält weder Absturzberichte noch Analysewerkzeuge.</td></tr>
@@ -283,13 +284,15 @@ COPY = {
 <p>Für jede Anfrage wird nur der dafür nötige Text gesendet:</p>
 <ul>
   <li><strong>Organisieren und Smart Fill</strong>: der Text des Gedankens, der organisiert wird, einschließlich Text, der auf deinem Gerät aus einem angehängten Foto oder PDF gelesen wurde, deine Zeitzone und Sprache sowie die Namen und kurzen Zusammenfassungen von bis zu 30 deiner Projekte.</li>
+  <li><strong>Transkription einer Aufnahme</strong> (Light und Pro mit Luna als Engine): die Aufnahme selbst, nur wenn sich dein iPhone bei ihren Worten nicht sicher war, zusammen mit deiner Sprache und einer kurzen Liste von Vokabelhinweisen. Siehe <em>Stimme, Spracherkennung und Aufnahmen</em> unten.</li>
   <li><strong>Frag deine Notizen</strong>: deine Frage und kurze Auszüge aus bis zu 12 gespeicherten Einträgen, die dein Gerät als relevant ausgewählt hat.</li>
   <li><strong>Aufräumen</strong> (Light und Pro): der Text der Notiz, die du aufräumen lassen wolltest.</li>
   <li><strong>Tageszusammenfassung</strong> (Pro): die Anzahl der fälligen Dinge und kurze Auszüge aus bis zu 10 deiner Einträge für diesen Tag.</li>
 </ul>
-<p><strong>Nie gesendet werden:</strong> Audio, Bilder oder Dateien selbst; Gedanken mit {K_device_only}; Termine aus deiner Kalender-App; dein Name oder deine E-Mail-Adresse (die haben wir nicht); jegliche Kennung, an der OpenAI erkennen könnte, wer du bist.</p>
+<p><strong>Nie gesendet werden:</strong> Bilder oder Dateien selbst; Audio, außer einer Aufnahme, die wie unter <em>Stimme, Spracherkennung und Aufnahmen</em> beschrieben zur Transkription an Luna geht; Gedanken mit {K_device_only}; Termine aus deiner Kalender-App; dein Name oder deine E-Mail-Adresse (die haben wir nicht); jegliche Kennung, an der OpenAI erkennen könnte, wer du bist.</p>
 <h3>Wie lange es gespeichert wird</h3>
 <p>Unser Server speichert ein Ergebnis <strong>bis zu 24 Stunden</strong>, damit eine unterbrochene Anfrage abgeschlossen werden kann, ohne sie doppelt auszuführen oder dein Kontingent doppelt zu belasten. Danach wird der Text entfernt, und ein inhaltsfreier Beleg (ein Einweg-Hash der Anfrage, die IDs der verwendeten Einträge und der Zeitpunkt) wird bis zu einem Jahr für die Kontingentabrechnung aufbewahrt. Wenn du einen Eintrag endgültig löschst, werden auch alle daraus erzeugten Ergebnisse entfernt, und wenn du deinen Account löschst, werden sie alle entfernt.</p>
+<p>Eine zur Transkription gesendete Aufnahme speichern wir überhaupt nicht. Nur ihr Einweg-Hash geht in den Beleg ein, damit die Anfrage abgeschlossen oder erstattet werden kann, und ihr Transkript wird zusammen mit dem Ergebnis dieselben 24 Stunden aufbewahrt.</p>
 <p>Wir bitten OpenAI, keine Antworten zu speichern. Gemäß seinen API-Bedingungen nutzt OpenAI diese Daten nicht zum Training seiner Modelle. OpenAI kann Eingaben und Ausgaben für begrenzte Zeit aufbewahren, um Missbrauch zu erkennen, wie in seinen <a href="https://openai.com/enterprise-privacy/">API-Datenrichtlinien</a> beschrieben.</p>
 <p>KI-generierte Vorschläge und Antworten können falsch sein. Deshalb lässt sich jedes Smart-Fill-Feld vor dem Speichern prüfen, und jede Antwort nennt ihre Quellen.</p>
 """,
@@ -329,7 +332,9 @@ COPY = {
 
 "p.voice.h": "Stimme, Spracherkennung und Aufnahmen",
 "p.voice.b": """
-<p>Die Sprachaufnahme nutzt das Mikrofon nur, während du aufnimmst. Gesprochenes wird <strong>auf deinem Gerät</strong> mit Apples Spracherkennung transkribiert. Deine Aufnahme wird für die Transkription weder an Apple noch an uns gesendet; bei der ersten Nutzung einer Sprache werden allerdings Apples Sprachdateien heruntergeladen.</p>
+<p>Die Sprachaufnahme nutzt das Mikrofon nur, während du aufnimmst. Gesprochenes wird <strong>auf deinem Gerät</strong> mit Apples Spracherkennung transkribiert. Deine Aufnahme wird für die Transkription weder an Apple noch an uns gesendet; bei der ersten Nutzung einer Sprache werden allerdings Apples Sprachdateien heruntergeladen. Es gibt eine Ausnahme, die gleich beschrieben wird.</p>
+<p><strong>Wann eine Aufnahme an Luna geht.</strong> Ab dem 4. November 2026 gilt: Wenn du Light oder Pro hast, unter {K_settings} Luna als Engine gewählt hast und sich dein iPhone bei den gehörten Worten nicht sicher war (die Zuverlässigkeit seiner Spracherkennung war gering, oder sie lieferte kein fertiges Transkript), wird die Aufnahme selbst an Luna gesendet und dort transkribiert, bevor Luna sie organisiert. Eine Aufnahme, bei der sich dein iPhone sicher war, wird nicht gesendet; wie bisher geht nur ihr Transkript. Die Aufnahme wird einmal über eine verschlüsselte Verbindung an unseren Server und weiter an das Sprache-zu-Text-Modell von OpenAI (gpt-transcribe) übertragen. Wir speichern sie nicht: Nur ein Einweg-Hash von ihr geht in unser Nutzungsprotokoll ein, damit eine unterbrochene Anfrage abgeschlossen und eine fehlgeschlagene erstattet werden kann, und das Transkript wird wie andere Ergebnisse bis zu 24 Stunden zusammen mit dem KI-Ergebnis aufbewahrt. Transkription und Organisieren einer Aufnahme zählen zusammen als eine Cloud-KI-Aufnahme des monatlichen Kontingents deines Plans. Nichts davon gilt für die Engine auf dem Gerät, für kostenlose Pläne oder für Gedanken mit {K_device_only}: Diese werden immer auf deinem Gerät transkribiert. Du kannst eine Aufnahme weiterhin selbst über {K_retranscribe} beim Überprüfen senden, wenn Cloud-KI eingeschaltet ist; sie wird genauso behandelt.</p>
+<p><strong>Vokabelhinweise.</strong> Damit Namen richtig geschrieben werden, gibt die App den Sprachmodellen eine kurze Liste von Wörtern mit, auf die sie achten sollen: die Namen deiner Projekte und Tags sowie Namen, die in den Titeln deiner gespeicherten Einträge vorkommen. Die Liste geht an Apples Spracherkennung auf deinem Gerät und, bei einer an Luna gesendeten Aufnahme, an unseren Server und OpenAI. Weder unser Server noch OpenAI behält sie über die Anfrage hinaus.</p>
 <p>Aufnahmen werden in deiner Bibliothek aufbewahrt. Sobald ein Transkript fertig ist, wird das Audio <strong>7 Tage</strong> nach dem Speichern gelöscht, außer du tippst auf {K_keep_recording}. Eine Aufnahme, deren Transkription fehlgeschlagen ist, bleibt erhalten, bis du sie löschst. Transkripte bleiben erhalten, auch wenn das Audio gelöscht ist.</p>
 """,
 
@@ -356,7 +361,7 @@ COPY = {
 <ul>
   <li><strong>Apple</strong>: „Mit Apple anmelden“, App Attest, der App Store und Käufe, iCloud-Synchronisierung in deinem eigenen Account, Push-Zustellung für die Synchronisierung sowie die KI- und Sprachmodelle auf dem Gerät.</li>
   <li><strong>Cloudflare</strong>: hostet unseren Server und seine Datenbank und leitet Anfragen dorthin weiter.</li>
-  <li><strong>OpenAI</strong>: betreibt Luna für die Cloud-KI-Anfragen, die du erlaubst, wie oben beschrieben.</li>
+  <li><strong>OpenAI</strong>: betreibt Luna für die Cloud-KI-Anfragen, die du erlaubst, einschließlich der Transkription der an Luna gesendeten Aufnahmen, wie oben beschrieben.</li>
 </ul>
 <p>Wir verkaufen oder vermieten keine personenbezogenen Daten und teilen nichts mit Werbetreibenden oder Datenhändlern. Wir können Informationen offenlegen, wenn das Gesetz es verlangt. Da wir so wenig speichern, gibt es kaum etwas, das wir offenlegen könnten.</p>
 """,
@@ -369,6 +374,7 @@ COPY = {
 <tr><td>Sprachaufnahmen</td><td>7 Tage nach einem fertigen Transkript, außer du behältst sie. Bis du sie löschst, wenn die Transkription fehlgeschlagen ist.</td></tr>
 <tr><td>Deine iCloud-Kopie</td><td>Bis du sie oder deinen Account löschst. Sie wird von Apple in deiner iCloud gespeichert.</td></tr>
 <tr><td>Cloud-KI-Ergebnis</td><td>Bis zu 24 Stunden. Ein inhaltsfreier Beleg wird bis zu 1 Jahr aufbewahrt.</td></tr>
+<tr><td>Zur Transkription an Luna gesendete Aufnahme</td><td>Wird nicht gespeichert. Ihr Einweg-Hash ist Teil des Belegs, und ihr Transkript wird bis zu 24 Stunden zusammen mit dem Ergebnis aufbewahrt.</td></tr>
 <tr><td>Anmeldesitzungen</td><td>30 Tage ab der letzten Aktualisierung</td></tr>
 <tr><td>Account, Plan und Nutzungszähler</td><td>Solange dein Account besteht</td></tr>
 <tr><td>Gehashte IP-Adresse zum Schutz vor Missbrauch</td><td>Wenige Minuten</td></tr>
@@ -451,7 +457,7 @@ COPY = {
 """,
 "t.cloud.h": "7. Cloud-Funktionen und Kontingente",
 "t.cloud.b": """
-<p>Die <strong>Synchronisierung</strong> nutzt deinen eigenen iCloud-Account und hängt von Apples Dienst, deinem iCloud-Speicher und deiner Verbindung ab. <strong>Cloud-KI</strong> ist durch das monatliche Kontingent deines Plans begrenzt: Light enthält 300 Cloud-KI-Aufnahmen und 100 Cloud-Antworten pro Monat, Pro enthält 700 und 250, und ein angemeldeter kostenloser Account erhält ein einmaliges Probekontingent. Kontingente werden jeden Kalendermonat zurückgesetzt, und ungenutzte Mengen werden nicht übertragen. Damit der Dienst fair bleibt, gilt außerdem ein Limit für die Gesamtmenge an Text, die pro Monat verarbeitet wird. Der <strong>Seitenimport</strong> (Pro) ruft nur öffentliche Seiten ab, und du bist dafür verantwortlich, dass du das Recht hast, das Importierte zu nutzen.</p>
+<p>Die <strong>Synchronisierung</strong> nutzt deinen eigenen iCloud-Account und hängt von Apples Dienst, deinem iCloud-Speicher und deiner Verbindung ab. <strong>Cloud-KI</strong> ist durch das monatliche Kontingent deines Plans begrenzt: Light enthält 300 Cloud-KI-Aufnahmen und 100 Cloud-Antworten pro Monat, Pro enthält 700 und 250, und ein angemeldeter kostenloser Account erhält ein einmaliges Probekontingent. Transkription und Organisieren einer Aufnahme mit Luna zählen zusammen als eine Aufnahme. Kontingente werden jeden Kalendermonat zurückgesetzt, und ungenutzte Mengen werden nicht übertragen. Damit der Dienst fair bleibt, gilt außerdem ein Limit für die Gesamtmenge an Text, die pro Monat verarbeitet wird. Der <strong>Seitenimport</strong> (Pro) ruft nur öffentliche Seiten ab, und du bist dafür verantwortlich, dass du das Recht hast, das Importierte zu nutzen.</p>
 <p>Wir bemühen uns, Cloud-Funktionen verfügbar zu halten, garantieren aber nicht, dass sie unterbrechungsfrei sind. Funktionen auf dem Gerät arbeiten auch ohne sie weiter.</p>
 """,
 "t.subscriptions.h": "8. Abos und Abrechnung",

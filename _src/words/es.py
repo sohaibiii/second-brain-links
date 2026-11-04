@@ -18,7 +18,7 @@ COPY = {
 "ui.rights": "Todos los derechos reservados.",
 "ui.store_soon": "Próximamente en el App Store",
 "ui.store_get": "Descárgalo en el App Store",
-"ui.date": "2 de noviembre de 2026",
+"ui.date": "4 de noviembre de 2026",
 "ui.last_updated": "Última actualización: {DATE}",
 # Shown only on translated Privacy and Terms pages.
 "ui.prevails": "Esta traducción se ofrece para tu comodidad. Si difiere de la versión en inglés, prevalece la versión en inglés.",
@@ -47,6 +47,7 @@ COPY = {
 "k.manage": "Gestionar suscripción",
 "k.sign_out": "Cerrar sesión y abrir la biblioteca de invitado",
 "k.keep_recording": "Conservar esta grabación",
+"k.retranscribe": "Volver a transcribir con Luna",
 "k.needs_review": "Por revisar",
 "k.smart_org": "Organización inteligente",
 "k.smart_fill": "Relleno inteligente",
@@ -134,7 +135,7 @@ COPY = {
 <dt>¿Puedo fiarme de las respuestas?</dt>
 <dd>Las respuestas se basan solo en lo que has guardado, y cada respuesta indica sus fuentes para que puedas abrirlas. Aun así, la IA puede malinterpretar u omitir cosas, así que comprueba las fuentes antes de fiarte de una respuesta para algo importante.</dd>
 <dt>¿Qué pasa con mis grabaciones de voz?</dt>
-<dd>Se transcriben en tu dispositivo y no se envían a Apple ni a nosotros para transcribirlas. Cuando la transcripción está completa, el audio se elimina a los 7 días, salvo que toques {K_keep_recording}. Si una transcripción falla, el audio se conserva hasta que lo elimines, para que puedas volver a intentarlo. Las transcripciones se conservan aunque su audio ya no esté.</dd>
+<dd>Se transcriben en tu dispositivo y no se envían a Apple ni a nosotros para transcribirlas, con una excepción: si tienes Light o Pro y elegiste Luna como motor, una grabación de la que tu iPhone no estaba seguro se envía a Luna para transcribirla antes de organizarla. Eso cuenta como una captura con IA en la nube, y no almacenamos la grabación. Los detalles están en la <a href="{BASE}{L}/privacy/">Política de privacidad</a>. Cuando la transcripción está completa, el audio se elimina a los 7 días, salvo que toques {K_keep_recording}. Si una transcripción falla, el audio se conserva hasta que lo elimines, para que puedas volver a intentarlo. Las transcripciones se conservan aunque su audio ya no esté.</dd>
 <dt>¿Se sincroniza entre mi iPhone y mi iPad?</dt>
 <dd>Sí, con Light o Pro. Inicia sesión con la misma Cuenta de Apple en ambos y activa {K_sync}. Tu biblioteca se sincroniza a través de tu propio almacenamiento privado de iCloud, que nosotros no podemos leer.</dd>
 <dt>¿Qué pasa si termina mi suscripción?</dt>
@@ -243,7 +244,7 @@ COPY = {
 <p>Hay tres cosas que cambian eso, y cada una requiere que tú lo elijas:</p>
 <ul>
   <li><strong>La sincronización con iCloud</strong> (Light y Pro) copia tu biblioteca en <em>tu propio</em> almacenamiento privado de iCloud. Nosotros no podemos leerlo.</li>
-  <li><strong>La IA en la nube («Luna»)</strong> envía a OpenAI, a través de nuestro servidor, el texto necesario para una solicitud, cuando la IA en el dispositivo no puede ayudar o cuando eliges Luna. No se envía nada a menos que inicies sesión y la actives.</li>
+  <li><strong>La IA en la nube («Luna»)</strong> envía a OpenAI, a través de nuestro servidor, el texto necesario para una solicitud, cuando la IA en el dispositivo no puede ayudar o cuando eliges Luna. Si Luna es tu motor, una grabación de la que tu iPhone no estaba seguro sigue el mismo camino para transcribirla. No se envía nada a menos que inicies sesión y la actives.</li>
   <li><strong>Una cuenta</strong> (Iniciar sesión con Apple) permite que nuestro servidor guarde un registro reducido: un ID de cuenta que es un hash unidireccional, tu plan, tus decisiones de consentimiento y tus recuentos de uso. Nunca pedimos a Apple tu nombre ni tu correo electrónico.</li>
 </ul>
 <div class="callout"><span class="tile">{shield}</span><div>Sin publicidad, sin analíticas, sin rastreo y sin SDK de terceros en la app. No vendemos ni compartimos datos personales, y nunca usamos tu contenido para entrenar modelos de IA.</div></div>
@@ -257,7 +258,7 @@ COPY = {
 <tr><th>Categoría</th><th>¿Se recopila?</th><th>Qué significa</th></tr>
 <tr><td>Información de contacto</td><td>No</td><td>Iniciar sesión con Apple está configurado para no compartir con nosotros ningún nombre ni dirección de correo electrónico. La app no tiene ningún campo de correo electrónico.</td></tr>
 <tr><td>Identificadores</td><td><strong>Solo con una cuenta</strong></td><td>Un ID de cuenta creado a partir de un hash unidireccional del identificador que nos da Apple, y la clave pública que App Attest de Apple crea en cada uno de tus dispositivos. No se usa ningún identificador publicitario ni ningún ID de dispositivo.</td></tr>
-<tr><td>Contenido del usuario</td><td><strong>Solo con IA en la nube</strong></td><td>El texto necesario para una solicitud que haces a Luna, y su resultado, conservados brevemente como se describe más abajo. Tu biblioteca en sí se queda en tu dispositivo y en tu propio iCloud.</td></tr>
+<tr><td>Contenido del usuario</td><td><strong>Solo con IA en la nube</strong></td><td>El texto necesario para una solicitud que haces a Luna, y su resultado, conservados brevemente como se describe más abajo. Si Luna es tu motor, también una grabación de la que tu iPhone no estaba seguro, que se transcribe y no se almacena. Tu biblioteca en sí se queda en tu dispositivo y en tu propio iCloud.</td></tr>
 <tr><td>Compras</td><td><strong>Solo si te suscribes</strong></td><td>La transacción firmada que Apple envía para tu plan: producto, fechas, estado de la prueba y de la renovación. Nunca vemos los datos de pago.</td></tr>
 <tr><td>Datos de uso</td><td><strong>Solo con una cuenta</strong></td><td>Recuentos de las solicitudes de IA en la nube y de su tamaño, para poder aplicar el cupo mensual. Sin analíticas ni registro de cómo usas la app.</td></tr>
 <tr><td>Ubicación, contactos, salud, navegación, historial de búsqueda, diagnóstico</td><td>No</td><td>La app no solicita la ubicación ni los contactos y no contiene ningún sistema de informes de fallos ni de analíticas.</td></tr>
@@ -289,13 +290,15 @@ COPY = {
 <p>En cada solicitud solo se envía el texto necesario para ella:</p>
 <ul>
   <li><strong>Organización y Relleno inteligente</strong>: el texto de la captura que se organiza, incluido el texto extraído en tu dispositivo de una foto o un PDF adjuntos, tu zona horaria y tu idioma, y los nombres y breves resúmenes de hasta 30 de tus proyectos.</li>
+  <li><strong>Transcribir una grabación</strong> (Light y Pro con Luna como motor): la grabación en sí, solo cuando tu iPhone no estaba seguro de sus palabras, junto con tu idioma y una breve lista de pistas de vocabulario. Consulta <em>Voz, reconocimiento de voz y grabaciones</em> más abajo.</li>
   <li><strong>Pregunta a tus notas</strong>: tu pregunta y breves fragmentos de hasta 12 elementos guardados que tu dispositivo eligió como relevantes.</li>
   <li><strong>Ordenar</strong> (Light y Pro): el texto de la nota que pediste ordenar.</li>
   <li><strong>Resumen diario</strong> (Pro): recuentos de lo que vence y breves fragmentos de hasta 10 de tus elementos de ese día.</li>
 </ul>
-<p><strong>Nunca se envía:</strong> el audio, las imágenes ni los archivos en sí; las capturas marcadas con {K_device_only}; tus eventos del Calendario de Apple; tu nombre ni tu correo electrónico (no los tenemos); ningún identificador que pudiera indicar a OpenAI quién eres.</p>
+<p><strong>Nunca se envía:</strong> las imágenes ni los archivos en sí; el audio, salvo una grabación que va a Luna para transcribirla como se describe en <em>Voz, reconocimiento de voz y grabaciones</em>; las capturas marcadas con {K_device_only}; tus eventos del Calendario de Apple; tu nombre ni tu correo electrónico (no los tenemos); ningún identificador que pudiera indicar a OpenAI quién eres.</p>
 <h3>Cuánto tiempo se conserva</h3>
 <p>Nuestro servidor conserva un resultado <strong>hasta 24 horas</strong>, para que una solicitud interrumpida pueda completarse sin ejecutarla dos veces ni descontarla dos veces de tu cupo. Después se elimina el texto, y se conserva hasta un año un comprobante sin contenido (un hash unidireccional de la solicitud, los ID de los elementos que usó y la hora) para la contabilidad del cupo. Eliminar definitivamente un elemento también elimina los resultados creados a partir de él, y eliminar tu cuenta los elimina todos.</p>
+<p>Una grabación enviada para transcribirla no se almacena en absoluto. Solo su hash unidireccional entra en el comprobante, para que la solicitud pueda completarse o reembolsarse, y su transcripción se conserva con el resultado durante las mismas 24 horas.</p>
 <p>Pedimos a OpenAI que no almacene las respuestas. Según las condiciones de su API, OpenAI no usa estos datos para entrenar sus modelos. Puede conservar las entradas y salidas durante un tiempo limitado para detectar abusos, como se describe en sus <a href="https://openai.com/enterprise-privacy/">políticas de datos de la API</a>.</p>
 <p>Las sugerencias y respuestas generadas por IA pueden ser incorrectas. Por eso cada campo del Relleno inteligente se puede revisar antes de guardarse, y cada respuesta indica sus fuentes.</p>
 """,
@@ -335,7 +338,9 @@ COPY = {
 
 "p.voice.h": "Voz, reconocimiento de voz y grabaciones",
 "p.voice.b": """
-<p>La captura de voz usa el micrófono solo mientras grabas. Lo que dices se transcribe <strong>en tu dispositivo</strong> con el reconocimiento de voz de Apple. Tu grabación no se envía a Apple ni a nosotros para transcribirla, aunque el primer uso de un idioma descarga los archivos de voz de Apple.</p>
+<p>La captura de voz usa el micrófono solo mientras grabas. Lo que dices se transcribe <strong>en tu dispositivo</strong> con el reconocimiento de voz de Apple. Tu grabación no se envía a Apple ni a nosotros para transcribirla, aunque el primer uso de un idioma descarga los archivos de voz de Apple. Hay una excepción, que se describe a continuación.</p>
+<p><strong>Cuándo una grabación va a Luna.</strong> Desde el 4 de noviembre de 2026: si tienes Light o Pro, elegiste Luna como motor en {K_settings} y tu iPhone no estaba seguro de las palabras que oyó (la confianza de su reconocimiento fue baja o no produjo una transcripción final), la grabación en sí se envía a Luna para transcribirla antes de que Luna la organice. Una grabación de la que tu iPhone sí estaba seguro no se envía; solo va el texto de su transcripción, como hasta ahora. La grabación viaja una sola vez, por una conexión cifrada, a nuestro servidor y de ahí al modelo de voz a texto de OpenAI (gpt-transcribe). No la almacenamos: solo un hash unidireccional de ella entra en nuestro registro de uso, para que una solicitud interrumpida pueda completarse y una fallida reembolsarse, y la transcripción se conserva con el resultado de la IA hasta 24 horas, como los demás resultados. Transcribir y organizar una grabación cuentan juntos como una captura con IA en la nube del cupo mensual de tu plan. Nada de esto se aplica al motor en el dispositivo, a los planes gratuitos ni a las capturas marcadas con {K_device_only}: esas se transcriben siempre en tu dispositivo. Puedes seguir enviando una grabación tú mismo con {K_retranscribe} en la pantalla de revisión, si la IA en la nube está activada; se trata de la misma manera.</p>
+<p><strong>Pistas de vocabulario.</strong> Para que los nombres se escriban bien, la app da a los modelos de voz una breve lista de palabras a las que prestar atención: los nombres de tus proyectos y etiquetas, y los nombres que aparecen en los títulos de tus elementos guardados. La lista va al reconocimiento de voz de Apple en tu dispositivo y, con una grabación enviada a Luna, a nuestro servidor y a OpenAI. Ni nuestro servidor ni OpenAI la conservan más allá de la solicitud.</p>
 <p>Las grabaciones se conservan en tu biblioteca. Cuando la transcripción está completa, el audio se elimina <strong>7 días</strong> después de guardarse, salvo que toques {K_keep_recording}. Una grabación cuya transcripción falló se conserva hasta que la elimines. Las transcripciones se conservan aunque su audio ya no esté.</p>
 """,
 
@@ -362,7 +367,7 @@ COPY = {
 <ul>
   <li><strong>Apple</strong>: Iniciar sesión con Apple, App Attest, el App Store y las compras, la sincronización con iCloud en tu propia cuenta, la entrega de notificaciones push para la sincronización, y los modelos de IA y de voz en el dispositivo.</li>
   <li><strong>Cloudflare</strong>: aloja nuestro servidor y su base de datos, y le dirige las solicitudes.</li>
-  <li><strong>OpenAI</strong>: ejecuta Luna para las solicitudes de IA en la nube que permites, como se describe más arriba.</li>
+  <li><strong>OpenAI</strong>: ejecuta Luna para las solicitudes de IA en la nube que permites, incluida la transcripción de las grabaciones que se le envían, como se describe más arriba.</li>
 </ul>
 <p>No vendemos ni alquilamos datos personales, y no compartimos nada con anunciantes ni intermediarios de datos. Podemos revelar información si la ley lo exige. Como conservamos tan poco, es poco lo que podríamos revelar.</p>
 """,
@@ -375,6 +380,7 @@ COPY = {
 <tr><td>Grabaciones de voz</td><td>7 días después de completarse la transcripción, salvo que las conserves. Si la transcripción falló, hasta que las elimines.</td></tr>
 <tr><td>Tu copia en iCloud</td><td>Hasta que la elimines o elimines tu cuenta. Apple la almacena en tu iCloud.</td></tr>
 <tr><td>Resultado de la IA en la nube</td><td>Hasta 24 horas. Se conserva un comprobante sin contenido durante un máximo de 1 año.</td></tr>
+<tr><td>Grabación enviada a Luna para transcribirla</td><td>No se almacena. Su hash unidireccional forma parte del comprobante, y su transcripción se conserva con el resultado hasta 24 horas.</td></tr>
 <tr><td>Sesiones iniciadas</td><td>30 días desde la última renovación</td></tr>
 <tr><td>Cuenta, plan y recuentos de uso</td><td>Mientras exista tu cuenta</td></tr>
 <tr><td>Dirección IP con hash para la protección frente a abusos</td><td>Unos minutos</td></tr>
@@ -457,7 +463,7 @@ COPY = {
 """,
 "t.cloud.h": "7. Funciones en la nube y cupos",
 "t.cloud.b": """
-<p><strong>La sincronización</strong> usa tu propia cuenta de iCloud y depende del servicio de Apple, de tu almacenamiento de iCloud y de tu conexión. <strong>La IA en la nube</strong> está limitada por el cupo mensual de tu plan: Light incluye 300 capturas con IA en la nube y 100 respuestas en la nube al mes, Pro incluye 700 y 250, y una cuenta gratuita con sesión iniciada recibe una muestra única. Los cupos se restablecen cada mes natural y las cantidades no usadas no se acumulan. Para que el servicio sea justo, también hay un límite en la cantidad total de texto procesado cada mes. <strong>La importación de páginas</strong> (Pro) solo obtiene páginas públicas, y eres responsable de tener derecho a usar lo que importas.</p>
+<p><strong>La sincronización</strong> usa tu propia cuenta de iCloud y depende del servicio de Apple, de tu almacenamiento de iCloud y de tu conexión. <strong>La IA en la nube</strong> está limitada por el cupo mensual de tu plan: Light incluye 300 capturas con IA en la nube y 100 respuestas en la nube al mes, Pro incluye 700 y 250, y una cuenta gratuita con sesión iniciada recibe una muestra única. Transcribir y organizar una grabación con Luna cuentan juntos como una captura. Los cupos se restablecen cada mes natural y las cantidades no usadas no se acumulan. Para que el servicio sea justo, también hay un límite en la cantidad total de texto procesado cada mes. <strong>La importación de páginas</strong> (Pro) solo obtiene páginas públicas, y eres responsable de tener derecho a usar lo que importas.</p>
 <p>Trabajamos para mantener disponibles las funciones en la nube, pero no garantizamos que funcionen sin interrupciones. Las funciones en el dispositivo siguen funcionando sin ellas.</p>
 """,
 "t.subscriptions.h": "8. Suscripciones y facturación",

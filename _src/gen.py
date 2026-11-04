@@ -339,7 +339,7 @@ APP_TERMS = (
     "delete_local", "export", "share_export", "recently_deleted",
     "delete_permanently", "data_handled", "privacy_screen", "sync", "sync_now",
     "luna", "on_device", "language", "restore", "manage", "sign_out",
-    "keep_recording", "needs_review", "smart_org", "smart_fill", "quick",
+    "keep_recording", "retranscribe", "needs_review", "smart_org", "smart_fill", "quick",
     "ask", "calendars", "morning", "reminders", "spotlight", "device_only",
     "undo", "widgets", "connected_apps", "share_open_tasks",
 )
