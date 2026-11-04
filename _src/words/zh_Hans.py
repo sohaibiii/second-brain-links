@@ -203,7 +203,7 @@ COPY = {
 "a.f5.h": "什么都不会丢。",
 "a.f5.p": "你的原话始终保留在由它生成的所有内容旁边。任何整理都可以撤销，你也可以随时导出整个资料库。",
 "a.f6.h": "默认私密。",
-"a.f6.p": '优先使用设备端 AI，没有广告，也没有追踪。云端同步和云端 AI 都要等你同意才会开启，任何记录都可以只保留在这台 iPhone 上。<a href="{BASE}{L}/privacy/">了解具体做法。</a>',
+"a.f6.p": '优先使用设备端 AI，App 中没有广告。云端同步和云端 AI 都要等你同意才会开启，任何记录都可以只保留在这台 iPhone 上。<a href="{BASE}{L}/privacy/">了解具体做法。</a>',
 
 "a.price.h": "方案",
 "a.price.b": """
@@ -241,7 +241,7 @@ COPY = {
   <li><strong>云端 AI（“Luna”）</strong>会在设备端 AI 无法处理或你选择使用 Luna 时，将单次请求所需的文字经由我们的服务器发送给 OpenAI。如果 Luna 是你的引擎，你的 iPhone 没有听清的录音也会经由同一路径发送以供转写。除非你登录并将其打开，否则不会发送任何内容。</li>
   <li><strong>账户</strong>（通过 Apple 登录）会让我们的服务器保存少量记录：一个经过单向哈希处理的账户 ID、你的方案、你的同意选项以及你的用量计数。我们从不向 Apple 索取你的姓名或电子邮件地址。</li>
 </ul>
-<div class="callout"><span class="tile">{shield}</span><div>App 中没有广告、没有分析、没有追踪，也没有第三方 SDK。我们不出售或共享个人数据，也绝不会使用你的内容训练 AI 模型。</div></div>
+<div class="callout"><span class="tile">{shield}</span><div>App 中没有广告，也不使用广告标识符。除上述三项外，App 中唯一的第三方 SDK，即 Meta 的 SDK，会在 App 打开时、你首次在某台设备上登录时，以及你开始试用或购买方案时通知 Meta，以便我们衡量广告效果。你资料库中的任何内容都不会被发送。我们不出售个人数据，也绝不会使用你的内容训练 AI 模型。</div></div>
 <p style="margin-top:16px">本政策适用于 iPhone 和 iPad 版 Second Brain App 以及本网站，二者均由 {COMPANY}（“我们”）发布。App 自身的{K_settings} → {K_data_handled}页面以更简短的形式说明了同样的内容。</p>
 """,
 
@@ -251,13 +251,14 @@ COPY = {
 <div class="table-wrap"><table>
 <tr><th>类别</th><th>是否收集？</th><th>具体含义</th></tr>
 <tr><td>联系信息</td><td>否</td><td>“通过 Apple 登录”已设置为不与我们共享姓名和电子邮件地址。App 中没有电子邮件字段。</td></tr>
-<tr><td>标识符</td><td><strong>仅在有账户时</strong></td><td>一个账户 ID，由 Apple 提供给我们的标识符经单向哈希处理生成；以及 Apple 的 App Attest 在你的每台设备上创建的公钥。不使用广告标识符，也不使用设备 ID。</td></tr>
+<tr><td>标识符</td><td><strong>仅在有账户时</strong></td><td>一个账户 ID，由 Apple 提供给我们的标识符经单向哈希处理生成；以及 Apple 的 App Attest 在你的每台设备上创建的公钥。不使用广告标识符。Meta 的 SDK 会为本 App 保存自己的随机 ID，详见“广告效果衡量”一项。</td></tr>
 <tr><td>用户内容</td><td><strong>仅在使用云端 AI 时</strong></td><td>你向 Luna 发出的请求所需的文字及其结果，按下文所述短暂保存。如果 Luna 是你的引擎，还包括你的 iPhone 没有听清的录音，它会被转写，但不会被存储。你的资料库本身保留在你的设备上和你自己的 iCloud 中。</td></tr>
 <tr><td>购买项目</td><td><strong>仅在你订阅时</strong></td><td>Apple 针对你的方案发送的已签名交易：产品、日期、试用和续订状态。我们从不会看到付款详情。</td></tr>
-<tr><td>使用数据</td><td><strong>仅在有账户时</strong></td><td>云端 AI 请求的次数及其大小，用于计算每月额度。没有分析功能，也不记录你如何使用 App。</td></tr>
-<tr><td>位置、通讯录、健康、浏览历史记录、搜索历史记录、诊断</td><td>否</td><td>App 不会请求位置或通讯录权限，也不包含崩溃报告工具或分析功能。</td></tr>
+<tr><td>使用数据</td><td><strong>仅在有账户时</strong></td><td>云端 AI 请求的次数及其大小，用于计算每月额度。除下方的广告效果衡量外，没有分析功能，也不记录你如何使用 App。</td></tr>
+<tr><td>广告效果衡量</td><td><strong>是，由 Meta 收集</strong></td><td>App 被打开、你首次在某台设备上登录，以及开始试用或购买方案（含价格和币种）。Meta 的 SDK 会连同它为本 App 创建的随机 ID、设备型号、iOS 版本、语言和时区等基本设备信息以及你的 IP 地址一起发送这些事件，也可能报告 SDK 自身的问题。绝不包含你资料库中的任何内容。</td></tr>
+<tr><td>位置、通讯录、健康、浏览历史记录、搜索历史记录</td><td>否</td><td>App 不会请求位置或通讯录权限，也没有自己的分析功能或崩溃报告工具。</td></tr>
 </table></div>
-<p style="margin-top:14px"><strong>追踪：</strong>无。我们不会将与你有关的数据与其他公司的数据相关联，不展示广告，也不与数据经纪商共享任何内容。App 从不显示 Apple 的追踪提示，因为它没有需要请求的内容。</p>
+<p style="margin-top:14px"><strong>追踪：</strong>App 从不请求 Apple 的追踪许可，因此从不读取你的广告标识符，iOS 也会阻止 Meta SDK 中需要该许可的部分。Meta 根据上述事件，借助其 Aggregated Event Measurement 和 Apple 的 SKAdNetwork，以汇总的方式衡量我们的广告。我们不在 App 中展示广告，也不与数据经纪商共享任何内容。</p>
 """,
 
 "p.device.h": "保留在你设备上的内容",
@@ -357,13 +358,14 @@ COPY = {
 
 "p.third.h": "服务提供商",
 "p.third.b": """
-<p>Second Brain <strong>不包含任何第三方 SDK</strong>：没有分析、没有广告，也没有崩溃报告工具。以下公司代表我们处理数据，且各自仅用于所列用途：</p>
+<p>Second Brain <strong>包含一个第三方 SDK</strong>：Meta 的 SDK，仅用于衡量我们的广告效果。它无法访问你的资料库，App 中也没有其他分析、广告或崩溃报告代码。以下公司代表我们处理数据，且各自仅用于所列用途：</p>
 <ul>
   <li><strong>Apple</strong>：通过 Apple 登录、App Attest、App Store 和购买、你自己账户中的 iCloud 同步、用于同步的推送传送，以及设备端 AI 和语音模型。</li>
   <li><strong>Cloudflare</strong>：托管我们的服务器及其数据库，并将请求路由到服务器。</li>
   <li><strong>OpenAI</strong>：按上文所述，为你允许的云端 AI 请求运行 Luna，包括转写发送给它的录音。</li>
+  <li><strong>Meta</strong>：根据 App 内其 SDK 发送的、<em>我们收集的信息</em>中所列的事件，衡量我们在 Facebook 和 Instagram 上的广告效果。Meta 依照其自己的<a href="https://www.facebook.com/privacy/policy/">隐私政策</a>处理这些数据。</li>
 </ul>
-<p>我们不会出售或出租个人数据，也不与广告商或数据经纪商共享任何内容。如法律要求，我们可能会披露信息。由于我们掌握的信息极少，能够披露的内容也很少。</p>
+<p>我们不会出售或出租个人数据。除 Meta 为我们进行的广告效果衡量外，我们不与广告商或数据经纪商共享任何内容。如法律要求，我们可能会披露信息。由于我们掌握的信息极少，能够披露的内容也很少。</p>
 """,
 
 "p.retention.h": "保存期限",
@@ -408,7 +410,7 @@ COPY = {
 
 "p.transfers.h": "数据的处理地点",
 "p.transfers.b": """
-<p>Cloudflare 在其全球网络上运行我们的服务器，OpenAI 和 Apple 可能会在美国及其他国家或地区处理数据。在法律要求的情况下，这些传输受服务提供商的数据处理条款（包括标准合同条款）保障。存储在你设备上的数据会留在你设备所在的地方。</p>
+<p>Cloudflare 在其全球网络上运行我们的服务器，OpenAI、Apple 和 Meta 可能会在美国及其他国家或地区处理数据。在法律要求的情况下，这些传输受服务提供商的数据处理条款（包括标准合同条款）保障。存储在你设备上的数据会留在你设备所在的地方。</p>
 """,
 
 "p.changes.h": "本政策的变更",

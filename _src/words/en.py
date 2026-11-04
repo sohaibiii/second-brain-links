@@ -223,7 +223,7 @@ COPY = {
 "a.f5.p": "Your original words stay next to everything made from them. Any organizing can be undone, and you can export your whole library at any time.",
 "a.f6.icon": "lock",
 "a.f6.h": "Private by default.",
-"a.f6.p": 'On-device AI first, no ads and no tracking. Cloud sync and cloud AI each wait for your yes, and any capture can stay on this iPhone only. <a href="{BASE}{L}/privacy/">How that works.</a>',
+"a.f6.p": 'On-device AI first and no ads in the app. Cloud sync and cloud AI each wait for your yes, and any capture can stay on this iPhone only. <a href="{BASE}{L}/privacy/">How that works.</a>',
 
 "a.price.h": "Plans",
 "a.price.b": """
@@ -261,7 +261,7 @@ COPY = {
   <li><strong>Cloud AI ("Luna")</strong> sends the text needed for one request through our server to OpenAI, when on-device AI can't help or when you choose Luna. If Luna is your engine, a recording your iPhone was not sure of goes the same way to be transcribed. Nothing is sent unless you sign in and turn it on.</li>
   <li><strong>An account</strong> (Sign in with Apple) lets our server keep a small record: an account ID that is a one-way hash, your plan, your consent choices and your usage counts. We never ask Apple for your name or email.</li>
 </ul>
-<div class="callout"><span class="tile">{shield}</span><div>No advertising, no analytics, no tracking, and no third-party SDKs in the app. We do not sell or share personal data, and we never use your content to train AI models.</div></div>
+<div class="callout"><span class="tile">{shield}</span><div>No ads in the app and no advertising identifier. Apart from the three above, the app's one third-party SDK, Meta's, tells Meta when the app opens, when you first sign in on a device and when you start a trial or buy a plan, so we can measure our ads. Nothing from your library is ever sent. We do not sell personal data, and we never use your content to train AI models.</div></div>
 <p style="margin-top:16px">This policy applies to the Second Brain app for iPhone and iPad and to this website, both published by {COMPANY} ("we", "us"). The app's own {K_settings} → {K_data_handled} screen says the same in shorter form.</p>
 """,
 
@@ -271,13 +271,14 @@ COPY = {
 <div class="table-wrap"><table>
 <tr><th>Category</th><th>Collected?</th><th>What that means</th></tr>
 <tr><td>Contact info</td><td>No</td><td>Sign in with Apple is set up to share no name and no email address with us. There is no email field in the app.</td></tr>
-<tr><td>Identifiers</td><td><strong>Only with an account</strong></td><td>An account ID made from a one-way hash of the identifier Apple gives us, and the public key Apple's App Attest creates on each of your devices. No advertising identifier and no device ID are used.</td></tr>
+<tr><td>Identifiers</td><td><strong>Only with an account</strong></td><td>An account ID made from a one-way hash of the identifier Apple gives us, and the public key Apple's App Attest creates on each of your devices. No advertising identifier is used. Meta's SDK keeps its own random ID for the app, described under ad measurement.</td></tr>
 <tr><td>User content</td><td><strong>Only with cloud AI</strong></td><td>The text needed for a request you make to Luna, and its result, kept briefly as described below. If Luna is your engine, also a recording your iPhone was not sure of, which is transcribed and not stored. Your library itself stays on your device and in your own iCloud.</td></tr>
 <tr><td>Purchases</td><td><strong>Only if you subscribe</strong></td><td>The signed transaction Apple sends for your plan: product, dates, trial and renewal status. We never see payment details.</td></tr>
-<tr><td>Usage data</td><td><strong>Only with an account</strong></td><td>Counts of cloud AI requests and their size, so the monthly allowance can be applied. No analytics and no record of how you use the app.</td></tr>
-<tr><td>Location, contacts, health, browsing, search history, diagnostics</td><td>No</td><td>The app does not request location or contacts and contains no crash reporter or analytics.</td></tr>
+<tr><td>Usage data</td><td><strong>Only with an account</strong></td><td>Counts of cloud AI requests and their size, so the monthly allowance can be applied. Apart from the ad measurement below, no analytics and no record of how you use the app.</td></tr>
+<tr><td>Ad measurement</td><td><strong>Yes, by Meta</strong></td><td>That the app opened, your first sign-in on a device, and a trial started or a plan bought, with its price and currency. Meta's SDK sends these with a random ID it creates for the app, basic device details such as the model, iOS version, language and time zone, and your IP address, and it may report problems in the SDK itself. Never anything from your library.</td></tr>
+<tr><td>Location, contacts, health, browsing, search history</td><td>No</td><td>The app does not request location or contacts, and has no analytics or crash reporter of its own.</td></tr>
 </table></div>
-<p style="margin-top:14px"><strong>Tracking:</strong> none. We do not link data about you with other companies' data, show ads, or share anything with data brokers. The app never shows Apple's tracking prompt because it has nothing to ask.</p>
+<p style="margin-top:14px"><strong>Tracking:</strong> the app never asks for Apple's permission to track you, so it never reads your advertising identifier, and iOS blocks the parts of Meta's SDK that need that permission. Meta measures our ads from the events above, in aggregate, with its Aggregated Event Measurement and Apple's SKAdNetwork. We do not show ads in the app or share anything with data brokers.</p>
 """,
 
 "p.device.h": "What stays on your device",
@@ -377,13 +378,14 @@ COPY = {
 
 "p.third.h": "Service providers",
 "p.third.b": """
-<p>Second Brain contains <strong>no third-party SDKs</strong>: no analytics, no advertising and no crash reporter. These companies process data for us, each only for the purpose listed:</p>
+<p>Second Brain contains <strong>one third-party SDK</strong>: Meta's, used only to measure our ads. It has no access to your library, and there is no other analytics, advertising or crash-reporting code. These companies process data for us, each only for the purpose listed:</p>
 <ul>
   <li><strong>Apple</strong>: Sign in with Apple, App Attest, the App Store and purchases, iCloud sync in your own account, push delivery for sync, and the on-device AI and speech models.</li>
   <li><strong>Cloudflare</strong>: hosts our server and its database, and routes requests to it.</li>
   <li><strong>OpenAI</strong>: runs Luna for the cloud AI requests you allow, including transcribing the recordings sent to it, as described above.</li>
+  <li><strong>Meta</strong>: measures our ads on Facebook and Instagram from the events listed under <em>What we collect</em>, sent by its SDK in the app. Meta handles that data under its own <a href="https://www.facebook.com/privacy/policy/">privacy policy</a>.</li>
 </ul>
-<p>We do not sell or rent personal data, and we share nothing with advertisers or data brokers. We may disclose information if the law requires it. Because we hold so little, there is little we could disclose.</p>
+<p>We do not sell or rent personal data. Apart from the ad measurement Meta does for us, we share nothing with advertisers or data brokers. We may disclose information if the law requires it. Because we hold so little, there is little we could disclose.</p>
 """,
 
 "p.retention.h": "How long we keep it",
@@ -428,7 +430,7 @@ COPY = {
 
 "p.transfers.h": "Where data is processed",
 "p.transfers.b": """
-<p>Cloudflare runs our server on its global network, and OpenAI and Apple may process data in the United States and other countries. Where the law requires it, these transfers are covered by the providers' data processing terms, including standard contractual clauses. Data stored on your device stays where your device is.</p>
+<p>Cloudflare runs our server on its global network, and OpenAI, Apple and Meta may process data in the United States and other countries. Where the law requires it, these transfers are covered by the providers' data processing terms, including standard contractual clauses. Data stored on your device stays where your device is.</p>
 """,
 
 "p.changes.h": "Changes to this policy",

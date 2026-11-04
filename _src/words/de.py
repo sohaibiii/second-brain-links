@@ -203,7 +203,7 @@ COPY = {
 "a.f5.h": "Nichts geht verloren.",
 "a.f5.p": "Deine ursprünglichen Worte bleiben neben allem, was daraus entstanden ist. Jedes Organisieren lässt sich widerrufen, und du kannst deine ganze Bibliothek jederzeit exportieren.",
 "a.f6.h": "Privat von Anfang an.",
-"a.f6.p": 'Zuerst KI auf dem Gerät, keine Werbung und kein Tracking. Cloud-Synchronisierung und Cloud-KI warten jeweils auf dein Ja, und jeder Gedanke kann ausschließlich auf diesem iPhone bleiben. <a href="{BASE}{L}/privacy/">So funktioniert das.</a>',
+"a.f6.p": 'Zuerst KI auf dem Gerät und keine Werbung in der App. Cloud-Synchronisierung und Cloud-KI warten jeweils auf dein Ja, und jeder Gedanke kann ausschließlich auf diesem iPhone bleiben. <a href="{BASE}{L}/privacy/">So funktioniert das.</a>',
 
 "a.price.h": "Pläne",
 "a.price.b": """
@@ -241,7 +241,7 @@ COPY = {
   <li><strong>Cloud-KI („Luna“)</strong> sendet den Text, der für eine einzelne Anfrage nötig ist, über unseren Server an OpenAI – wenn die KI auf dem Gerät nicht weiterhelfen kann oder wenn du Luna wählst. Ist Luna deine Engine, geht auch eine Aufnahme, bei der sich dein iPhone nicht sicher war, auf demselben Weg zur Transkription. Es wird nichts gesendet, solange du dich nicht anmeldest und sie einschaltest.</li>
   <li><strong>Ein Account</strong> („Mit Apple anmelden“) lässt unseren Server einen kleinen Datensatz speichern: eine Account-ID, die ein Einweg-Hash ist, deinen Plan, deine Einwilligungen und deine Nutzungszähler. Wir fragen Apple nie nach deinem Namen oder deiner E-Mail-Adresse.</li>
 </ul>
-<div class="callout"><span class="tile">{shield}</span><div>Keine Werbung, keine Analyse, kein Tracking und keine SDKs von Drittanbietern in der App. Wir verkaufen oder teilen keine personenbezogenen Daten und nutzen deine Inhalte nie zum Training von KI-Modellen.</div></div>
+<div class="callout"><span class="tile">{shield}</span><div>Keine Werbung in der App und keine Werbe-ID. Neben den drei Punkten oben meldet das einzige Drittanbieter-SDK der App, das von Meta, an Meta, wenn die App geöffnet wird, wenn du dich zum ersten Mal auf einem Gerät anmeldest und wenn du eine Testphase startest oder einen Plan kaufst, damit wir unsere Werbung messen können. Aus deiner Bibliothek wird nie etwas gesendet. Wir verkaufen keine personenbezogenen Daten und nutzen deine Inhalte nie zum Training von KI-Modellen.</div></div>
 <p style="margin-top:16px">Diese Erklärung gilt für die App Second Brain für iPhone und iPad und für diese Website, die beide von {COMPANY} („wir“, „uns“) veröffentlicht werden. Der Bildschirm {K_settings} → {K_data_handled} in der App sagt dasselbe in Kurzform.</p>
 """,
 
@@ -251,13 +251,14 @@ COPY = {
 <div class="table-wrap"><table>
 <tr><th>Kategorie</th><th>Erhoben?</th><th>Was das bedeutet</th></tr>
 <tr><td>Kontaktdaten</td><td>Nein</td><td>„Mit Apple anmelden“ ist so eingerichtet, dass weder dein Name noch deine E-Mail-Adresse mit uns geteilt werden. In der App gibt es kein E-Mail-Feld.</td></tr>
-<tr><td>Kennungen</td><td><strong>Nur mit Account</strong></td><td>Eine Account-ID, die aus einem Einweg-Hash der Kennung entsteht, die Apple uns übermittelt, und der öffentliche Schlüssel, den Apples App Attest auf jedem deiner Geräte erzeugt. Es werden weder eine Werbe-ID noch eine Geräte-ID verwendet.</td></tr>
+<tr><td>Kennungen</td><td><strong>Nur mit Account</strong></td><td>Eine Account-ID, die aus einem Einweg-Hash der Kennung entsteht, die Apple uns übermittelt, und der öffentliche Schlüssel, den Apples App Attest auf jedem deiner Geräte erzeugt. Es wird keine Werbe-ID verwendet. Metas SDK führt eine eigene zufällige ID für die App, beschrieben unter Werbemessung.</td></tr>
 <tr><td>Nutzerinhalte</td><td><strong>Nur mit Cloud-KI</strong></td><td>Der Text, der für eine Anfrage an Luna nötig ist, und ihr Ergebnis, kurzzeitig gespeichert wie unten beschrieben. Ist Luna deine Engine, auch eine Aufnahme, bei der sich dein iPhone nicht sicher war; sie wird transkribiert und nicht gespeichert. Deine Bibliothek selbst bleibt auf deinem Gerät und in deiner eigenen iCloud.</td></tr>
 <tr><td>Käufe</td><td><strong>Nur wenn du ein Abo abschließt</strong></td><td>Die signierte Transaktion, die Apple für deinen Plan sendet: Produkt, Datumsangaben, Status von Testphase und Verlängerung. Zahlungsdaten sehen wir nie.</td></tr>
-<tr><td>Nutzungsdaten</td><td><strong>Nur mit Account</strong></td><td>Anzahl und Umfang der Cloud-KI-Anfragen, damit das monatliche Kontingent angewendet werden kann. Keine Analyse und keine Aufzeichnung darüber, wie du die App nutzt.</td></tr>
-<tr><td>Standort, Kontakte, Gesundheit, Browserverlauf, Suchverlauf, Diagnose</td><td>Nein</td><td>Die App fragt weder Standort noch Kontakte ab und enthält weder Absturzberichte noch Analysewerkzeuge.</td></tr>
+<tr><td>Nutzungsdaten</td><td><strong>Nur mit Account</strong></td><td>Anzahl und Umfang der Cloud-KI-Anfragen, damit das monatliche Kontingent angewendet werden kann. Abgesehen von der Werbemessung unten keine Analyse und keine Aufzeichnung darüber, wie du die App nutzt.</td></tr>
+<tr><td>Werbemessung</td><td><strong>Ja, durch Meta</strong></td><td>Dass die App geöffnet wurde, deine erste Anmeldung auf einem Gerät sowie eine gestartete Testphase oder ein gekaufter Plan mit Preis und Währung. Metas SDK sendet diese Ereignisse mit einer zufälligen ID, die es für die App erzeugt, grundlegenden Geräteangaben wie Modell, iOS-Version, Sprache und Zeitzone sowie deiner IP-Adresse, und es kann Probleme im SDK selbst melden. Nie etwas aus deiner Bibliothek.</td></tr>
+<tr><td>Standort, Kontakte, Gesundheit, Browserverlauf, Suchverlauf</td><td>Nein</td><td>Die App fragt weder Standort noch Kontakte ab und hat keine eigenen Analysewerkzeuge oder Absturzberichte.</td></tr>
 </table></div>
-<p style="margin-top:14px"><strong>Tracking:</strong> keines. Wir verknüpfen keine Daten über dich mit Daten anderer Unternehmen, zeigen keine Werbung und teilen nichts mit Datenhändlern. Die App zeigt nie Apples Tracking-Abfrage, weil sie nichts zu fragen hat.</p>
+<p style="margin-top:14px"><strong>Tracking:</strong> Die App fragt nie nach Apples Erlaubnis, dich zu tracken. Sie liest daher nie deine Werbe-ID, und iOS blockiert die Teile von Metas SDK, die diese Erlaubnis bräuchten. Meta misst unsere Werbung anhand der Ereignisse oben in zusammengefasster Form, mit seiner Aggregated Event Measurement und Apples SKAdNetwork. Wir zeigen keine Werbung in der App und teilen nichts mit Datenhändlern.</p>
 """,
 
 "p.device.h": "Was auf deinem Gerät bleibt",
@@ -357,13 +358,14 @@ COPY = {
 
 "p.third.h": "Dienstleister",
 "p.third.b": """
-<p>Second Brain enthält <strong>keine SDKs von Drittanbietern</strong>: keine Analyse, keine Werbung und keine Absturzberichte. Diese Unternehmen verarbeiten Daten für uns, jeweils nur für den genannten Zweck:</p>
+<p>Second Brain enthält <strong>ein SDK von Drittanbietern</strong>: das von Meta, ausschließlich zur Messung unserer Werbung. Es hat keinen Zugriff auf deine Bibliothek, und es gibt keinen anderen Code für Analyse, Werbung oder Absturzberichte. Diese Unternehmen verarbeiten Daten für uns, jeweils nur für den genannten Zweck:</p>
 <ul>
   <li><strong>Apple</strong>: „Mit Apple anmelden“, App Attest, der App Store und Käufe, iCloud-Synchronisierung in deinem eigenen Account, Push-Zustellung für die Synchronisierung sowie die KI- und Sprachmodelle auf dem Gerät.</li>
   <li><strong>Cloudflare</strong>: hostet unseren Server und seine Datenbank und leitet Anfragen dorthin weiter.</li>
   <li><strong>OpenAI</strong>: betreibt Luna für die Cloud-KI-Anfragen, die du erlaubst, einschließlich der Transkription der an Luna gesendeten Aufnahmen, wie oben beschrieben.</li>
+  <li><strong>Meta</strong>: misst unsere Werbung auf Facebook und Instagram anhand der unter <em>Was wir erheben</em> genannten Ereignisse, die sein SDK in der App sendet. Meta verarbeitet diese Daten nach seiner eigenen <a href="https://www.facebook.com/privacy/policy/">Datenrichtlinie</a>.</li>
 </ul>
-<p>Wir verkaufen oder vermieten keine personenbezogenen Daten und teilen nichts mit Werbetreibenden oder Datenhändlern. Wir können Informationen offenlegen, wenn das Gesetz es verlangt. Da wir so wenig speichern, gibt es kaum etwas, das wir offenlegen könnten.</p>
+<p>Wir verkaufen oder vermieten keine personenbezogenen Daten. Abgesehen von der Werbemessung, die Meta für uns übernimmt, teilen wir nichts mit Werbetreibenden oder Datenhändlern. Wir können Informationen offenlegen, wenn das Gesetz es verlangt. Da wir so wenig speichern, gibt es kaum etwas, das wir offenlegen könnten.</p>
 """,
 
 "p.retention.h": "Wie lange wir Daten aufbewahren",
@@ -408,7 +410,7 @@ COPY = {
 
 "p.transfers.h": "Wo Daten verarbeitet werden",
 "p.transfers.b": """
-<p>Cloudflare betreibt unseren Server in seinem globalen Netzwerk, und OpenAI und Apple können Daten in den USA und anderen Ländern verarbeiten. Soweit gesetzlich erforderlich, sind diese Übermittlungen durch die Datenverarbeitungsbedingungen der Anbieter abgedeckt, einschließlich Standardvertragsklauseln. Daten, die auf deinem Gerät gespeichert sind, bleiben dort, wo dein Gerät ist.</p>
+<p>Cloudflare betreibt unseren Server in seinem globalen Netzwerk, und OpenAI, Apple und Meta können Daten in den USA und anderen Ländern verarbeiten. Soweit gesetzlich erforderlich, sind diese Übermittlungen durch die Datenverarbeitungsbedingungen der Anbieter abgedeckt, einschließlich Standardvertragsklauseln. Daten, die auf deinem Gerät gespeichert sind, bleiben dort, wo dein Gerät ist.</p>
 """,
 
 "p.changes.h": "Änderungen dieser Erklärung",

@@ -216,20 +216,21 @@ footer a:hover{color:var(--accent-ink)}
   <li><strong>クラウドAI（「Luna」）</strong>は、オンデバイスAIで対応できないとき、またはLunaを選んだときに、1件のリクエストに必要なテキストを当社のサーバー経由でOpenAIに送ります。Lunaをエンジンに選んでいる場合は、iPhoneが聞き取りに自信を持てなかった録音も、文字起こしのために同じ経路で送られます。サインインしてオンにしない限り、何も送られません。</li>
   <li><strong>アカウント</strong>（Appleでサインイン）があると、当社のサーバーにわずかな記録が保存されます：一方向ハッシュであるアカウントID、プラン、同意の選択、利用回数です。当社がAppleに名前やメールアドレスを求めることはありません。</li>
 </ul>
-<div class="callout"><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6l7-3z"/></svg></span><div>アプリには広告、分析、トラッキング、サードパーティSDKは一切ありません。当社は個人データを販売・共有せず、あなたのコンテンツをAIモデルの学習に使うこともありません。</div></div>
+<div class="callout"><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6l7-3z"/></svg></span><div>アプリに広告はなく、広告識別子も使用しません。上記の3点とは別に、アプリに含まれる唯一のサードパーティSDKであるMetaのSDKが、当社の広告効果を測定するため、アプリが開かれたとき、デバイスで初めてサインインしたとき、トライアルを開始したときやプランを購入したときにMetaに知らせます。ライブラリの内容が送信されることは一切ありません。当社は個人データを販売せず、あなたのコンテンツをAIモデルの学習に使うこともありません。</div></div>
 <p style="margin-top:16px">このポリシーは、TOPSOL（以下「当社」）が提供するiPhoneおよびiPad用Second Brainアプリと、このWebサイトに適用されます。アプリの<kbd>設定</kbd> → <kbd>データの取り扱い</kbd>画面にも、同じ内容が短くまとめられています。</p>
 </section><section class="card" id="collect"><h2>収集する情報</h2>
 <p>ここでいう「収集」とは、データがあなたのデバイスを離れ、当社が読める場所に保存されることを指します。あなた自身のiCloudストレージにだけ届くデータは、当社が収集するものではありません。</p>
 <div class="table-wrap"><table>
 <tr class="head"><th>カテゴリ</th><th>収集の有無</th><th>内容</th></tr>
 <tr><td data-label="カテゴリ">連絡先情報</td><td data-label="収集の有無">なし</td><td data-label="内容">「Appleでサインイン」は、名前もメールアドレスも当社と共有しないよう設定されています。アプリにはメールアドレスの入力欄もありません。</td></tr>
-<tr><td data-label="カテゴリ">識別子</td><td data-label="収集の有無"><strong>アカウントがある場合のみ</strong></td><td data-label="内容">Appleから提供される識別子を一方向ハッシュ化して作るアカウントIDと、AppleのApp Attestがあなたの各デバイスで作成する公開鍵。広告識別子やデバイスIDは使用しません。</td></tr>
+<tr><td data-label="カテゴリ">識別子</td><td data-label="収集の有無"><strong>アカウントがある場合のみ</strong></td><td data-label="内容">Appleから提供される識別子を一方向ハッシュ化して作るアカウントIDと、AppleのApp Attestがあなたの各デバイスで作成する公開鍵。広告識別子は使用しません。MetaのSDKはアプリ用に独自のランダムなIDを保持します（広告効果測定の項目を参照）。</td></tr>
 <tr><td data-label="カテゴリ">ユーザコンテンツ</td><td data-label="収集の有無"><strong>クラウドAIを使う場合のみ</strong></td><td data-label="内容">Lunaへのリクエストに必要なテキストとその結果。下記のとおり、短期間だけ保持します。Lunaをエンジンに選んでいる場合は、iPhoneが聞き取りに自信を持てなかった録音も対象で、文字起こしされ、保存はされません。ライブラリそのものは、あなたのデバイスとあなた自身のiCloudに残ります。</td></tr>
 <tr><td data-label="カテゴリ">購入</td><td data-label="収集の有無"><strong>サブスクリプションに登録した場合のみ</strong></td><td data-label="内容">Appleがプランについて送る署名付きの取引情報：製品、日付、トライアルと更新の状態。支払い情報を当社が見ることはありません。</td></tr>
-<tr><td data-label="カテゴリ">使用状況データ</td><td data-label="収集の有無"><strong>アカウントがある場合のみ</strong></td><td data-label="内容">月ごとの利用枠を適用するための、クラウドAIリクエストの回数とサイズ。分析は行わず、アプリの使い方の記録もありません。</td></tr>
-<tr><td data-label="カテゴリ">位置情報、連絡先、健康、閲覧履歴、検索履歴、診断</td><td data-label="収集の有無">なし</td><td data-label="内容">アプリは位置情報や連絡先へのアクセスを求めず、クラッシュレポーターや分析ツールも含みません。</td></tr>
+<tr><td data-label="カテゴリ">使用状況データ</td><td data-label="収集の有無"><strong>アカウントがある場合のみ</strong></td><td data-label="内容">月ごとの利用枠を適用するための、クラウドAIリクエストの回数とサイズ。下記の広告効果測定を除き、分析は行わず、アプリの使い方の記録もありません。</td></tr>
+<tr><td data-label="カテゴリ">広告効果測定</td><td data-label="収集の有無"><strong>あり（Metaによる）</strong></td><td data-label="内容">アプリが開かれたこと、デバイスでの初回サインイン、トライアルの開始またはプランの購入（価格と通貨を含む）。MetaのSDKはこれらを、アプリ用に作成するランダムなID、機種・iOSのバージョン・言語・タイムゾーンなどの基本的なデバイス情報、IPアドレスとともに送信し、SDK自体の不具合を報告することもあります。ライブラリの内容が含まれることはありません。</td></tr>
+<tr><td data-label="カテゴリ">位置情報、連絡先、健康、閲覧履歴、検索履歴</td><td data-label="収集の有無">なし</td><td data-label="内容">アプリは位置情報や連絡先へのアクセスを求めず、独自の分析ツールやクラッシュレポーターもありません。</td></tr>
 </table></div>
-<p style="margin-top:14px"><strong>トラッキング：</strong>行いません。当社は、あなたに関するデータを他社のデータと結び付けたり、広告を表示したり、データブローカーと何かを共有したりしません。尋ねることが何もないため、アプリがAppleのトラッキングの許可を求める画面を表示することはありません。</p>
+<p style="margin-top:14px"><strong>トラッキング：</strong>アプリがAppleにトラッキングの許可を求めることはありません。そのため広告識別子を読み取ることはなく、その許可を必要とするMetaのSDKの機能はiOSによってブロックされます。Metaは上記のイベントをもとに、MetaのAggregated Event MeasurementとAppleのSKAdNetworkを使って、当社の広告を集計された形で測定します。当社はアプリに広告を表示せず、データブローカーと何かを共有することもありません。</p>
 </section><section class="card" id="device"><h2>デバイスに残るもの</h2>
 <p>Second Brainは、ライブラリをデバイス上のアプリ専用のプライベートな領域に保存し、iOSのデータ保護とパスコードで保護します：</p>
 <ul>
@@ -302,13 +303,14 @@ footer a:hover{color:var(--accent-ink)}
 </section><section class="card" id="purchases"><h2>購入</h2>
 <p>LightとProは、AppleのApp Storeを通じて販売されます。支払いはあなたとAppleの間で<a href="https://www.apple.com/legal/privacy/">Appleのプライバシーポリシー</a>に基づいて行われ、当社が支払い情報を見ることはありません。プランはアカウントなしでも購入できます。その場合、Appleが署名した取引はiPhone上で確認され、当社のサーバーには購入に関する情報は何も保存されません。サインインすると、当社のサーバーがその取引を確認してアカウントとともに保存し、プランをほかのデバイスでも使えるようにします。アカウントなしで行った購入は、最初にそれを送信したアカウントに紐づけられます。当社のサーバーは、更新、返金、キャンセルに関するAppleからの通知も受け取り、プランを正しい状態に保つため、アカウントに紐づいた購入にのみ適用します。</p>
 </section><section class="card" id="third"><h2>サービス提供者</h2>
-<p>Second Brainには<strong>サードパーティSDKは含まれていません</strong>。分析、広告、クラッシュレポーターもありません。次の企業が、それぞれ記載された目的に限って、当社のためにデータを処理します：</p>
+<p>Second Brainには<strong>サードパーティSDKが1つ含まれています</strong>。当社の広告効果の測定だけに使うMetaのSDKです。このSDKはあなたのライブラリにアクセスできず、ほかに分析、広告、クラッシュレポートのためのコードはありません。次の企業が、それぞれ記載された目的に限って、当社のためにデータを処理します：</p>
 <ul>
   <li><strong>Apple</strong>：Appleでサインイン、App Attest、App Storeと購入、あなた自身のアカウントでのiCloud同期、同期のためのプッシュ配信、オンデバイスのAIモデルと音声モデル。</li>
   <li><strong>Cloudflare</strong>：当社のサーバーとそのデータベースのホスティング、およびサーバーへのリクエストのルーティング。</li>
   <li><strong>OpenAI</strong>：上記のとおり、あなたが許可したクラウドAIリクエストのためのLunaの実行（Lunaに送られた録音の文字起こしを含む）。</li>
+  <li><strong>Meta</strong>：アプリ内のSDKが送信する、<em>収集する情報</em>に記載のイベントをもとに、FacebookとInstagramでの当社の広告を測定します。Metaはこのデータを自社の<a href="https://www.facebook.com/privacy/policy/">プライバシーポリシー</a>に従って取り扱います。</li>
 </ul>
-<p>当社は個人データを販売または貸与せず、広告主やデータブローカーとは何も共有しません。法律で求められた場合には、情報を開示することがあります。ただし、当社が保持する情報はごくわずかなので、開示できるものもわずかです。</p>
+<p>当社は個人データを販売または貸与しません。Metaによる広告効果測定を除き、広告主やデータブローカーとは何も共有しません。法律で求められた場合には、情報を開示することがあります。ただし、当社が保持する情報はごくわずかなので、開示できるものもわずかです。</p>
 </section><section class="card" id="retention"><h2>保持期間</h2>
 <div class="table-wrap"><table>
 <tr class="head"><th>データ</th><th>保持期間</th></tr>
@@ -338,7 +340,7 @@ footer a:hover{color:var(--accent-ink)}
 </section><section class="card" id="children"><h2>お子様について</h2>
 <p>Second Brainは、13歳未満のお子様、またはお住まいの地域のデジタル同意年齢に満たないお子様を対象としていません。当社は、お子様の個人データを故意に収集することはありません。お子様がアカウントを作成したと思われる場合は、<a href="mailto:topsol.org@gmail.com">topsol.org@gmail.com</a>までご連絡ください。削除をお手伝いします。</p>
 </section><section class="card" id="transfers"><h2>データが処理される場所</h2>
-<p>Cloudflareは当社のサーバーを世界規模のネットワーク上で運用しており、OpenAIとAppleは米国やその他の国でデータを処理することがあります。法律で求められる場合、これらの移転は、標準契約条項を含む各提供者のデータ処理条件の対象となります。デバイスに保存されたデータは、デバイスのある場所にとどまります。</p>
+<p>Cloudflareは当社のサーバーを世界規模のネットワーク上で運用しており、OpenAI、Apple、Metaは米国やその他の国でデータを処理することがあります。法律で求められる場合、これらの移転は、標準契約条項を含む各提供者のデータ処理条件の対象となります。デバイスに保存されたデータは、デバイスのある場所にとどまります。</p>
 </section><section class="card" id="changes"><h2>このポリシーの変更</h2>
 <p>アプリのデータの扱い方が変わる場合、当社はこのポリシーと冒頭の日付を更新します。重要な変更はアプリのリリースノートでお知らせし、法律で求められる場合は改めて同意をお願いします。あなたが新たに選択しない限り、あなたのコンテンツを新しい送り先に送り始めることは決してありません。</p>
 </section><section class="card" id="contact"><h2>お問い合わせ</h2>
